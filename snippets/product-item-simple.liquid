@@ -1,0 +1,74 @@
+<style>
+  .outofstock__overlay {
+  	z-index: 1;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	background-color: #01213080;
+  }
+
+  .outofstock__overlay {
+  	color: rgb(0, 240, 255);
+  	font-family: 'Montserrat', sans-serif;
+  	font-size:16px;
+  	font-weight: 600;
+  }
+</style>
+
+{% liquid
+  assign image_sizes = image_sizes | default: '100vw'
+  assign featured_image = product.metafields.collection.images.value | first | default: product.featured_image
+%}
+
+<div class="space-y-5 sm:space-y-2.5">
+  {% if product.available %}
+    <a
+      class="block aspect-w-3 aspect-h-4 [&_*]:object-cover relative"
+      href="{{ product.url }}"
+    >
+  {% else %}
+    <div
+      class="block aspect-w-3 aspect-h-4 [&_*]:object-cover relative"
+    >
+  {% endif %}
+  {% if product.available == false %}
+    <div class="absolute top-0 left-0 outofstock__overlay w-full h-full">
+      <p>OUT OF STOCK</p>
+    </div>
+  {% endif %}
+  {% if featured_image %}
+    {{
+      featured_image
+      | image_url: width: 1200
+      | image_tag: loading: 'lazy', sizes: image_sizes, widths: '300, 400, 600, 800, 1200'
+    }}
+  {% else %}
+    {{ 'product-1' | placeholder_svg_tag }}
+  {% endif %}
+  {% if product.available %}
+    </a>
+  {% else %}
+    </div>
+  {% endif %}
+
+  <div>
+    <h3 class="text-base font-body font-normal tracking-normal sm:text-20{% if product.title.size > 20 %} max-w-[10em]{% endif %}">
+      {{ product.title }}
+    </h3>
+  </div>
+</div>
+{%- capture formatted_min_price -%}{{ product.price_min | money }}{%- endcapture -%}
+{%- capture formatted_max_price -%}{{ product.price_max | money }}{%- endcapture -%}
+{% if product.has_only_default_variant %}
+	<div class="card-price-wrapper font-bold flex items-center mt-auto" data-price="">
+		<span class="Price">
+			{{ product.price | money }}
+		</span>
+	</div>
+{% else %}
+	<div class="card-price-wrapper font-bold flex items-center mt-auto" data-price="">
+		<span class="Price">
+			{{ 'collections.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}
+		</span>
+	</div>
+{% endif %}

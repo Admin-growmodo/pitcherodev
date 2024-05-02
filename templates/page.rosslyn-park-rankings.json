@@ -1,0 +1,245 @@
+{
+  "sections": {
+    "page_header": {
+      "type": "main-page-header",
+      "settings": {
+        "page_style_blue": true,
+        "transparent_header": true,
+        "background_newsletter": false,
+        "show_header": false,
+        "background_image": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_content": false
+      }
+    },
+    "f70bf208-2322-4b2c-91d2-c9dafb641b21": {
+      "type": "hero",
+      "blocks": {
+        "bab7283d-6d0e-40ec-b1f0-ad43dbc8674f": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "primary",
+            "text": "BUY NOW",
+            "url": "shopify:\/\/products\/new-gps-player-bundle"
+          }
+        },
+        "9c162658-b1d7-4331-9db6-57c49f41d439": {
+          "type": "text",
+          "settings": {
+            "show_on_mobile": false,
+            "text": "<p>PicheroGPS is attending this years Howden Roslyn Park National Schools Sevens tournament, searching for the fastest player at the tournament. The top speed of all the players wearing a PitcheroGPS Player Tracker will be recorded on our live leaderboard below.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "bab7283d-6d0e-40ec-b1f0-ad43dbc8674f",
+        "9c162658-b1d7-4331-9db6-57c49f41d439"
+      ],
+      "settings": {
+        "style": "black",
+        "image_left": false,
+        "image": "shopify:\/\/shop_images\/Speed_Heroes_2_bf981b48-a8e8-4b3d-96be-71a1e15e8ab5.png",
+        "hide_text_mobile": false,
+        "image_mobile": "shopify:\/\/shop_images\/Frame_1564.png",
+        "show_image_decoration": false,
+        "show_image_on_mobile": true,
+        "title": "Speed Rankings",
+        "title_as_h1": false,
+        "show_heading_decoration": true,
+        "title_small": false,
+        "title_not_uppercase_mobile": false,
+        "sub_title": ""
+      }
+    },
+    "2e6a53d8-74f9-497a-b20d-e1c4a952adf3": {
+      "type": "hero-redesign",
+      "blocks": {
+        "b768127f-4787-415c-8a10-87f058b49c8d": {
+          "type": "image",
+          "settings": {
+            "show_on_mobile": true,
+            "text": "",
+            "image": "shopify:\/\/shop_images\/Frame_746_fc6a8356-75b8-4c59-9855-02dacd1f7322.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_746_fc6a8356-75b8-4c59-9855-02dacd1f7322.png"
+          }
+        },
+        "173d34c2-0398-4e4c-a011-47d0fc49114e": {
+          "type": "button",
+          "settings": {
+            "style": "primary",
+            "text": "BUY NOW",
+            "url": "shopify:\/\/products\/new-gps-player-bundle",
+            "text_review": "Rated Excellent on TrustPilot",
+            "image_reviews": "shopify:\/\/shop_images\/GPS_-_Trust_Pilot_Stars.png"
+          }
+        }
+      },
+      "block_order": [
+        "b768127f-4787-415c-8a10-87f058b49c8d",
+        "173d34c2-0398-4e4c-a011-47d0fc49114e"
+      ],
+      "disabled": true,
+      "settings": {
+        "active_color": true,
+        "color": "#012130",
+        "style": "gradient",
+        "image_left": false,
+        "image": "shopify:\/\/shop_images\/Speed_Heroes_2.png",
+        "hide_text_mobile": false,
+        "image_mobile": "shopify:\/\/shop_images\/Speed_Heroes_2.png",
+        "show_image_decoration": false,
+        "show_image_on_mobile": true,
+        "title": "<p>Top Speed Rankings<\/p>",
+        "title_as_h1": false,
+        "show_heading_decoration": true,
+        "title_small": false,
+        "title_not_uppercase_mobile": false,
+        "sub_title": "WORLD RANKINGS"
+      }
+    },
+    "e24d12ec-5b40-42ca-9a29-6b6894a31685": {
+      "type": "text-with-media",
+      "settings": {
+        "top_padding": false,
+        "bottom_padding": false,
+        "padding_top": 40,
+        "padding_top_mobile": 40,
+        "padding_bottom": 40,
+        "padding_bottom_mobile": 40,
+        "show_media_on_mobile": true,
+        "medium_size": false,
+        "title": "",
+        "title_center": false,
+        "title_position": "outside",
+        "bold_text": "",
+        "bold_text_mobile": "",
+        "bold_text_center": true,
+        "bold_text_size": 30,
+        "text": "<p>PicheroGPS is attending this years Howden Rosslyn Park National Schools Sevens competition, searching for the fastest player at the tournament. The top speed of all the players wearing a PitcheroGPS Player Tracker will be recorded on our live leaderboard below.<\/p>",
+        "text_list_background": false,
+        "text_color": "",
+        "background_color": "",
+        "media_position": "flex-row"
+      }
+    },
+    "rp7_leaderboard_react_YkrnEH": {
+      "type": "rp7_leaderboard_react",
+      "settings": {
+        "top_padding": true
+      }
+    },
+    "d5363da0-9813-4a61-9e72-a43d72089a08": {
+      "type": "leaderboard_react",
+      "disabled": true,
+      "settings": {
+        "top_padding": false
+      }
+    },
+    "b54582c7-28f3-4efb-a3e9-0c4cab8712ef": {
+      "type": "bundles-redesign",
+      "blocks": {
+        "template--15813763268813__b54582c7-28f3-4efb-a3e9-0c4cab8712ef-bundle-1": {
+          "type": "bundle",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_461_2_233b69cc-1bb7-4032-9f9d-1d7b1468c11a.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1048_cb316604-1565-4419-bb17-8f37ebabba12.png",
+            "overlay_background": false,
+            "background_color": "#f2f2f2",
+            "text_color": "#000000",
+            "title": "Player<br>Bundle",
+            "sub_title": "Order Now",
+            "text": "",
+            "button": "BUY NOW",
+            "button_url": "shopify:\/\/products\/new-gps-player-bundle",
+            "button_style": "primary"
+          }
+        },
+        "template--15813763268813__b54582c7-28f3-4efb-a3e9-0c4cab8712ef-bundle-2": {
+          "type": "bundle",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1036_2_1_56032e1c-e5c3-4a51-b38a-0e90536ab473.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1297_1.png",
+            "overlay_background": false,
+            "background_color": "#f2f2f2",
+            "text_color": "#000000",
+            "title": "Team<br>Bundle",
+            "sub_title": "ORDER NOW",
+            "text": "",
+            "button": "BUY NOW",
+            "button_url": "shopify:\/\/products\/new-gps-team-bundle",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15813763268813__b54582c7-28f3-4efb-a3e9-0c4cab8712ef-bundle-1",
+        "template--15813763268813__b54582c7-28f3-4efb-a3e9-0c4cab8712ef-bundle-2"
+      ],
+      "settings": {
+        "padding_top": 48,
+        "padding_top_mobile": 36,
+        "padding_bottom": 48,
+        "padding_bottom_mobile": 36,
+        "hide_mobile": false,
+        "container_width": "medium",
+        "title": ""
+      }
+    },
+    "1653b1a8-bc15-4c8f-8f1a-a87164de54b8": {
+      "type": "hero-video-redesign",
+      "blocks": {
+        "5733e7dd-3e98-4d90-9206-f6f8c00ee7f9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>On a pitch Speed is undefeated. The PitcheroGPS Speed Training programme can make every player run faster for longer.<br\/><br\/>Completed over 6 weeks and designed for all players, the programme is a series of drills and exercise to improve running technique and match day performance.<\/p>"
+          }
+        },
+        "7dc3860e-d24a-49b0-8663-7f35c122cfae": {
+          "type": "button",
+          "settings": {
+            "style": "primary",
+            "text": "LEARN MORE",
+            "url": "shopify:\/\/pages\/speed-training"
+          }
+        }
+      },
+      "block_order": [
+        "5733e7dd-3e98-4d90-9206-f6f8c00ee7f9",
+        "7dc3860e-d24a-49b0-8663-7f35c122cfae"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_top_mobile": 50,
+        "padding_bottom": 0,
+        "padding_bottom_mobile": 50,
+        "style": "black",
+        "image": "shopify:\/\/shop_images\/Frame_1037.png",
+        "image_mobile": "shopify:\/\/shop_images\/Frame_1037_5.png",
+        "image_title": "shopify:\/\/shop_images\/Group_172_1.png",
+        "title": "",
+        "title_as_h1": false,
+        "sub_title": "",
+        "subtitle": "PitcheroGPS Speed Training",
+        "video": "",
+        "media_position": "flex-row"
+      }
+    }
+  },
+  "order": [
+    "page_header",
+    "main",
+    "f70bf208-2322-4b2c-91d2-c9dafb641b21",
+    "2e6a53d8-74f9-497a-b20d-e1c4a952adf3",
+    "e24d12ec-5b40-42ca-9a29-6b6894a31685",
+    "rp7_leaderboard_react_YkrnEH",
+    "d5363da0-9813-4a61-9e72-a43d72089a08",
+    "b54582c7-28f3-4efb-a3e9-0c4cab8712ef",
+    "1653b1a8-bc15-4c8f-8f1a-a87164de54b8"
+  ]
+}

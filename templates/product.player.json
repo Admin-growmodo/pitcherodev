@@ -1,0 +1,1062 @@
+{
+  "sections": {
+    "c3e3931f-87a3-402e-bc35-d642100b626b": {
+      "type": "main-page-header",
+      "settings": {
+        "page_style_blue": true,
+        "transparent_header": false,
+        "background_newsletter": false,
+        "show_header": false,
+        "background_image": false
+      }
+    },
+    "navigation": {
+      "type": "product-navigation",
+      "blocks": {
+        "c76b2a9b-3432-41db-8b04-80681b5ee8a6": {
+          "type": "product",
+          "settings": {
+            "product": "new-gps-player-bundle",
+            "image": "shopify:\/\/shop_images\/Frame_467_20ed9b04-8a55-4624-83fd-71e9854bea28.png",
+            "text": ""
+          }
+        },
+        "e89fe0b9-cf0d-4fcb-b227-097e00093b42": {
+          "type": "product",
+          "settings": {
+            "product": "new-gps-team-bundle",
+            "image": "shopify:\/\/shop_images\/Group.png",
+            "text": ""
+          }
+        },
+        "f0fb230e-d3d8-4133-a475-6875013cb863": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "original-team-bundle",
+            "image": "shopify:\/\/shop_images\/Group.png",
+            "icon": "shopify:\/\/shop_images\/Navigation_Approved.png",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "c76b2a9b-3432-41db-8b04-80681b5ee8a6",
+        "e89fe0b9-cf0d-4fcb-b227-097e00093b42",
+        "f0fb230e-d3d8-4133-a475-6875013cb863"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-product-checkout-2",
+      "blocks": {
+        "review_VHmqiB": {
+          "type": "review",
+          "settings": {
+            "text_review": "TrustScore <strong> 4.5 I 80+<\/strong> reviews",
+            "image_reviews": "shopify:\/\/shop_images\/Trustpilot_ratings_4halfstar-RGB.svg",
+            "review_url": ""
+          }
+        },
+        "html_fPbeEK": {
+          "type": "html",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Happiness_Guarntee.svg",
+            "logo-text": "You have\u202830 days to return it"
+          }
+        },
+        "html_FCBJEN": {
+          "type": "html",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/4601560_1.svg",
+            "logo-text": "Same Day\u2028Shipping"
+          }
+        },
+        "html_xDwUGX": {
+          "type": "html",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_1416_1_7696c819-0aab-4c0f-97ed-1c7e38c3541f.png",
+            "logo-text": "FIFA &\u2028World Rugby\u2028Approved"
+          }
+        },
+        "html_mtkwfq": {
+          "type": "html",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/made-in-britain-logo-93322B9BF0-seeklogo_1_1.svg",
+            "logo-text": "Made\u2028in the UK"
+          }
+        }
+      },
+      "block_order": [
+        "review_VHmqiB",
+        "html_fPbeEK",
+        "html_FCBJEN",
+        "html_xDwUGX",
+        "html_mtkwfq"
+      ],
+      "settings": {
+        "title_color": "#000000",
+        "enable_checkout_process": true,
+        "size_guide_label": "Size Guide",
+        "youth_first_row_heading": "YS,YM,YL",
+        "youth_first_column_heading": "Chest (INCH),Chest (CM)",
+        "youth_table_data_first_row": "25-28,28-31,31-34",
+        "youth_table_data_second_row": "63-69,69-78,80-87",
+        "adult_first_row_heading": "S,M,L,XL,XXL",
+        "adult_first_column_heading": "Chest (INCH),Chest (CM)",
+        "adult_table_data_first_row": "34-37,37-40,40-43,43-46,46-49",
+        "adult_table_data_second_row": "88-94,95-102,103-110,111-117,118-125",
+        "checkout_process_page": "checkout-process",
+        "checkout_process_page_gift": "checkout-process-player-as-gift",
+        "button": "",
+        "button_url": "shopify:\/\/pages\/choose-membership",
+        "button_color": "",
+        "button_background_color": "",
+        "trustpilot-text": "TrustScore <strong>4.5 I <\/strong><u><strong>65<\/strong> reviews<\/u>",
+        "trustpilot": "",
+        "custom-url": "",
+        "download-link": ""
+      }
+    },
+    "b1e49431-6cc5-4666-adc5-3a969a275937": {
+      "type": "text-with-media",
+      "settings": {
+        "top_padding": false,
+        "bottom_padding": false,
+        "padding_top": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom": 0,
+        "padding_bottom_mobile": 0,
+        "show_media_on_mobile": true,
+        "medium_size": false,
+        "title": "",
+        "title_center": false,
+        "title_position": "outside",
+        "bold_text": "<p><strong>How to Order<\/strong><\/p>",
+        "bold_text_mobile": "<p><strong>How to Order<\/strong><\/p>",
+        "bold_text_center": true,
+        "bold_text_size": 24,
+        "text": "",
+        "text_list_background": false,
+        "text_color": "#000000",
+        "background_color": "#f2f2f2",
+        "media_position": "flex-row"
+      }
+    },
+    "01584932-3bc4-48ba-b0f9-695a8cc6cabe": {
+      "type": "text-blocks-border",
+      "blocks": {
+        "46dc908a-2a6e-4612-befa-c9847cc1c4e4": {
+          "type": "text",
+          "settings": {
+            "subtitle": "<p>STEP 1<\/p>",
+            "subtitle_font": "Montserrat",
+            "subtitle_size": 16,
+            "title": "<p>Membership<\/p>",
+            "title_font": "Montserrat",
+            "title_size": 24,
+            "text": "<p>Choose to pay annually or monthly.<\/p>",
+            "text_font": "Montserrat",
+            "text_size": 16
+          }
+        },
+        "72c19c9c-31a3-44ef-952c-7eb4f995475e": {
+          "type": "text",
+          "settings": {
+            "subtitle": "<p>STEP 2<\/p>",
+            "subtitle_font": "Montserrat",
+            "subtitle_size": 16,
+            "title": "<p>GPS Vest<\/p>",
+            "title_font": "Montserrat",
+            "title_size": 24,
+            "text": "<p>Pick your GPS Vest size.<\/p>",
+            "text_font": "Montserrat",
+            "text_size": 16
+          }
+        },
+        "1c371699-daaf-4a5e-b33f-949cf3a9d65b": {
+          "type": "text",
+          "settings": {
+            "subtitle": "<p>STEP 3<\/p>",
+            "subtitle_font": "Montserrat",
+            "subtitle_size": 16,
+            "title": "<p>Confirm Your Order<\/p>",
+            "title_font": "Montserrat",
+            "title_size": 24,
+            "text": "<p>Complete the checkout process<\/p>",
+            "text_font": "Montserrat",
+            "text_size": 16
+          }
+        },
+        "c0215799-e2eb-43b7-b186-fd798ff0a301": {
+          "type": "text",
+          "settings": {
+            "subtitle": "<p>STEP 4<\/p>",
+            "subtitle_font": "Montserrat",
+            "subtitle_size": 16,
+            "title": "<p><strong>Delivery<\/strong><\/p>",
+            "title_font": "Montserrat",
+            "title_size": 24,
+            "text": "<p>Your Player Bundle will be delivered in 2-3 business days.<\/p>",
+            "text_font": "Montserrat",
+            "text_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "46dc908a-2a6e-4612-befa-c9847cc1c4e4",
+        "72c19c9c-31a3-44ef-952c-7eb4f995475e",
+        "1c371699-daaf-4a5e-b33f-949cf3a9d65b",
+        "c0215799-e2eb-43b7-b186-fd798ff0a301"
+      ],
+      "settings": {
+        "width": 1400,
+        "color": "#f2f2f2",
+        "padding_top": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom": 50,
+        "padding_bottom_mobile": 50,
+        "number": 4
+      }
+    },
+    "744d8d44-56e8-4e63-8dac-37d6168b1e27": {
+      "type": "text-with-media",
+      "settings": {
+        "top_padding": false,
+        "bottom_padding": false,
+        "padding_top": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom": 0,
+        "padding_bottom_mobile": 0,
+        "show_media_on_mobile": true,
+        "medium_size": false,
+        "title": "",
+        "title_center": false,
+        "title_position": "outside",
+        "bold_text": "<p><strong>Introducing the PitcheroGPS Player Bundle<\/strong><\/p>",
+        "bold_text_mobile": "<p><strong>Introducing the PitcheroGPS Player Bundle<\/strong><\/p>",
+        "bold_text_center": true,
+        "bold_text_size": 24,
+        "text": "",
+        "text_list_background": false,
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "media_position": "flex-row"
+      }
+    },
+    "7fef42b4-dbe6-4fac-b1cc-6dd0e4cec96a": {
+      "type": "video-banner",
+      "settings": {
+        "width": 840,
+        "padding_top": 55,
+        "padding_top_mobile": 0,
+        "padding_bottom": 0,
+        "padding_bottom_mobile": 0,
+        "active_color": true,
+        "color": "#ffffff",
+        "style": "gradient",
+        "subtitle": "",
+        "title": "",
+        "title_as_h1": false,
+        "video_popup": false,
+        "video_autoplay": true,
+        "video": "",
+        "video_iframe": "https:\/\/player.vimeo.com\/video\/850499193",
+        "border_radius": 16,
+        "style_btn": "primary",
+        "text": "",
+        "url": ""
+      }
+    },
+    "cc5488a3-bd26-4984-87bb-79c120c79b97": {
+      "type": "offer-app",
+      "blocks": {
+        "d36f4420-a795-45db-9b96-b7c9f44e7476": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The PitcheroGPS Player vest records your activity during a training session or game. When the activity ends, the recorded data is transferred in seconds to the PitcheroGPS App on your mobile phone via Bluetooth. Made for Apple and Android phones, the App displays your performance using intuitive, easy-to-read charts and tables.<\/p>"
+          }
+        },
+        "7ba8d71f-2941-4a3c-9068-1c66f019dd6e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Compare your latest performance to your Personal Best and create a journal tracking your progress and achievements over time. Enjoy a little competition? Submit your metrics to the #HEROSPEED Challenge and compare your Top Speed with team mates and rivals, week to week, game to game.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d36f4420-a795-45db-9b96-b7c9f44e7476",
+        "7ba8d71f-2941-4a3c-9068-1c66f019dd6e"
+      ],
+      "disabled": true,
+      "settings": {
+        "padding_top": 80,
+        "padding_top_mobile": 60,
+        "padding_bottom": 80,
+        "padding_bottom_mobile": 60,
+        "width": 1280,
+        "video": "https:\/\/www.youtube.com\/watch?v=Rb8F_8em3fY",
+        "video_iframe": "",
+        "border_radius": 16,
+        "title": "",
+        "sub_title": "PitcheroGPS Mobile App",
+        "text": "",
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "81412b0e-a831-4940-a391-b38462bfddb1": {
+      "type": "how-to-order",
+      "blocks": {
+        "a8ee8ebc-73ff-4a7d-a78d-fb3c20839580": {
+          "type": "step",
+          "settings": {
+            "title": "Today",
+            "text": "Pre-Order Player Bundle,\u2028 & Select Membership",
+            "bold_text": "£49",
+            "bold_text_separator": ""
+          }
+        },
+        "c24d9ba7-8307-4fc0-bb52-fb04db527c59": {
+          "type": "step",
+          "settings": {
+            "title": "July 2023",
+            "text": "Player Bundle Delivered, Membership Begins",
+            "bold_text": "£4",
+            "bold_text_separator": "per month"
+          }
+        }
+      },
+      "block_order": [
+        "a8ee8ebc-73ff-4a7d-a78d-fb3c20839580",
+        "c24d9ba7-8307-4fc0-bb52-fb04db527c59"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_spacing": false,
+        "bottom_spacing": false,
+        "title": "How to Order",
+        "text": "<p>Exclusive Pre-Order Pricing - <strong>Save 20%<\/strong> Order Today<\/p>",
+        "text_color": "#ffffff",
+        "background_color": "#012130"
+      }
+    },
+    "cc5488a3-bd26-4984-87bb-79c120c79b96": {
+      "type": "offer-app",
+      "blocks": {
+        "d36f4420-a795-45db-9b96-b7c9f44e7476": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The PitcheroGPS Player Bundle contains everything you need to take your game to the next level. Each bundle includes a FIFA and World Rugby approved GPS Player Tracker, GPS Player Vest, charging cable, and access to the PitcheroGPS Mobile App.<\/p>"
+          }
+        },
+        "7ba8d71f-2941-4a3c-9068-1c66f019dd6e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Analyse your performance and track improvements in your speed and fitness session by session and match by match. Compete and compare stats with teammates and other PitcheroGPS players by position, sport and age. Share your stats on Social Media and show people who you are.<\/p>"
+          }
+        },
+        "9108420a-b475-48d5-b721-e398a60cb03b": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Iphone_Homepage_-_Football_2.png",
+            "narrow": true
+          }
+        },
+        "b1c1f7dc-e66f-4a22-8626-74f57786c71c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Iphone_Speed_Stats_f675ad97-bade-4336-b6f2-943204506f02.png",
+            "narrow": true
+          }
+        },
+        "64ed77ce-181d-422a-a7aa-6d5fa2f710e2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Iphone_Intensity_50ebeaf7-4eb2-4ae8-a865-1cfb97daa6a2.png",
+            "narrow": true
+          }
+        }
+      },
+      "block_order": [
+        "d36f4420-a795-45db-9b96-b7c9f44e7476",
+        "7ba8d71f-2941-4a3c-9068-1c66f019dd6e",
+        "9108420a-b475-48d5-b721-e398a60cb03b",
+        "b1c1f7dc-e66f-4a22-8626-74f57786c71c",
+        "64ed77ce-181d-422a-a7aa-6d5fa2f710e2"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom": 60,
+        "padding_bottom_mobile": 40,
+        "width": 1240,
+        "video": "",
+        "video_iframe": "",
+        "border_radius": 0,
+        "title": "",
+        "sub_title": "",
+        "text": "",
+        "button_text": "",
+        "button_url": "https:\/\/www.pitcherogps.com\/pages\/checkout-process?handle=new-gps-player-bundle"
+      }
+    },
+    "81412b0e-a831-4940-a391-b38462bfddb0": {
+      "type": "how-to-order",
+      "blocks": {
+        "a8ee8ebc-73ff-4a7d-a78d-fb3c20839580": {
+          "type": "step",
+          "settings": {
+            "title": "GPS Tracker",
+            "text": "Purchase your GPS Tracker today",
+            "bold_text": "Only £55",
+            "bold_text_separator": ""
+          }
+        },
+        "c24d9ba7-8307-4fc0-bb52-fb04db527c59": {
+          "type": "step",
+          "settings": {
+            "title": "GPS Membership",
+            "text": "Begins when you start training",
+            "bold_text": "Only £5",
+            "bold_text_separator": "per month"
+          }
+        }
+      },
+      "block_order": [
+        "a8ee8ebc-73ff-4a7d-a78d-fb3c20839580",
+        "c24d9ba7-8307-4fc0-bb52-fb04db527c59"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_spacing": false,
+        "bottom_spacing": false,
+        "title": "GPS Tracker & Membership",
+        "text": "",
+        "text_color": "#ffffff",
+        "background_color": "#012130"
+      }
+    },
+    "custom_trust_pilot_7tRdtq": {
+      "type": "custom-trust-pilot",
+      "blocks": {
+        "review_RQgiHb": {
+          "type": "review",
+          "settings": {
+            "text_review": "TrustScore 4.4 | 96 reviews",
+            "image_reviews": "shopify:\/\/shop_images\/Trustpilot_ratings_4halfstar-RGB.svg",
+            "review_url": "https:\/\/www.trustpilot.com\/review\/pitcherogps.com"
+          }
+        },
+        "review_card_qqN99f": {
+          "type": "review_card",
+          "settings": {
+            "image_card_reviews": "shopify:\/\/shop_images\/Trustpilot_ratings_5star-RGB.png",
+            "card_title": "Delighted budding rugby star!",
+            "card_review": "My son absolutely loves his Pitchero GPS, he was straight out tearing up our grass to check it out over Christmas! Really easy to set up and provides a mine of information.",
+            "writer_name": "Nicola Barker",
+            "writer_initials": "NB",
+            "date_published": "Jan 12, 2024"
+          }
+        },
+        "review_card_qmJffk": {
+          "type": "review_card",
+          "settings": {
+            "image_card_reviews": "shopify:\/\/shop_images\/Trustpilot_ratings_5star-RGB.png",
+            "card_title": "Fantastic product that will help take…",
+            "card_review": "Fantastic product that will help take your fitness to the next level in your respective sport. Easy to use app and downloading of data is a quick simple process. Lots of stats in the app such as top speed, number of high speed runs, distance, impacts, cross references to personal best, a heat map and much more. If you want to invest in a GPS product, this is definitely the one to go for. Highly recommended.",
+            "writer_name": "Mark Courtney",
+            "writer_initials": "MC",
+            "date_published": "Jul 12, 2023"
+          }
+        },
+        "review_card_EUf3qy": {
+          "type": "review_card",
+          "settings": {
+            "image_card_reviews": "shopify:\/\/shop_images\/Trustpilot_ratings_5star-RGB.png",
+            "card_title": "Brilliant Product",
+            "card_review": "Really easy to order, delivery was fast as stated when ordering.\nSimple to set up and first connection for my sons first rugby game was seamless!\nReally great stats following the game, all the rest of the team really impressed, I would imagine there will be more orders from the rest of the team coming soon!",
+            "writer_name": "Consumer",
+            "writer_initials": "CO",
+            "date_published": "Feb 04, 2024"
+          }
+        }
+      },
+      "block_order": [
+        "review_RQgiHb",
+        "review_card_qqN99f",
+        "review_card_qmJffk",
+        "review_card_EUf3qy"
+      ],
+      "settings": {
+        "title": "Customer Testimonials",
+        "subtitle": "",
+        "pt_desktop": 0,
+        "pt_tablet": 0,
+        "pt_mobile": 0,
+        "pb_desktop": 50,
+        "pb_tablet": 0,
+        "pb_mobile": 40,
+        "bg_color": ""
+      }
+    },
+    "65f8915f-9dd3-4432-8ffd-86e718ae32d1": {
+      "type": "features",
+      "blocks": {
+        "96845afb-a12a-4461-b1d0-d19d97be4fed": {
+          "type": "feature",
+          "settings": {
+            "title": "Size",
+            "text": "<p>Designed to meet FIFA and World Rugby requirements 76mm x 45mm x 20mm.<\/p>"
+          }
+        },
+        "142b777c-b13a-448d-9676-c0a71c56d65f": {
+          "type": "feature",
+          "settings": {
+            "title": "Weight",
+            "text": "<p>Lightweight and compact weighing only 51 grams.<\/p>"
+          }
+        },
+        "50a9b205-d588-4ab7-87ee-9238ed3c198f": {
+          "type": "feature",
+          "settings": {
+            "title": "Battery Life",
+            "text": "<p>5 hours of battery life captures every minute played.<\/p>"
+          }
+        },
+        "f5626e81-8904-4978-b881-b947ab280c0c": {
+          "type": "feature",
+          "settings": {
+            "title": "Motion Processor",
+            "text": "<p>3-axis accelerometer and 3-axis gyroscope track your every twist and turn.<\/p>"
+          }
+        },
+        "ad54cc74-50cf-4378-ab1c-2118595c2960": {
+          "type": "feature",
+          "settings": {
+            "title": "Display",
+            "text": "<p>Crystal clear 1.14\" LCD screen.<\/p>"
+          }
+        },
+        "8bc3b02e-106c-4cb8-b3e6-c3a05edb32e4": {
+          "type": "feature",
+          "settings": {
+            "title": "Charge Time",
+            "text": "<p>Full battery charge in 30 minutes.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "96845afb-a12a-4461-b1d0-d19d97be4fed",
+        "142b777c-b13a-448d-9676-c0a71c56d65f",
+        "50a9b205-d588-4ab7-87ee-9238ed3c198f",
+        "f5626e81-8904-4978-b881-b947ab280c0c",
+        "ad54cc74-50cf-4378-ab1c-2118595c2960",
+        "8bc3b02e-106c-4cb8-b3e6-c3a05edb32e4"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_top_mobile": 80,
+        "padding_bottom": 80,
+        "padding_bottom_mobile": 80,
+        "background": "#f2f2f2",
+        "image": "shopify:\/\/shop_images\/7a74acc63e8f525cf748022b1bc9f498.png",
+        "image_shadow": false,
+        "title": "Player Tracker"
+      }
+    },
+    "ebe5b13c-50b0-4003-8da0-e0862c93989f": {
+      "type": "metrics-grid",
+      "blocks": {
+        "92c00f8d-e4ae-49d4-b610-dfd724b7b8f7": {
+          "type": "column",
+          "settings": {
+            "grid_spacing": "small",
+            "top_padding": true,
+            "image": "shopify:\/\/shop_images\/Heat_Map_1.gif",
+            "image_size": "medium",
+            "image_position": "left",
+            "icon": "shopify:\/\/shop_images\/Contained_Icon_0e05abe7-5da9-4643-a3f2-af86b6a1bb31.png",
+            "title": "Heatmaps",
+            "text": "<p>Dive into detailed, color-coded maps that show your movement on the pitch.<\/p><p>Plus, with our innovative Match Playback feature, you can revisit key moments of your match.<\/p>"
+          }
+        },
+        "fb660dbe-d5c1-459c-9e43-0a5be5b2a992": {
+          "type": "column",
+          "settings": {
+            "grid_spacing": "small",
+            "top_padding": true,
+            "image": "shopify:\/\/shop_images\/Speed_fcf15815-efd6-405d-bd45-2d5378ddd8ff.png",
+            "image_size": "medium",
+            "image_position": "right",
+            "icon": "shopify:\/\/shop_images\/Icon_Speed.png",
+            "title": "Speed",
+            "text": "<p>Record your Top Speed, Average Speed and Custom Speed Zones.<\/p><p>Track your speed game to game, session to session and monitor your progress as you become a fitter, faster player.<\/p>"
+          }
+        },
+        "dda11493-34c1-4bef-97b0-8c8a83cb0706": {
+          "type": "column",
+          "settings": {
+            "grid_spacing": "small",
+            "top_padding": true,
+            "image": "shopify:\/\/shop_images\/Distance.png",
+            "image_size": "medium",
+            "image_position": "left",
+            "icon": "shopify:\/\/shop_images\/Icon_Distance.png",
+            "title": "Distance",
+            "text": "<p>Record how far you walk, run and sprint every time you play. A pro player runs 10 km per game - how far do you run?<\/p><p>Improve your fitness and watch your total distance increase week to week.<\/p>"
+          }
+        },
+        "ebcb7715-610d-4fb6-993f-1f51ea0f5376": {
+          "type": "column",
+          "settings": {
+            "grid_spacing": "small",
+            "top_padding": true,
+            "image": "shopify:\/\/shop_images\/Intensity.png",
+            "image_size": "medium",
+            "image_position": "right",
+            "icon": "shopify:\/\/shop_images\/Icon_Intensity.png",
+            "title": "Intensity",
+            "text": "<p>Record your accelerations and decelerations, tracking all high-velocity, explosive movements.<\/p><p>Monitor your player metrics for fatigue and strain caused by impacts on the body and adapt your intensity levels to avoid injury.<\/p>"
+          }
+        },
+        "220c0a55-a7b2-4314-8739-31110359c0fc": {
+          "type": "column",
+          "settings": {
+            "grid_spacing": "small",
+            "top_padding": true,
+            "image": "shopify:\/\/shop_images\/Mask_group_a3013eea-7129-47c0-98c1-bbe030d6a199.png",
+            "image_size": "medium",
+            "image_position": "left",
+            "icon": "shopify:\/\/shop_images\/Icon_Compete.png",
+            "title": "Compare",
+            "text": "<p>Compete with teammates and rivals for Top Speed, Distance covered and Intensity level. Set personal goals and begin your journey to the fittest, faster player in your squad.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "92c00f8d-e4ae-49d4-b610-dfd724b7b8f7",
+        "fb660dbe-d5c1-459c-9e43-0a5be5b2a992",
+        "dda11493-34c1-4bef-97b0-8c8a83cb0706",
+        "ebcb7715-610d-4fb6-993f-1f51ea0f5376",
+        "220c0a55-a7b2-4314-8739-31110359c0fc"
+      ],
+      "settings": {
+        "top_padding": true,
+        "bottom_padding": true,
+        "show_border": false,
+        "title": "Player App",
+        "text": "<p>PitcheroGPS records all activity during a training session or match which can be transferred to the PitcheroGPS Player App. For ease of use and quick comparisons, the activity is processed and separated into 3 categories; SPEED, DISTANCE and INTENSITY providing a detailed overview of performance, player health and fatigue.<\/p>"
+      }
+    },
+    "07d13978-3a4f-4140-881f-1bf0c4480a5f": {
+      "type": "features",
+      "blocks": {
+        "d96bf818-ce93-49e5-a4ec-aa4c49c37df3": {
+          "type": "feature",
+          "settings": {
+            "title": "Comfort",
+            "text": "<p>Designed with soft touch and ultra stretch fabric for a conformable fit<\/p>"
+          }
+        },
+        "2e2f4b6c-b987-4436-8950-9257e7db733a": {
+          "type": "feature",
+          "settings": {
+            "title": "Perfect Fit",
+            "text": "<p>7 unisex size options, from Youth Small to 2XL<\/p>"
+          }
+        },
+        "3b3b0db7-e7a1-4d29-ad47-2e84e7a95012": {
+          "type": "feature",
+          "settings": {
+            "title": "Elastic Grip",
+            "text": "<p>Elite elastic with rubber grip ensure the vest stays in place<\/p>"
+          }
+        },
+        "ce1b1940-7c68-4d46-b9ea-ac1f7ecff849": {
+          "type": "feature",
+          "settings": {
+            "title": "Approved",
+            "text": "<p>Vest approved by FIFA & World Rugby<\/p>"
+          }
+        },
+        "1225182c-b5a7-4762-8c53-94616de021da": {
+          "type": "feature",
+          "settings": {
+            "title": "Pocket",
+            "text": "<p>Thick padded pocket provides maximum protection for the wearer<\/p>"
+          }
+        },
+        "9e15ca01-b83f-4e46-8822-46c8286b362d": {
+          "type": "feature",
+          "settings": {
+            "title": "Washer Safe",
+            "text": "<p>Safe to wash at home at 30°<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d96bf818-ce93-49e5-a4ec-aa4c49c37df3",
+        "2e2f4b6c-b987-4436-8950-9257e7db733a",
+        "3b3b0db7-e7a1-4d29-ad47-2e84e7a95012",
+        "ce1b1940-7c68-4d46-b9ea-ac1f7ecff849",
+        "1225182c-b5a7-4762-8c53-94616de021da",
+        "9e15ca01-b83f-4e46-8822-46c8286b362d"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_top_mobile": 80,
+        "padding_bottom": 80,
+        "padding_bottom_mobile": 80,
+        "background": "#f2f2f2",
+        "image": "shopify:\/\/shop_images\/Vest_2.png",
+        "image_shadow": false,
+        "title": "Player Vest"
+      }
+    },
+    "6f867fb0-4716-4376-b4ba-5f7c3b0343c4": {
+      "type": "hero-video",
+      "blocks": {
+        "70c5011b-e652-4574-89de-56be94c09cd5": {
+          "type": "button",
+          "settings": {
+            "style": "primary",
+            "text": "JOIN THE CLUB",
+            "url": "shopify:\/\/pages\/hero"
+          }
+        },
+        "6238977a-eb78-454d-b7dd-d09e1e3e1c89": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unlock your top speed and true potential with our Speed Heroes player programme. Open to PitcheroGPS members looking to learn, improve and perform. <\/p><p>Register now for access to exclusive benefits, elite training opportunities and join our global search for the fastest player in grassroots sport. <\/p><p>All Players. All Ages. All Levels. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "70c5011b-e652-4574-89de-56be94c09cd5",
+        "6238977a-eb78-454d-b7dd-d09e1e3e1c89"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "black",
+        "image": "shopify:\/\/shop_images\/Frame_1027.png",
+        "image_decoration": false,
+        "title": "Join The #Speedheroes",
+        "title_as_h1": false,
+        "sub_title": "Our unique #SPEED club"
+      }
+    },
+    "c17c0d64-0f05-4156-a9cf-5398171985ec": {
+      "type": "media-slider",
+      "blocks": {
+        "dfd4f585-5a0b-48b4-97b4-fa2bf618154d": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WP5_8242.png"
+          }
+        },
+        "ccca7892-99ac-4e95-a91d-82412ba51db2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WP9_5616.png"
+          }
+        },
+        "template--15660718358733__c17c0d64-0f05-4156-a9cf-5398171985ec-166600327916e7c9e8-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WP5_8240_1.png"
+          }
+        },
+        "template--15660718358733__c17c0d64-0f05-4156-a9cf-5398171985ec-166600327916e7c9e8-2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IGWP5_2743.jpg"
+          }
+        },
+        "b0501070-382a-486f-aeb4-3390a75e2215": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IGWP5_3131.jpg"
+          }
+        },
+        "template--15660718358733__c17c0d64-0f05-4156-a9cf-5398171985ec-166600327916e7c9e8-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IGWP5_3799.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "dfd4f585-5a0b-48b4-97b4-fa2bf618154d",
+        "ccca7892-99ac-4e95-a91d-82412ba51db2",
+        "template--15660718358733__c17c0d64-0f05-4156-a9cf-5398171985ec-166600327916e7c9e8-1",
+        "template--15660718358733__c17c0d64-0f05-4156-a9cf-5398171985ec-166600327916e7c9e8-2",
+        "b0501070-382a-486f-aeb4-3390a75e2215",
+        "template--15660718358733__c17c0d64-0f05-4156-a9cf-5398171985ec-166600327916e7c9e8-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_padding": true,
+        "bottom_padding": true
+      }
+    },
+    "c00f1440-420a-4aa5-8127-a4582e4d3bd3": {
+      "type": "hero-video-redesign",
+      "blocks": {
+        "f9db3af2-575d-464f-947a-ce6016506956": {
+          "type": "text",
+          "settings": {
+            "text": "<p>On a pitch Speed is undefeated and the PitcheroGPS Speed Training programme can make every player run faster for longer.<br\/><br\/>Completed over 6 weeks and designed for all players, the programme is a series of drills and exercise to improve running technique and match day performance.<\/p>"
+          }
+        },
+        "fe822fcc-c5fe-4d89-9d5e-551c8abe1c50": {
+          "type": "button",
+          "settings": {
+            "style": "primary",
+            "text": "DOWNLOAD THE PROGRAMME",
+            "url": "shopify:\/\/pages\/speed-training"
+          }
+        }
+      },
+      "block_order": [
+        "f9db3af2-575d-464f-947a-ce6016506956",
+        "fe822fcc-c5fe-4d89-9d5e-551c8abe1c50"
+      ],
+      "settings": {
+        "padding_top": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom": 50,
+        "padding_bottom_mobile": 50,
+        "style": "black",
+        "image": "shopify:\/\/shop_images\/Frame_1037.png",
+        "image_mobile": "shopify:\/\/shop_images\/Frame_1037_5.png",
+        "image_title": "shopify:\/\/shop_images\/Group_172_1.png",
+        "title": "",
+        "title_as_h1": false,
+        "sub_title": "",
+        "subtitle": "PitcheroGPS Speed Training",
+        "video": "",
+        "media_position": "flex-row"
+      }
+    },
+    "7592e725-7b75-4969-ab88-a8ff6137c602": {
+      "type": "featured-bundle-redesign",
+      "blocks": {
+        "7869de91-e3de-4df4-949e-29c237227941": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fifa.png"
+          }
+        },
+        "d1c2779b-b512-415f-954d-6cd9bf319656": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Approved_Rugby.png"
+          }
+        },
+        "044d3ed0-9ccc-42fc-97a5-6ea7354a2736": {
+          "type": "text",
+          "settings": {
+            "text": "<p>FIFA and World Rugby approve the PitcheroGPS Player Tracker for use at all levels of competition. From grassroots all the way up to the Premier League and Premiership Rugby.<br\/><br\/><\/p>"
+          }
+        },
+        "95ef9e78-1ef8-4b3f-9a68-fb1e7829189d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This global certification means FIFA and World Rugby rigorously tested the PitcheroGPS Player Tracker for safety and approved its use in all levels of sport.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7869de91-e3de-4df4-949e-29c237227941",
+        "d1c2779b-b512-415f-954d-6cd9bf319656",
+        "044d3ed0-9ccc-42fc-97a5-6ea7354a2736",
+        "95ef9e78-1ef8-4b3f-9a68-fb1e7829189d"
+      ],
+      "settings": {
+        "padding_top": 100,
+        "padding_top_mobile": 50,
+        "padding_bottom": 100,
+        "padding_bottom_mobile": 50,
+        "title": "FIFA & WORLD RUGBY",
+        "sub_title": "GLOBALLY APPROVED",
+        "title_mobile": "Approved by FIFA and World Rugby",
+        "image": "shopify:\/\/shop_images\/Pitchero_GPS_Tracker_1_2.png"
+      }
+    },
+    "eb627473-27ae-410f-a38d-91d4bbab4ec2": {
+      "type": "image-grid",
+      "blocks": {
+        "2348b82a-6d68-4783-a842-bf3e97cee8b7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WP9_6078.png"
+          }
+        },
+        "150b3390-7b95-418b-a998-c598a7192643": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1289.png"
+          }
+        },
+        "66280165-0d7c-4594-a294-93bea3f4fa5a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1287.png"
+          }
+        },
+        "afb5a9e5-3719-42d1-9c3b-10b71e8503ef": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1290.png"
+          }
+        },
+        "05adc238-4aff-4dec-a0b8-00c28cdb021a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1285.png"
+          }
+        },
+        "a0e31fa8-878f-4397-90be-092b385b4c5c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1292.png"
+          }
+        },
+        "0021ae4c-82cb-4f91-8090-20ec4b8c8f00": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1284_1.png"
+          }
+        },
+        "f742fea3-92fb-45ee-9b1e-ac5ea4b93db5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1288.png"
+          }
+        },
+        "876d737a-de6b-4722-91ce-44d84daeaa4c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1265_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "2348b82a-6d68-4783-a842-bf3e97cee8b7",
+        "150b3390-7b95-418b-a998-c598a7192643",
+        "66280165-0d7c-4594-a294-93bea3f4fa5a",
+        "afb5a9e5-3719-42d1-9c3b-10b71e8503ef",
+        "05adc238-4aff-4dec-a0b8-00c28cdb021a",
+        "a0e31fa8-878f-4397-90be-092b385b4c5c",
+        "0021ae4c-82cb-4f91-8090-20ec4b8c8f00",
+        "f742fea3-92fb-45ee-9b1e-ac5ea4b93db5",
+        "876d737a-de6b-4722-91ce-44d84daeaa4c"
+      ],
+      "settings": {
+        "width": 1060,
+        "padding_top": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom": 100,
+        "padding_bottom_mobile": 100
+      }
+    },
+    "25929c2a-bfef-46c4-b094-ce404f69a6691": {
+      "type": "logo-list",
+      "blocks": {
+        "cb17c1d7-14b1-404f-aa6a-4595a6b98a10": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6df60785d4d2fd1aae74aa8442e9ba22.png",
+            "image_width": 72,
+            "title": "Company Name"
+          }
+        },
+        "317dc3e4-84b1-43f1-8253-b4aa268228bd": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b2a1683f4ceb4971fd0aece23416daac.png",
+            "image_width": 64,
+            "title": "Company Name"
+          }
+        },
+        "903c542b-d32a-43c1-b8c4-ec4c97e28b20": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/e439dcc3e065c5acb735bd486237c854.png",
+            "image_width": 56,
+            "title": "Company Name"
+          }
+        },
+        "5ffd87b9-1e74-4f6f-944d-86a839d32994": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/315d976e41da79cee34f3f85a8f0dfc5.png",
+            "image_width": 52,
+            "title": "Company Name"
+          }
+        },
+        "eb585d70-60fb-42eb-b17f-96ef57e1a596": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cdd93260fb50c8fcca2e7f46a27a4ab0.png",
+            "image_width": 48,
+            "title": "Company Name"
+          }
+        },
+        "70701910-4326-483c-a23b-80ad22a40fe5": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6db9582867961177c148e988ec782582.png",
+            "image_width": 60,
+            "title": "Company Name"
+          }
+        }
+      },
+      "block_order": [
+        "cb17c1d7-14b1-404f-aa6a-4595a6b98a10",
+        "317dc3e4-84b1-43f1-8253-b4aa268228bd",
+        "903c542b-d32a-43c1-b8c4-ec4c97e28b20",
+        "5ffd87b9-1e74-4f6f-944d-86a839d32994",
+        "eb585d70-60fb-42eb-b17f-96ef57e1a596",
+        "70701910-4326-483c-a23b-80ad22a40fe5"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_spacing": false,
+        "bottom_spacing": false,
+        "title": "Trusted By",
+        "text_color": "",
+        "background_color": "#f2f2f2"
+      }
+    }
+  },
+  "order": [
+    "c3e3931f-87a3-402e-bc35-d642100b626b",
+    "navigation",
+    "main",
+    "b1e49431-6cc5-4666-adc5-3a969a275937",
+    "01584932-3bc4-48ba-b0f9-695a8cc6cabe",
+    "744d8d44-56e8-4e63-8dac-37d6168b1e27",
+    "7fef42b4-dbe6-4fac-b1cc-6dd0e4cec96a",
+    "cc5488a3-bd26-4984-87bb-79c120c79b97",
+    "81412b0e-a831-4940-a391-b38462bfddb1",
+    "cc5488a3-bd26-4984-87bb-79c120c79b96",
+    "81412b0e-a831-4940-a391-b38462bfddb0",
+    "custom_trust_pilot_7tRdtq",
+    "65f8915f-9dd3-4432-8ffd-86e718ae32d1",
+    "ebe5b13c-50b0-4003-8da0-e0862c93989f",
+    "07d13978-3a4f-4140-881f-1bf0c4480a5f",
+    "6f867fb0-4716-4376-b4ba-5f7c3b0343c4",
+    "c17c0d64-0f05-4156-a9cf-5398171985ec",
+    "c00f1440-420a-4aa5-8127-a4582e4d3bd3",
+    "7592e725-7b75-4969-ab88-a8ff6137c602",
+    "eb627473-27ae-410f-a38d-91d4bbab4ec2",
+    "25929c2a-bfef-46c4-b094-ce404f69a6691"
+  ]
+}

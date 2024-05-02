@@ -1,0 +1,498 @@
+{% liquid
+  assign review = section.blocks | where: 'type', 'review' | first
+
+  assign cards = section.blocks | where: 'type', 'review_card'
+%}
+
+<style>
+  .custom-y-padding {
+  	padding-top: {{ section.settings.pt_mobile }}px;
+  	padding-bottom: {{ section.settings.pb_mobile }}px;
+  }
+
+  #customTrustPilot .bg-brand-primary{
+  	padding: 60px 20px 370px 20px;
+  }
+
+  #customTrustPilot .ctp_title {
+  	margin-bottom: 20px;
+     font-family: Anton;
+     font-size: 36px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 110%;
+     letter-spacing: -0.96px;
+  }
+
+  #customTrustPilot .ctp_subtitle {
+  	font-family: Montserrat;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 150%;
+  }
+
+  #customTrustPilot .review_container {
+  	margin-top: 30px;
+  	margin-bottom: 40px;
+  }
+
+  #customTrustPilot .review__heading {
+  	color: #fff;
+     font-family: Montserrat;
+     font-size: 14.427px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 168.9%;
+  }
+
+  #customTrustPilot .article_readmore {
+  	font-size: 15px;
+  }
+
+  .slider-section {
+  	padding: 0 17.5px;
+  	margin-top: -370px;
+  }
+
+  .reviews-slider__container {
+  	width: 100%;
+  	overflow-x: hidden;
+  	position: relative;
+  }
+
+  .reviews-slider__container .swiper-slide {
+  	width: 33.333333%;
+  	border: 3px solid #00f0ff;
+  	padding: 30px 30px 30px 30px;
+  	background-color: #fff;
+  	border-radius: 16px;
+  }
+
+  .reviews-slider__container .swiper-slide img{
+  	margin-bottom: 24px;
+  }
+
+  .reviews-slider__container .swiper-slide .heading {
+  	margin-bottom: 16px;
+     font-family: Anton;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 28.8px;
+     letter-spacing: -2%;
+  }
+
+  .reviews-slider__container .swiper-slide .description {
+  	font-family: Roboto;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 24px;
+  }
+
+  .reviews-slider__container .swiper-slide .writer-details{
+  	margin-top: 28px;
+  }
+
+  .reviews-slider__container .swiper-slide .profile-wrapper {
+  	width: 56px;
+  	height: 56px;
+  	font-family: Roboto;
+  	background-color: #00F0FF;
+  	border-radius: 50%;
+  	margin-right: 12px;
+  	font-size: 21px;
+  	font-weight: 600;
+  }
+
+  .reviews-slider__container .swiper-slide .writer-name {
+  	font-size: 14px;
+  	font-family: Roboto;
+  	font-weight: 600;
+  	line-height: 21px;
+  }
+
+  .reviews-slider__container .swiper-slide .date-published {
+  	font-size: 14px;
+  	font-family: Roboto;
+  	line-height: 21px;
+  	font-weight: 400;
+  }
+
+  .reviews-slider__container .swiper-pagination {
+  	margin-top: 40px;
+     justify-content: center;
+     display: flex;
+  	position: unset;
+  }
+
+  .reviews-slider__container .swiper-pagination .swiper-pagination-bullet {
+  	width: 8px;
+  	height: 8px;
+  	background-color: hsl(0, 1%, 52%);
+  }
+
+  .reviews-slider__container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  	background-color: #002030;
+  }
+
+  .show-in-mobile {
+  	display: inline;
+  }
+
+  @media (min-width: 768px) {
+  	.custom-y-padding {
+  		padding-top: {{ section.settings.pt_tablet }}px;
+  		padding-bottom: {{ section.settings.pb_tablet }}px;
+  		padding-right: 20px;
+  		padding-left: 20px;
+  	}
+
+  	#customTrustPilot .bg-brand-primary{
+  		padding: 60px 60px 240px 60px;
+  		border-radius: 10px;
+  	}
+
+  	#customTrustPilot .ctp_title {
+  		font-size: 48px;
+  		margin-bottom: 24px;
+  	}
+
+  	#customTrustPilot .ctp_subtitle {
+  		font-size: 24px;
+  	}
+
+  	#customTrustPilot .article_readmore {
+  		font-size: 16px;
+  	}
+
+  	.slider-section {
+  		padding: 0 36.5px;
+  		margin-top: -240px;
+  	}
+
+  	.show-in-mobile {
+  		display: none;
+  	}
+  }
+
+  @media (min-width: 1040px) {
+  	.custom-y-padding {
+  		padding-top: {{ section.settings.pt_desktop }}px;
+  		padding-bottom: {{ section.settings.pb_desktop }}px;
+  	}
+  }
+
+  /* swiper */
+
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    box-sizing: content-box;
+} .swiper-wrapper {
+    transform: translate3d(0px, 0, 0);
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-horizontal {
+    touch-action: pan-y;
+}
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+
+swiper-backface-hidden .swiper-slide {
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    display: block;
+}
+
+span.swiper-pagination-bullet {
+	margin: 0 4px !important;
+}
+/*  */
+</style>
+
+<div id="customTrustPilot" style="background-color: {{ section.settings.bg_color }}">
+  <div
+    class="
+      max-w-screen-lg
+      mx-auto
+      custom-y-padding
+    "
+  >
+    <div class="bg-brand-primary text-center text-white">
+      <div class="flex flex-col items-center">
+        <h2 class="ctp_title">{{ section.settings.title }}</h2>
+        <p class="ctp_subtitle">{{ section.settings.subtitle }}</p>
+        <div class="flex">
+          {% if review != blank %}
+            <div class="hero__review__container">
+              <a
+                class="flex items-center flex-col md:flex-row review_container w-full gap-2"
+                {% if review.settings.review_url %}
+                  href=" {{ review.settings.review_url }}"
+                {% endif %}
+                target="_blank"
+              >
+                {% if review.settings.image_reviews != blank %}
+                  {{
+                    review.settings.image_reviews
+                    | image_url: width: 141
+                    | image_tag:
+                      loading: 'lazy',
+                      class: 'h-auto grow',
+                      widths: '300, 141',
+                      alt: review.settings.image.alt
+                    | escape
+                  }}
+                {% endif %}
+                <div class="font-bold review__heading">{{ review.settings.text_review }}</div>
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="slider-section w-full">
+      {% if cards.size > 0 %}
+        <div class="reviews-slider__container">
+          <div class="swiper-wrapper">
+            {% for card in cards %}
+              <div class="swiper-slide">
+                {% if card.settings.image_card_reviews != blank %}
+                  {{
+                    card.settings.image_card_reviews
+                    | image_url: width: 141
+                    | image_tag: loading: 'lazy', class: 'h-auto', widths: '300, 141', alt: review.settings.image.alt
+                    | escape
+                  }}
+                {% endif %}
+                <h4 class="heading">{{ card.settings.card_title }}</h4>
+                <div class="description">{{ card.settings.card_review }}</div>
+                <div class="flex items-center writer-details">
+                  <div class="profile-wrapper flex items-center justify-center">
+                    {{ card.settings.writer_initials }}
+                  </div>
+                  <div>
+                    <div class="writer-name">{{ card.settings.writer_name }}</div>
+                    <div class="date-published">{{ card.settings.date_published }}</div>
+                  </div>
+                </div>
+                <a
+                  href="https://www.trustpilot.com/review/pitcherogps.com"
+                  target="_blank"
+                  class="flex items-center space-x-2 article__link"
+                  previewlistener="true"
+                >
+                  <span class="font-bold article_readmore"
+                    >Read More <span class="show-in-mobile">Review From Trustpilot</span></span
+                  >
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".reviews-slider__container", {
+   	slidesPerView: 1,
+     spaceBetween: 10,
+  	pagination: {
+       el: ".swiper-pagination",
+  		type: "bullets",
+       clickable: true
+     },
+  	breakpoints: {
+       580: {
+         slidesPerView: 2
+       },
+  		940: {
+         slidesPerView: 3
+       },
+  	}
+  })
+</script>
+
+{% schema %}
+{
+  "name": "Custom Reviews-Trustpilot",
+  "settings": [
+	{
+		"type": "text",
+		"id": "title",
+		"label": "Heading",
+		"default": "Customer Testimonials"
+	},
+	{
+		"type": "text",
+		"id": "subtitle",
+		"label": "Subtitle",
+		"default": "Lorem Ipsum"
+	},
+	{
+		"type": "header",
+		"content": "Padding Top"
+	},
+	{
+		"type": "number",
+		"id": "pt_desktop",
+		"label": "Desktop(px)",
+		"default": 0
+	},
+	{
+		"type": "number",
+		"id": "pt_tablet",
+		"label": "Tablet(px)",
+		"default": 0
+	},
+	{
+		"type": "number",
+		"id": "pt_mobile",
+		"label": "Mobile(px)",
+		"default": 0
+	},
+	{
+		"type": "header",
+		"content": "Padding Bottom"
+	},
+	{
+		"type": "number",
+		"id": "pb_desktop",
+		"label": "Desktop(px)",
+		"default": 0
+	},
+	{
+		"type": "number",
+		"id": "pb_tablet",
+		"label": "Tablet(px)",
+		"default": 0
+	},
+	{
+		"type": "number",
+		"id": "pb_mobile",
+		"label": "Mobile(px)",
+		"default": 0
+	},
+	{
+		"type": "header",
+		"content": "Colors"
+	},
+	{
+		"type": "color",
+		"id": "bg_color",
+		"label": "Section Background"
+	}
+],
+"blocks": [
+	{
+		"type": "review",
+		"name": "Review",
+		"limit": 1,
+		"settings": [
+			{
+				"type": "textarea",
+				"id": "text_review",
+				"label": "Text review"
+			},
+			{
+				"type": "image_picker",
+				"id": "image_reviews",
+				"label": "Image"
+			},
+			{
+				"type": "url",
+				"id": "review_url",
+				"label": "Review link"
+			}
+		]
+	},
+	{
+		"type": "review_card",
+		"name": "Review Card",
+		"settings": [
+			{
+				"type": "image_picker",
+				"id": "image_card_reviews",
+				"label": "Star Image"
+			},
+			{
+				"type": "text",
+				"id": "card_title",
+				"label": "Title",
+				"default": "Lorem Ipsum"
+			},
+			{
+				"type": "textarea",
+				"id": "card_review",
+				"label": "Review",
+				"default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+			},
+			{
+				"type": "text",
+				"id": "writer_name",
+				"label": "Writer Name",
+				"default": "John Doe"
+			},
+			{
+				"type": "text",
+				"id": "writer_initials",
+				"label": "Writer Initials",
+				"default": "JD"
+			},
+			{
+				"type": "text",
+				"id": "date_published",
+				"label": "Date Published",
+				"default": "Jul 13, 2023"
+			}
+		]
+	}
+],
+"presets": [
+	{
+		"name": "Custom Reviews-Trustpilot",
+		"blocks": []
+	}
+]
+}
+{% endschema %}

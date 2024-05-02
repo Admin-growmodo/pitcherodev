@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "6e186e32-30bd-4753-847f-da76356c4385": {
+      "type": "hero",
+      "custom_css": [
+        ".hero-image-background {left: 0; z-index: 1;}",
+        ".Hero__Container {flex-direction: row-reverse;}",
+        "@media (min-width: 768px) {.Hero__Container > div:not(.hero-image-background) {transform: translate(-100px, 50px); }}",
+        "@media (max-width: 768px) {.Hero__Container {flex-direction: column; } .hero-image-background .hero-image-background img {display: none; }}"
+      ],
+      "settings": {
+        "style": "black",
+        "image_left": false,
+        "image": "shopify:\/\/shop_images\/Speed_DT_Header.png",
+        "hide_text_mobile": false,
+        "image_mobile": "shopify:\/\/shop_images\/Frame_1377.png",
+        "show_image_decoration": true,
+        "show_image_on_mobile": true,
+        "title": "PitcheroGPS Blog",
+        "title_as_h1": false,
+        "show_heading_decoration": true,
+        "title_small": true,
+        "title_not_uppercase_mobile": false,
+        "sub_title": ""
+      }
+    },
+    "1861ed9c-d396-4ec7-9c7a-44d02e1c9449": {
+      "type": "blogs",
+      "settings": {
+        "spacing": true,
+        "title": "",
+        "blog": ""
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_title": false,
+        "show_filter": true,
+        "show_last_viewed_article": true,
+        "image_overlay": true,
+        "per_page": 8,
+        "text_color": "#ffffff",
+        "background_color": "linear-gradient(90deg, rgba(248, 204, 176, 1), rgba(255, 173, 141, 1) 100%)",
+        "button_color": "#f8ccb0"
+      }
+    }
+  },
+  "order": [
+    "6e186e32-30bd-4753-847f-da76356c4385",
+    "1861ed9c-d396-4ec7-9c7a-44d02e1c9449",
+    "main"
+  ]
+}

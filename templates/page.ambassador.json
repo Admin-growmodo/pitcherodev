@@ -1,0 +1,112 @@
+{
+  "sections": {
+    "page_header": {
+      "type": "main-page-header",
+      "settings": {
+        "page_style_blue": true,
+        "transparent_header": true,
+        "background_newsletter": false,
+        "show_header": false,
+        "background_image": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_content": true
+      }
+    },
+    "4d0cf0ba-e05a-4a49-b877-04ea1ca1c393": {
+      "type": "hero",
+      "blocks": {
+        "bc38f73b-9120-4dad-92c4-ea11de9ad5aa": {
+          "type": "text",
+          "settings": {
+            "show_on_mobile": true,
+            "text": "<p>Are you an ambitious player or coach with a major online following or a wide network of contacts? You can earn money by promoting PitcheroGPS.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "bc38f73b-9120-4dad-92c4-ea11de9ad5aa"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "style": "gradient",
+        "image_left": true,
+        "image": "shopify:\/\/shop_images\/Ambassador_DT_3.png",
+        "hide_text_mobile": false,
+        "image_mobile": "shopify:\/\/shop_images\/Ambassador_Mobile_02784570-e605-4321-b329-d8525365a952.png",
+        "show_image_decoration": false,
+        "show_image_on_mobile": true,
+        "title": "Ambassador Programme",
+        "title_as_h1": true,
+        "show_heading_decoration": true,
+        "title_small": false,
+        "title_not_uppercase_mobile": false,
+        "sub_title": ""
+      }
+    },
+    "0f4c9e89-f69f-46cb-aa01-6a0c17699830": {
+      "type": "text-with-media-redesign",
+      "blocks": {
+        "a2a95bbd-4a00-47ea-9033-4c54014571a6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Share.png",
+            "image_max_width": 300,
+            "rounded": false,
+            "background_color": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "a2a95bbd-4a00-47ea-9033-4c54014571a6"
+      ],
+      "settings": {
+        "top_padding": false,
+        "bottom_padding": false,
+        "padding_top": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom": 0,
+        "padding_bottom_mobile": 0,
+        "image_max_width": 620,
+        "medium_size": true,
+        "title": "",
+        "title_center": false,
+        "title_position": "outside",
+        "bold_text": "<h3><br\/><\/h3>",
+        "bold_text_mobile": "",
+        "bold_text_center": false,
+        "bold_text_size": 20,
+        "text": "<p><strong>PitcheroGPS is designed to maximise a player's match-day performance by improving player speed and fitness. Our advanced GPS technology is used globally by amateur and professional players to maximise their training and optimise their game.<\/strong><\/p><p><strong>Pitchero is seeking Ambassadors to join our programme, earn money and promote PitcheroGPS to football, rugby and hockey players worldwide.<\/strong><\/p><p><\/p><p><strong>Requirements<\/strong><\/p><ul><li>Active content creator with an engaged audience and over 2,000 followers<\/li><li>Public social media account on Instagram, YouTube, or TikTok<\/li><li>Residing anywhere in the world<\/li><li>Obsessed with football, rugby or hockey<\/li><\/ul><p><strong>Ambassador program benefits<\/strong><\/p><ul><li>Free PitcheroGPS Player Tracker, Player Vest and Membership<\/li><li>Earn £10 from every sale you generate using your personal sale code<\/li><\/ul><p><strong>Are you ready to join the team?<\/strong><\/p><p>Let us know about your interest via the form below.<\/p>",
+        "text_mobile": "<p><strong>PitcheroGPS is designed to maximise a player's match-day performance by improving player speed and fitness. Our advanced GPS technology is used globally by amateur and professional players to maximise their training and optimise their game.<\/strong><\/p><p><strong>Pitchero is seeking Ambassadors to join our programme, earn money and promote PitcheroGPS to football, rugby and hockey players worldwide.<\/strong><\/p><p><\/p><p><strong>Requirements<\/strong><\/p><p>Active content creator with an engaged audience and over 2,000 followers<\/p><p>Public social media account on Instagram, YouTube, or TikTok<\/p><p>Residing anywhere in the world<\/p><p>Obsessed with football, rugby or hockey<\/p><p><strong>Ambassador program benefits<\/strong><\/p><p>Free PitcheroGPS Player Tracker, Player Vest and Membership<\/p><p>Earn £10 from every sale you generate using your personal sale code<\/p><p><strong>Are you ready to join the team?<\/strong><\/p><p>Let us know about your interest via the form below.<\/p>",
+        "text_list_background": false,
+        "text_color": "",
+        "background_color": "",
+        "media_position": "flex-row-reverse"
+      }
+    },
+    "10132203-f6bd-4c20-99ff-b8196c7cb092": {
+      "type": "new-from-register",
+      "custom_css": [
+        "{font-size: 32px; color: white;}"
+      ],
+      "settings": {
+        "style": "black",
+        "title": "Ambassador Application",
+        "html": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"2547723\",\n    formId: \"1c77f32d-bd9e-40cf-9efc-d00ef7710b69\"\n  });\n<\/script>"
+      }
+    }
+  },
+  "order": [
+    "page_header",
+    "main",
+    "4d0cf0ba-e05a-4a49-b877-04ea1ca1c393",
+    "0f4c9e89-f69f-46cb-aa01-6a0c17699830",
+    "10132203-f6bd-4c20-99ff-b8196c7cb092"
+  ]
+}

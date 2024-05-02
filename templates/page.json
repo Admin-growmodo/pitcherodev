@@ -1,0 +1,109 @@
+{
+  "sections": {
+    "page_header": {
+      "type": "main-page-header",
+      "settings": {
+        "page_style_blue": true,
+        "transparent_header": true,
+        "background_newsletter": false,
+        "show_header": false,
+        "background_image": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_content": true
+      }
+    },
+    "e6c045a3-1e1d-45ce-b1b4-b2b0b43745a1": {
+      "type": "hero",
+      "blocks": {
+        "393ebe41-1c3c-4e2a-9c08-0b6ae684404e": {
+          "type": "text",
+          "settings": {
+            "show_on_mobile": true,
+            "text": "<p><\/p><p><br\/>We are looking for brand ambassadors who are active football, rugby or hockey players who love playing and training. If you love sharing your story online, we want you to be part of a team revolutionising the world of sports with cutting-edge GPS technology!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "393ebe41-1c3c-4e2a-9c08-0b6ae684404e"
+      ],
+      "settings": {
+        "style": "black",
+        "image_left": true,
+        "image": "shopify:\/\/shop_images\/Ambassador_DT.png",
+        "hide_text_mobile": false,
+        "image_mobile": "shopify:\/\/shop_images\/Ambassador_Mobile.png",
+        "show_image_decoration": false,
+        "show_image_on_mobile": true,
+        "title": "become a PitcheroGPS ambassador",
+        "title_as_h1": false,
+        "show_heading_decoration": true,
+        "title_small": false,
+        "title_not_uppercase_mobile": false,
+        "sub_title": ""
+      }
+    },
+    "3eb8d75c-467a-4908-a394-d33570e912c8": {
+      "type": "text-with-media-redesign",
+      "blocks": {
+        "b043869b-6084-4db9-8601-197e4eb32f94": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Share.png",
+            "image_max_width": 410,
+            "rounded": false,
+            "background_color": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "b043869b-6084-4db9-8601-197e4eb32f94"
+      ],
+      "settings": {
+        "top_padding": true,
+        "bottom_padding": true,
+        "padding_top": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom": 0,
+        "padding_bottom_mobile": 0,
+        "image_max_width": 620,
+        "medium_size": false,
+        "title": "",
+        "title_center": false,
+        "title_position": "outside",
+        "bold_text": "",
+        "bold_text_mobile": "",
+        "bold_text_center": false,
+        "bold_text_size": 20,
+        "text": "<p><strong>PitcheroGPS is designed to maximise a player's match-day performance by improving player speed and fitness. Our advanced GPS technology is used globally by amateur and professional players to maximise their training and optimise their game.Ambassador requirements<\/strong><\/p><ul><li>Active content creator with an engaged audience and over 2,000 followers<\/li><li>Public social media account on Instagram, YouTube, or TikTok<\/li><li>Residing anywhere in the world<\/li><li>Obsessed with playing football, rugby or hockey<\/li><\/ul><p><strong>Ambassador program benefits<\/strong><\/p><ul><li>Free PitcheroGPS Player Tracker, Player Vest and Membership<\/li><li>Earn income based on the revenue generated when promoting PitcheroGPS products with a personal code<\/li><\/ul><p><strong>Are you ready to join the team?<\/strong><\/p><p>Let us know about your interest via the form below. We’ll go over your application and be in touch.<\/p><p><strong>In your message, please include the following details:<\/strong><\/p><ul><li>Your full name<\/li><li>Country of residence<\/li><li>Social media accounts with URLs<\/li><li>Why you’d make a great brand ambassador for PitcheroGPS<\/li><\/ul><p>Let’s take the world of sports to new heights together! <\/p>",
+        "text_mobile": "<p><strong>PitcheroGPS is designed to maximise a player's match-day performance by improving player speed and fitness. Our advanced GPS technology is used globally by amateur and professional players to maximise their training and optimise their game.<\/strong><\/p><p><strong>That’s why if for any reason, you’re not 100% satisfied with your PitcheroGPS Player or Team Bundle, we will refund the entire purchase if you contact us within 30 days of receiving your order.<\/strong><\/p><p>Simply contact our customer support team to begin the returns process. Once we receive your returned order, we will process a full refund of your original purchase*. It will take between 5-10 working days for your money to return to your account once we have processed your refund.<\/p><p>You can contact the PitcheroGPS customer support team by email <strong>support@PitcheroGPS.com.<\/strong><\/p><p>* If the returns package is incomplete or the PitcheroGPS Vest or Base Layer is returned damaged, it may result in a deduction from the refund amount.<\/p>",
+        "text_list_background": false,
+        "text_color": "",
+        "background_color": "",
+        "media_position": "flex-row-reverse"
+      }
+    },
+    "52b2abe8-612e-488e-8ccb-8539485bee79": {
+      "type": "new-from-register",
+      "custom_css": [
+        "{font-size: 32px; color: white;}"
+      ],
+      "settings": {
+        "style": "black",
+        "title": "Ambassador Application",
+        "html": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"2547723\",\n    formId: \"1c77f32d-bd9e-40cf-9efc-d00ef7710b69\"\n  });\n<\/script>"
+      }
+    }
+  },
+  "order": [
+    "page_header",
+    "main",
+    "e6c045a3-1e1d-45ce-b1b4-b2b0b43745a1",
+    "3eb8d75c-467a-4908-a394-d33570e912c8",
+    "52b2abe8-612e-488e-8ccb-8539485bee79"
+  ]
+}

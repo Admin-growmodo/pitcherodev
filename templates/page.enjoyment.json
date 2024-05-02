@@ -1,0 +1,342 @@
+{
+  "sections": {
+    "page_header": {
+      "type": "main-page-header",
+      "settings": {
+        "page_style_blue": true,
+        "transparent_header": true,
+        "background_newsletter": false,
+        "show_header": false,
+        "background_image": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_content": false
+      }
+    },
+    "0d09175a-295d-4c28-9604-86af3008b091": {
+      "type": "hero",
+      "blocks": {
+        "3f420ec3-ef50-487c-98b3-0481e73b7b85": {
+          "type": "text",
+          "settings": {
+            "show_on_mobile": true,
+            "text": "<p>Improve your speed and fitness with the PitcheroGPS Player Vest approved by FIFA and World Rugby<\/p>"
+          }
+        },
+        "d2fe8da3-1313-4dc4-9adf-b03254c18695": {
+          "type": "marquee",
+          "disabled": true,
+          "settings": {
+            "show_on_mobile": true,
+            "text": "WIN. MORE. GAMES."
+          }
+        }
+      },
+      "block_order": [
+        "3f420ec3-ef50-487c-98b3-0481e73b7b85",
+        "d2fe8da3-1313-4dc4-9adf-b03254c18695"
+      ],
+      "custom_css": [
+        ".hero-image-background {left: 0; z-index: 1;}",
+        ".Hero__Container {flex-direction: row-reverse;}",
+        "@media (min-width: 768px) {.Hero__Container > div:not(.hero-image-background) {transform: translate(-100px, 50px); }}",
+        "@media (max-width: 768px) {.Hero__Container {flex-direction: column; } .hero-image-background .hero-image-background img {display: none; }}"
+      ],
+      "settings": {
+        "style": "gradient",
+        "image_left": false,
+        "image": "shopify:\/\/shop_images\/Speed_DT_Header.png",
+        "hide_text_mobile": false,
+        "image_mobile": "shopify:\/\/shop_images\/Frame_1377.png",
+        "show_image_decoration": false,
+        "show_image_on_mobile": true,
+        "title": "Total Speed",
+        "title_as_h1": false,
+        "show_heading_decoration": true,
+        "title_small": true,
+        "title_not_uppercase_mobile": false,
+        "sub_title": ""
+      }
+    },
+    "bdfecdb1-c419-4c63-870e-e9b35cecd392": {
+      "type": "page-navigation",
+      "settings": {
+        "title": "Next Level Speed",
+        "text": "<p>In sport, speed is undefeated. It’s a gamechanger for every player on the pitch and so often the difference between winning and losing. <\/p><p>The PitcheroGPS Player Vest is built to help you take your speed training to the next level, so you can feel the difference in every sprint, every training session and every game.<\/p>",
+        "menu": "why-pages"
+      }
+    },
+    "42f7aab1-5afe-47dd-b5a4-54680a1b6646": {
+      "type": "media-with-text",
+      "blocks": {
+        "99f1d86a-f6b4-498f-a755-c4006d6a71e9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Speed_01_54d502e0-f5fe-43f8-a1e4-94cb979151a2.png",
+            "image_mobile": "shopify:\/\/shop_images\/Speed_01_54d502e0-f5fe-43f8-a1e4-94cb979151a2.png"
+          }
+        },
+        "599b30ab-03e2-48fd-bcd0-516d343bbb63": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video": "",
+            "video_iframe": "https:\/\/vimeo.com\/868648470",
+            "video_popup": false
+          }
+        }
+      },
+      "block_order": [
+        "99f1d86a-f6b4-498f-a755-c4006d6a71e9",
+        "599b30ab-03e2-48fd-bcd0-516d343bbb63"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_top_mobile": 20,
+        "padding_bottom": 80,
+        "padding_bottom_mobile": 20,
+        "background": "",
+        "border_radius": 1,
+        "icon": "shopify:\/\/shop_images\/icon-gps.png",
+        "title_left": false,
+        "title": "Measure Your Top Speed",
+        "text": "<p>Whatever sport you play, the first step to unlocking your true speed potential is to measure your top speed so you can see where you’re starting from.<\/p><p>A PitcheroGPS Player Vest tracks your speed metrics with pinpoint accuracy using FIFA and World Rugby-approved technology, providing you with all the data you need to take the first step to becoming the fastest player on the pitch.<\/p><p><\/p>",
+        "text_color": "#000000",
+        "media_position": "flex-row-reverse"
+      }
+    },
+    "f1013346-89a4-4c1f-9028-1e81a74b8c29": {
+      "type": "media-with-text",
+      "blocks": {
+        "5a844dbc-f6ad-4026-85b1-cd42a17b3579": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video": "https:\/\/youtu.be\/KJSXsQF8f_M",
+            "video_iframe": "",
+            "video_popup": false
+          }
+        },
+        "f368dced-a332-4ed6-8eed-37a5da7bc1be": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Speed_02_c7bf7186-391c-41f6-a7d6-cc24a0b57758.png",
+            "image_mobile": "shopify:\/\/shop_images\/Speed_02_c7bf7186-391c-41f6-a7d6-cc24a0b57758.png"
+          }
+        }
+      },
+      "block_order": [
+        "5a844dbc-f6ad-4026-85b1-cd42a17b3579",
+        "f368dced-a332-4ed6-8eed-37a5da7bc1be"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_top_mobile": 20,
+        "padding_bottom": 80,
+        "padding_bottom_mobile": 20,
+        "background": "",
+        "border_radius": 1,
+        "icon": "shopify:\/\/shop_images\/icon-gps.png",
+        "title_left": false,
+        "title": "Go Faster Every Game",
+        "text": "<p>The PitcheroGPS Player Vest is designed to train you to go faster, so you can improve week in, week out and deliver in the game defining moments that matter.<\/p><p>No matter which sport you play, you can train smarter and leave the competition behind with PitcheroGPS. Set speed targets every session or compare your stats with teammates to push yourself to the limit.<\/p>",
+        "text_color": "#000000",
+        "media_position": "flex-row"
+      }
+    },
+    "c05c320b-564d-4311-b619-ccf5f97d1e5c": {
+      "type": "media-with-text",
+      "blocks": {
+        "f8bd884e-3da9-4450-bf14-682d73e19d7a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Speed_03_150184f5-b117-4e12-8938-a53fc55f3723.png",
+            "image_mobile": "shopify:\/\/shop_images\/Speed_03_150184f5-b117-4e12-8938-a53fc55f3723.png"
+          }
+        },
+        "8a2e2c9f-96cd-494a-be99-3c61e949ffce": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/f32f4a0ee0024f834f6a7a071ea63753.jpg"
+          }
+        },
+        "d3ecaec9-52f2-4c37-a94b-d2d155c27404": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/35256c835bff557d20506ab76c60c9c0.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "f8bd884e-3da9-4450-bf14-682d73e19d7a",
+        "8a2e2c9f-96cd-494a-be99-3c61e949ffce",
+        "d3ecaec9-52f2-4c37-a94b-d2d155c27404"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_top_mobile": 20,
+        "padding_bottom": 80,
+        "padding_bottom_mobile": 20,
+        "background": "",
+        "border_radius": 1,
+        "icon": "shopify:\/\/shop_images\/icon-gps.png",
+        "title_left": false,
+        "title": "Compete Against The Best",
+        "text": "<p>Technology creates a world of possibilities so there’s never been a more exciting time for connected fitness and performance training. With a PitcheroGPS Player Vest you can share your speed and performance stats with the world, competing with other players by sport, position and profile. See your name and top speed ranking up on our global leaderboard and be part of our search for the fastest player in sports.<\/p>",
+        "text_color": "#000000",
+        "media_position": "flex-row-reverse"
+      }
+    },
+    "29397ff8-34cb-46ea-a106-201ddfb5e0c6": {
+      "type": "media-with-text",
+      "blocks": {
+        "c900124d-85bf-45ba-b0d6-668c72bf4d41": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Speed_04_397585f7-80e1-4bb1-ba11-96f5c07a959e.png",
+            "image_mobile": "shopify:\/\/shop_images\/Speed_04_397585f7-80e1-4bb1-ba11-96f5c07a959e.png"
+          }
+        }
+      },
+      "block_order": [
+        "c900124d-85bf-45ba-b0d6-668c72bf4d41"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_top_mobile": 20,
+        "padding_bottom": 40,
+        "padding_bottom_mobile": 20,
+        "background": "",
+        "border_radius": 1,
+        "icon": "shopify:\/\/shop_images\/icon-gps.png",
+        "title_left": false,
+        "title": "Join A Unique Sports Community",
+        "text": "<p>PitcheroGPS is about more than just an individual training journey. By signing up you become part of a unique sports community and join our mission to create the fastest players in sport.<\/p><p>We believe speed is the universal attribute which can improve any player and if you’re looking to learn, then you can also join our Speed Heroes programme. This gives you  access to elite speed training sessions across the UK, online masterclass videos and the chance to earn a spot as a PitcheroGPS ambassador.<\/p>",
+        "text_color": "#000000",
+        "media_position": "flex-row"
+      }
+    },
+    "2b9afc54-049d-42fa-babe-49fcd19cbfec": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "show_section": true,
+        "image": "shopify:\/\/shop_images\/New_Footer_Image_1.png",
+        "image_decoration": false,
+        "title": "<p>Join our newsletter<\/p>",
+        "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+        "form_tag": ""
+      }
+    },
+    "08b0912d-9bd7-441d-981c-8e85530cc41c": {
+      "type": "hero-video",
+      "blocks": {
+        "e116970c-37dc-45d7-a17f-397bc10839ea": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The search for the fastest player in grassroots sport. <strong>ALL players. ALL ages. ALL competitions.<\/strong><\/p>"
+          }
+        },
+        "e61ffe4f-e1d7-4b13-a88a-9df60c0a7386": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "title": "How fast is fast?",
+            "video": "https:\/\/www.youtube.com\/watch?v=Rb8F_8em3fY&t=6s",
+            "button": "WATCH VIDEO"
+          }
+        },
+        "1bdfee98-1641-4656-988f-d4730cb89f71": {
+          "type": "button",
+          "settings": {
+            "style": "primary",
+            "text": "BOOK YOUR PLACE TODAY",
+            "url": "shopify:\/\/pages\/hero"
+          }
+        }
+      },
+      "block_order": [
+        "e116970c-37dc-45d7-a17f-397bc10839ea",
+        "e61ffe4f-e1d7-4b13-a88a-9df60c0a7386",
+        "1bdfee98-1641-4656-988f-d4730cb89f71"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "black",
+        "image": "shopify:\/\/shop_images\/New_Footer_Image_1.png",
+        "image_decoration": false,
+        "title": "#HERO SPEED CHALLENGE",
+        "title_as_h1": false,
+        "sub_title": "LAUNCHING JULY 2023"
+      }
+    },
+    "e10385a0-fe25-44d5-b1d7-11dd3ee5b456": {
+      "type": "bundles-redesign",
+      "blocks": {
+        "template--15813762416845__e10385a0-fe25-44d5-b1d7-11dd3ee5b456-bundle-1": {
+          "type": "bundle",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_461_2_233b69cc-1bb7-4032-9f9d-1d7b1468c11a.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1048_cb316604-1565-4419-bb17-8f37ebabba12.png",
+            "overlay_background": false,
+            "background_color": "#f2f2f2",
+            "text_color": "#000000",
+            "title": "Player<br>bundle",
+            "sub_title": "NEW",
+            "text": "",
+            "button": "BUY NOW",
+            "button_url": "shopify:\/\/products\/new-gps-player-bundle",
+            "button_style": "primary"
+          }
+        },
+        "template--15813762416845__e10385a0-fe25-44d5-b1d7-11dd3ee5b456-bundle-2": {
+          "type": "bundle",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1036_2_1_56032e1c-e5c3-4a51-b38a-0e90536ab473.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1297_1.png",
+            "overlay_background": false,
+            "background_color": "#f2f2f2",
+            "text_color": "#000000",
+            "title": "Team<br>Bundle",
+            "sub_title": "NEW",
+            "text": "",
+            "button": "BUY NOW",
+            "button_url": "shopify:\/\/products\/new-gps-team-bundle",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15813762416845__e10385a0-fe25-44d5-b1d7-11dd3ee5b456-bundle-1",
+        "template--15813762416845__e10385a0-fe25-44d5-b1d7-11dd3ee5b456-bundle-2"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom": 48,
+        "padding_bottom_mobile": 36,
+        "hide_mobile": false,
+        "container_width": "medium",
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "page_header",
+    "main",
+    "0d09175a-295d-4c28-9604-86af3008b091",
+    "bdfecdb1-c419-4c63-870e-e9b35cecd392",
+    "42f7aab1-5afe-47dd-b5a4-54680a1b6646",
+    "f1013346-89a4-4c1f-9028-1e81a74b8c29",
+    "c05c320b-564d-4311-b619-ccf5f97d1e5c",
+    "29397ff8-34cb-46ea-a106-201ddfb5e0c6",
+    "2b9afc54-049d-42fa-babe-49fcd19cbfec",
+    "08b0912d-9bd7-441d-981c-8e85530cc41c",
+    "e10385a0-fe25-44d5-b1d7-11dd3ee5b456"
+  ]
+}

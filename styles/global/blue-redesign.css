@@ -1,0 +1,33 @@
+.blue-style .Button, .blue-style .Header__Actions .Button{
+  border: none;
+}
+.blue-style .Hero__Container svg path, .blue-style .Hero svg path{
+  fill: #00F0FF;
+}
+.blue-style .OfferBox__Content-text strong, .OfferBox__Product span{
+  color: #00F0FF;
+}
+.blue-style .OfferBox__Product{
+  background: linear-gradient(293.58deg, #00F0FF 8.3%, #FFFFFF 84.97%);
+  border-radius: 1rem;
+  padding: 3px;
+}
+.blue-style .border-brand-accent{
+  border-color: #00F0FF;
+}
+.blue-style .peer:checked ~ .peer-checked\:border-brand-accent{
+  --tw-shadow: inset 0 0 0 2px #00F0FF;
+  --tw-shadow-colored: inset 0 0 0 4px #00F0FF;
+  border-color: #00F0FF;
+}
+.blue-style .selling-plan-group{
+  background: #00F0FF;
+  color: #000;
+}
+.blue-style .FeaturedBundle__Container{
+  background: #00F0FF;
+}
+.blue-style .ColumnsSlider__ItemContent{
+  background-color: #00F0FF;
+  color:#000;
+}

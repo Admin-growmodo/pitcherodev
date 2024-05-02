@@ -1,0 +1,171 @@
+{
+  "sections": {
+    "page_header": {
+      "type": "main-page-header",
+      "settings": {
+        "page_style_blue": true,
+        "transparent_header": true,
+        "background_newsletter": false,
+        "show_header": false,
+        "background_image": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_content": true
+      }
+    },
+    "48b233f7-eb42-4640-915a-d329e4897411": {
+      "type": "hero-section",
+      "blocks": {
+        "71d86c1d-0f7f-419c-9029-d5bd62c166ed": {
+          "type": "text",
+          "settings": {
+            "show_on_mobile": true,
+            "text": "<p><strong>Download the PitcheroGPS 6-Week Training Programme.<\/strong><\/p>"
+          }
+        },
+        "aa50519e-3967-4ddf-a95c-837ec1885350": {
+          "type": "button",
+          "settings": {
+            "style": "primary",
+            "text": "Download Now",
+            "url": "#section-form-scroll"
+          }
+        }
+      },
+      "block_order": [
+        "71d86c1d-0f7f-419c-9029-d5bd62c166ed",
+        "aa50519e-3967-4ddf-a95c-837ec1885350"
+      ],
+      "settings": {
+        "transparent_header": true,
+        "style_mobile": "transparent",
+        "style": "black",
+        "image_desktop": "shopify:\/\/shop_images\/Frame_550_1_1.png",
+        "image_mobile": "shopify:\/\/shop_images\/Frame_1027_1.png",
+        "show_image_decoration": true,
+        "image_title": "shopify:\/\/shop_images\/Group_172_1.png",
+        "title": "fitter   faster",
+        "title_as_h1": false,
+        "title_small": false,
+        "title_not_uppercase_mobile": false,
+        "video": ""
+      }
+    },
+    "e8dc4cf5-d0e2-4030-b032-994b62808ef5": {
+      "type": "text-with-video",
+      "settings": {
+        "title": "",
+        "video": "https:\/\/www.youtube.com\/watch?v=GEycgN_OLlY",
+        "video_iframe_vimeo": "",
+        "text_size": "text_container-medium",
+        "text": "<h4>Sprint Technique in 5 Steps<\/h4>",
+        "small_text": "<p>Performing a good sprinting technique is essential if you are to become a fitter, faster player. Good technique will unleash all of your power and ensure maximum results from training.<\/p><p>This sprint technique explanation video has been prepared for all players and provides an overview of the core principles of running fast.<\/p><p>Watch this video before every training session and make good technique the foundation stone of all your training. <\/p>",
+        "media_position": "flex-row-reverse",
+        "large_container": true,
+        "text_mobile_top": false,
+        "video_popup": false,
+        "video_border": 0,
+        "bottom_line": false,
+        "bottom_line_border": 0,
+        "padding_bottom": 100,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "435ed37a-99a4-4e5a-9add-c31bfca50de6": {
+      "type": "section-form",
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Frame_1224.png",
+        "image_logo": "shopify:\/\/shop_images\/PitcheroGPS_White_Logo_TM.png",
+        "image": "shopify:\/\/shop_images\/Group_172_1.png",
+        "subtitle": "6 Week Training Programme",
+        "image_large": "shopify:\/\/shop_images\/Frame_1236.png",
+        "image_mobile": "shopify:\/\/shop_images\/Frame_1228_1.png",
+        "video": "https:\/\/www.youtube.com\/watch?v=GEycgN_OLlY",
+        "text": "Unlock your top speed and true potential with our 6 Week Training Programme. Open to anyone looking to become a fitter & faster player. Register now for access to exclusive benefits, elite training opportunities and join our global search for the fastest player in grassroots sport.",
+        "html": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"2547723\",\n    formId: \"453b86e1-e6f1-4e98-a408-f5dc06fb99a1\"\n  });\n<\/script>"
+      }
+    },
+    "69750647-0ca7-4927-b82c-d180cf12d187": {
+      "type": "text-with-video",
+      "disabled": true,
+      "settings": {
+        "title": "Speed Training Videos",
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-06-13_at_12.47.20_1.png",
+        "video": "",
+        "video_iframe": "shopify:\/\/files\/videos\/Shortsleevemale.mp4",
+        "video_iframe_vimeo": "",
+        "text_size": "text_container-small",
+        "text": "<h4>Acceleration<\/h4>",
+        "small_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec varius nunc, vel pellentesque ligula. Nunc congue luctus turpis. In commodo massa quis ex dignissim, eu interdum ipsum iaculis.<\/p>",
+        "media_position": "flex-row-reverse",
+        "large_container": false,
+        "text_mobile_top": false,
+        "video_popup": false,
+        "video_border": 0,
+        "bottom_line": true,
+        "bottom_line_border": 2,
+        "padding_bottom": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "41c4024a-fe2f-4cf9-bf6a-c51eeda6c3bd": {
+      "type": "text-with-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-06-13_at_12.47.20_1.png",
+        "video": "",
+        "video_iframe": "shopify:\/\/files\/videos\/Shortsleevemale.mp4",
+        "video_iframe_vimeo": "",
+        "text_size": "text_container-small",
+        "text": "<h4>Acceleration<\/h4>",
+        "small_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec varius nunc, vel pellentesque ligula. Nunc congue luctus turpis. In commodo massa quis ex dignissim, eu interdum ipsum iaculis.<\/p>",
+        "media_position": "flex-row-reverse",
+        "large_container": false,
+        "text_mobile_top": false,
+        "video_popup": false,
+        "video_border": 0,
+        "bottom_line": true,
+        "bottom_line_border": 2,
+        "padding_bottom": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "be362ddc-c410-4827-9972-bbf98621c96d": {
+      "type": "text-with-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-06-13_at_12.47.20_1.png",
+        "video": "",
+        "video_iframe": "shopify:\/\/files\/videos\/Shortsleevemale.mp4",
+        "video_iframe_vimeo": "",
+        "text_size": "text_container-small",
+        "text": "<h4>Acceleration<\/h4>",
+        "small_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec varius nunc, vel pellentesque ligula. Nunc congue luctus turpis. In commodo massa quis ex dignissim, eu interdum ipsum iaculis.<\/p>",
+        "media_position": "flex-row-reverse",
+        "large_container": false,
+        "text_mobile_top": false,
+        "video_popup": false,
+        "video_border": 0,
+        "bottom_line": true,
+        "bottom_line_border": 0,
+        "padding_bottom": 40,
+        "padding_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "page_header",
+    "main",
+    "48b233f7-eb42-4640-915a-d329e4897411",
+    "e8dc4cf5-d0e2-4030-b032-994b62808ef5",
+    "435ed37a-99a4-4e5a-9add-c31bfca50de6",
+    "69750647-0ca7-4927-b82c-d180cf12d187",
+    "41c4024a-fe2f-4cf9-bf6a-c51eeda6c3bd",
+    "be362ddc-c410-4827-9972-bbf98621c96d"
+  ]
+}

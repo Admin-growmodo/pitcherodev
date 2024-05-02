@@ -1,0 +1,13 @@
+{
+  "layout": "theme",
+  "sections": {
+    "ecom-pitcherogps-blog-blog": {
+      "type": "ecom-pitcherogps-blog-blog",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "ecom-pitcherogps-blog-blog"
+  ]
+}

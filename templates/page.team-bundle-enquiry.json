@@ -1,0 +1,151 @@
+{
+  "sections": {
+    "page_header": {
+      "type": "main-page-header",
+      "settings": {
+        "page_style_blue": false,
+        "transparent_header": true,
+        "background_newsletter": false,
+        "show_header": false,
+        "background_image": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_content": false
+      }
+    },
+    "785a4b4e-0cd3-470e-8888-d7fb34397d32": {
+      "type": "hero",
+      "blocks": {
+        "46c6a513-49fe-4c8b-bb0f-1838345e24b0": {
+          "type": "text",
+          "settings": {
+            "show_on_mobile": true,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "46c6a513-49fe-4c8b-bb0f-1838345e24b0"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "style": "gradient",
+        "image_left": false,
+        "image": "shopify:\/\/shop_images\/Header_Updated_Brochure.png",
+        "hide_text_mobile": false,
+        "image_mobile": "shopify:\/\/shop_images\/Mobile_Updated_Brochure.png",
+        "show_image_decoration": false,
+        "show_image_on_mobile": true,
+        "title": "",
+        "title_as_h1": false,
+        "show_heading_decoration": true,
+        "title_small": true,
+        "title_not_uppercase_mobile": false,
+        "sub_title": ""
+      }
+    },
+    "c7e5c74f-788e-4803-81f2-f85efa588b19": {
+      "type": "text-with-media",
+      "disabled": true,
+      "settings": {
+        "top_padding": false,
+        "bottom_padding": false,
+        "padding_top": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom": 20,
+        "padding_bottom_mobile": 20,
+        "show_media_on_mobile": false,
+        "medium_size": false,
+        "title": "Heading",
+        "title_center": false,
+        "title_position": "outside",
+        "bold_text": "",
+        "bold_text_mobile": "",
+        "bold_text_center": false,
+        "bold_text_size": 20,
+        "text": "",
+        "text_list_background": false,
+        "text_color": "",
+        "background_color": "#052130",
+        "media_position": "flex-row"
+      }
+    },
+    "659a0f1d-e3ce-4c95-b3b3-1b6abf5c247e": {
+      "type": "text-with-media",
+      "settings": {
+        "top_padding": false,
+        "bottom_padding": false,
+        "padding_top": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom": 0,
+        "padding_bottom_mobile": 0,
+        "show_media_on_mobile": true,
+        "medium_size": false,
+        "title": "",
+        "title_center": false,
+        "title_position": "inside",
+        "bold_text": "<h1><strong>Brochure Download<\/strong><\/h1>",
+        "bold_text_mobile": "<h1><strong>Brochure<br\/>Download<\/strong><\/h1>",
+        "bold_text_center": true,
+        "bold_text_size": 45,
+        "text": "",
+        "text_list_background": false,
+        "text_color": "#ffffff",
+        "background_color": "#052130",
+        "media_position": "flex-row"
+      }
+    },
+    "d5431055-8595-4833-8685-93b22689d9ee": {
+      "type": "video-banner",
+      "disabled": true,
+      "settings": {
+        "width": 700,
+        "padding_top": 40,
+        "padding_top_mobile": 0,
+        "padding_bottom": 30,
+        "padding_bottom_mobile": 34,
+        "active_color": true,
+        "color": "#052130",
+        "style": "gradient",
+        "subtitle": "",
+        "title": "",
+        "title_as_h1": false,
+        "image": "shopify:\/\/shop_images\/Frame_1298_d4c0fc92-4937-41b2-b2a6-0f9002926166.png",
+        "video_popup": false,
+        "video_autoplay": false,
+        "video": "",
+        "video_iframe": "",
+        "border_radius": 1,
+        "style_btn": "primary",
+        "text": "",
+        "url": ""
+      }
+    },
+    "40259fae-fa0e-445a-8323-560c4c4f4724": {
+      "type": "new-from-register",
+      "custom_css": [
+        "{font-size: 32px; color: white; background-color: #052130;}"
+      ],
+      "settings": {
+        "style": "gradient",
+        "title": "",
+        "html": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"2547723\",\n    formId: \"8415be50-d900-4750-8d58-95b6e5bd1db0\"\n  });\n<\/script>"
+      }
+    }
+  },
+  "order": [
+    "page_header",
+    "main",
+    "785a4b4e-0cd3-470e-8888-d7fb34397d32",
+    "c7e5c74f-788e-4803-81f2-f85efa588b19",
+    "659a0f1d-e3ce-4c95-b3b3-1b6abf5c247e",
+    "d5431055-8595-4833-8685-93b22689d9ee",
+    "40259fae-fa0e-445a-8323-560c4c4f4724"
+  ]
+}
