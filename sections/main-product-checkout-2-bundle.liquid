@@ -299,7 +299,7 @@
                             {{ "checkout_process.membership.annual.billed" | t: price: annual_price }}
                           </div>
                           <div class="capitalize membership_desc">
-                            +{{ membership_variant_paid.price  | money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }} 
+                            +{{ 6000  | money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }} 
                           </div>
                         {% elsif  clean_membership_type == "Monthly" %}
                           <div class="flex items-center flex-row justify-start text-left flex-col membeship_price-container">
