@@ -103,8 +103,6 @@
         "9b9dcff6-9923-4be7-b1d5-2272b8a4e8ca"
       ],
       "settings": {
-        "top_padding": true,
-        "bottom_padding": true,
         "container_width": "medium",
         "title": ""
       }
@@ -335,8 +333,6 @@
         "44760b90-9091-47c6-919e-d42f74bdb107"
       ],
       "settings": {
-        "top_padding": true,
-        "bottom_padding": true,
         "container_width": "medium",
         "title": ""
       }
@@ -482,8 +478,6 @@
         "513d9c06-c829-4d27-8c49-1c90b4624bb4"
       ],
       "settings": {
-        "top_padding": true,
-        "bottom_padding": true,
         "container_width": "medium",
         "title": ""
       }

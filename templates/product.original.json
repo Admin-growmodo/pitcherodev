@@ -54,7 +54,6 @@
     },
     "cc5488a3-bd26-4984-87bb-79c120c79b96": {
       "type": "offer-app",
-      "disabled": true,
       "blocks": {
         "a2e6d94c-7439-4175-be73-9b29cca9e655": {
           "type": "button",
@@ -117,9 +116,8 @@
         "d36f4420-a795-45db-9b96-b7c9f44e7476",
         "7ba8d71f-2941-4a3c-9068-1c66f019dd6e"
       ],
+      "disabled": true,
       "settings": {
-        "top_spacing": true,
-        "bottom_spacing": true,
         "video": "",
         "title": "",
         "sub_title": "PitcheroGPS Mobile App",
@@ -130,7 +128,6 @@
     },
     "188a8f28-fcdf-433a-8d58-6f6ec52c0c6d": {
       "type": "metrics",
-      "disabled": true,
       "blocks": {
         "39cb8ece-510d-4951-b036-39de6976ac7c": {
           "type": "tab",
@@ -282,6 +279,7 @@
         "5dadf144-4882-4e5a-8461-5ef5f15bdc73",
         "fa661d1c-41c8-4b9c-bddd-0424f5d2be44"
       ],
+      "disabled": true,
       "settings": {
         "top_padding": true,
         "bottom_padding": true,
@@ -291,7 +289,6 @@
     },
     "770d0870-16d4-4e80-a558-273be76f2ee1": {
       "type": "columns",
-      "disabled": true,
       "blocks": {
         "template--15660718358733__770d0870-16d4-4e80-a558-273be76f2ee1-166593766121878c86-0": {
           "type": "column",
@@ -359,6 +356,7 @@
         "259d456b-87d9-4751-905e-a3a1a6c26fe5",
         "9e2eee84-6e25-4092-9fd2-28c34e5110b7"
       ],
+      "disabled": true,
       "settings": {
         "top_padding": false,
         "bottom_padding": true,

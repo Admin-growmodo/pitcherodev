@@ -77,8 +77,6 @@
         "b103b73f-e1cc-4932-b56a-49817fc012c1"
       ],
       "settings": {
-        "top_padding": false,
-        "bottom_padding": true,
         "icon": "shopify:\/\/shop_images\/Icon_Track_e7938454-c768-4b21-a96b-3c4b826b4350.png",
         "title": "Track Your Progress",
         "text": "<p>Running watches and bike computers are used by athletes to track their progress every time they go out.<\/p><p>With a <a href=\"\/products\/player-bundle\" title=\"New Player Bundle\">GPS Player Vest<\/a>, you can now do the same in contact-sports like football, rugby and hockey. Review your performance session by session, match by match. See your top speed and total distance improve as you get fitter and faster.<\/p>",
@@ -115,8 +113,6 @@
         "b0138fd6-0755-49b9-8076-d2276458c7b2"
       ],
       "settings": {
-        "top_padding": true,
-        "bottom_padding": true,
         "icon": "shopify:\/\/shop_images\/Icon_Goals_1.png",
         "title": "Reach Your Goals",
         "text": "<p>How fast can you run? How much ground do you cover in a game? Track this and much more with a <a href=\"\/products\/player-bundle\" title=\"New Player Bundle\">GPS Player Vest<\/a>.<\/p><p>Set a Top Speed goal and follow your progress throughout the season! Achieving your goals and reaching your targets will help you and your team’s fitness, stamina and tactical awareness.<\/p>",
@@ -145,8 +141,6 @@
         "d6139e76-4aca-4e04-80f8-89f828065ab8"
       ],
       "settings": {
-        "top_padding": true,
-        "bottom_padding": true,
         "icon": "shopify:\/\/shop_images\/Icon_Compete.png",
         "title": "Compete With Teammates",
         "text": "<p>Bring more fun to the locker room. Compete over speed, distance and time with teammates.<\/p><p>Compare stats within seconds of matches finishing and aim to be the fastest, fittest or most improved player in your team.<\/p>",
@@ -183,8 +177,6 @@
         "d3ecaec9-52f2-4c37-a94b-d2d155c27404"
       ],
       "settings": {
-        "top_padding": true,
-        "bottom_padding": false,
         "icon": "shopify:\/\/shop_images\/Icon_World.png",
         "title": "Compete With The World",
         "text": "<p>Teammates not enough? Thanks to Pitchero’s unique global network, you can compare your stats with players worldwide through the #HERO Speed Challenge.<\/p><p>Compete across your sport, position and age group or all sports, ages and positions to see how you compare to a global field of grassroots and semi-pro players.<\/p>",
@@ -226,8 +218,6 @@
         "template--15651126837453__346fd114-8fb7-4a77-b546-91e8ef8db29b-166540752005b5f770-1"
       ],
       "settings": {
-        "top_padding": true,
-        "bottom_padding": true,
         "container_width": "medium",
         "title": ""
       }

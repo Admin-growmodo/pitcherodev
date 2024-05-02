@@ -149,8 +149,6 @@
       ],
       "settings": {
         "hide_mobile": false,
-        "top_padding": true,
-        "bottom_padding": true,
         "container_width": "small",
         "title": ""
       }

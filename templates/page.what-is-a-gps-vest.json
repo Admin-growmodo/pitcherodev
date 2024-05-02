@@ -89,8 +89,6 @@
         "c842b368-9e76-4234-bc31-f162345dc50b"
       ],
       "settings": {
-        "top_padding": false,
-        "bottom_padding": false,
         "container_width": "medium",
         "title": ""
       }
@@ -158,8 +156,6 @@
         "4730bc00-2b01-4cf6-b2c4-f880551504b3"
       ],
       "settings": {
-        "top_padding": true,
-        "bottom_padding": false,
         "container_width": "medium",
         "title": ""
       }
@@ -241,8 +237,6 @@
         "template--15695965946061__c7914b31-28f8-4f63-b477-38f83f167317-1670411015a3e92c3b-1"
       ],
       "settings": {
-        "top_padding": true,
-        "bottom_padding": true,
         "container_width": "medium",
         "title": ""
       }

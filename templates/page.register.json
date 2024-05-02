@@ -17,7 +17,6 @@
     },
     "d0ff10d9-23ff-4a30-b245-e44788b760af": {
       "type": "hero",
-      "disabled": true,
       "blocks": {
         "51564ac4-37e5-43f5-80c0-6a1f979351ec": {
           "type": "text",
@@ -38,6 +37,7 @@
         "51564ac4-37e5-43f5-80c0-6a1f979351ec",
         "38a967d0-77f8-461c-8866-ab77302292f4"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_94_68a1d9b6-401d-49b8-951a-61194e791b0d.png",
         "show_image_decoration": true,
