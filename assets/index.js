@@ -2119,7 +2119,7 @@
 				var items = [];
 				var bundleProducts = Object.values(state.bundle);
 				var id = localStorage.getItem("productVariant");
-				var sellingId = JSON.parse(localStorage.getItem("sellingId"));
+				// var sellingId = JSON.parse(localStorage.getItem("sellingId"));
 				if (gift === 'false') {
 					items.push({
 						id: Number(sellingId.Id),
