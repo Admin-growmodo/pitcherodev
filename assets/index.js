@@ -2366,7 +2366,7 @@
 			});
 			var sellingIdString = JSON.stringify(sellingId);
 			localStorage.setItem("productVariant", select.selectedOptions[0].value);
-			localStorage.setItem("sellingId", sellingIdString);
+			// localStorage.setItem("sellingId", sellingIdString);
 		};
 		submitBundle.addEventListener("click", function () {
 			setItemStorage(membership);
