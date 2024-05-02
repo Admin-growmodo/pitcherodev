@@ -269,51 +269,51 @@ export default component((node) => {
     const submit = event.target.closest("[data-checkout-process=submit]")
     if (submit && !isButtonClicked) {
       isButtonClicked = true
-      const items = []
+      // const items = []
       const bundleProducts = Object.values(state.bundle)
       const id = localStorage.getItem("productVariant")
-      const sellingId = JSON.parse(localStorage.getItem("sellingId"))
+      // const sellingId = JSON.parse(localStorage.getItem("sellingId"))
       if(gift === 'false'){
-        items.push(
-          {
-            id: Number(sellingId.Id),
-            quantity: 1,
-            selling_plan: Number(sellingId.sellingId) || null,
-            properties: {
-              _Bundle: bundleId,
-            },
-          },
-          {
-            id: Number(id),
-            quantity: 1,
-          }
-        )
+        // items.push(
+        //   {
+        //     id: Number(sellingId.Id),
+        //     quantity: 1,
+        //     selling_plan: Number(sellingId.sellingId) || null,
+        //     properties: {
+        //       _Bundle: bundleId,
+        //     },
+        //   },
+        //   {
+        //     id: Number(id),
+        //     quantity: 1,
+        //   }
+        // )
       }else{
-        items.push({
-          id: state.subscription.variantId,
-          quantity: 1,
-          selling_plan: state.subscription.sellingPlanId || null,
-          properties: {
-            _Bundle: bundleId,
-          },
-        })
+        // items.push({
+        //   id: state.subscription.variantId,
+        //   quantity: 1,
+        //   selling_plan: state.subscription.sellingPlanId || null,
+        //   properties: {
+        //     _Bundle: bundleId,
+        //   },
+        // })
       }
 
       if (bundleProducts.length) {
         bundleProducts.forEach((p) => {
-          items.push({
-            id: p,
-            quantity: 1,
-            properties: {
-              _Bundle: bundleId,
-            },
-          })
+          // items.push({
+          //   id: p,
+          //   quantity: 1,
+          //   properties: {
+          //     _Bundle: bundleId,
+          //   },
+          // })
         })
       }
 
-      addItems({ items }).then(
-        () => (window.location.href = `${window.Shopify.routes.root}checkout`)
-      )
+      // addItems({ items }).then(
+      //   () => (window.location.href = `${window.Shopify.routes.root}checkout`)
+      // )
     }
   })
 
