@@ -53,8 +53,8 @@
           "show_announcement": false,
           "announcement": "",
           "logo": "shopify:\/\/shop_images\/logo.png",
-          "menu_main": "new-menu",
-          "menu_mobile": "mobile-menu"
+          "menu_main": "",
+          "menu_mobile": ""
         }
       },
       "newsletter": {
@@ -80,7 +80,7 @@
           "a1ea298d-da72-48e7-b361-ce5039b86779": {
             "type": "menu",
             "settings": {
-              "menu": "footer-1"
+              "menu": ""
             }
           },
           "e64b438c-41b1-4b38-bf73-aa0f9b07d064": {
@@ -99,7 +99,7 @@
           "show_payments": true,
           "show_social": true,
           "credits_text": "© 2022 Pitchero GPS",
-          "menu": "footer-1"
+          "menu": ""
         }
       },
       "header-v2": {
@@ -125,24 +125,24 @@
     ],
     "blocks": {
       "7902831097370503076": {
-        "type": "shopify:\/\/apps\/estimated-order-delivery-date\/blocks\/estimated-delivery-days\/d8155dd1-6598-4174-aaeb-cbcf85a857bc",
-        "disabled": false,
+        "type": "shopify:\/\/apps\/estimated-delivery-date-eta\/blocks\/estimated-delivery-days\/d8155dd1-6598-4174-aaeb-cbcf85a857bc",
+        "disabled": true,
         "settings": {
         }
       },
       "17151115064775110295": {
         "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/recharge-theme\/371eed76-0b44-4869-9813-730372ea378e",
-        "disabled": false,
+        "disabled": true,
         "settings": {
-          "color_brand": "#467C99",
-          "contrast_color": "#FFFFFF",
-          "color_brand_secondary": "#467C99",
+          "color_brand": "#467c99",
+          "contrast_color": "#ffffff",
+          "color_brand_secondary": "#467c99",
           "corners": "8px",
           "app_background": "#f9f8f4",
           "app_container": 1200,
           "app_vertical_padding": 32,
           "images_aspect_ratio": "1",
-          "cards_background": "#FFFFFF",
+          "cards_background": "#ffffff",
           "cards_border_color": "rgba(0,0,0,0)"
         }
       }
