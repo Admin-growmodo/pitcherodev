@@ -2121,14 +2121,18 @@
 				var id = localStorage.getItem("productVariant");
 				// var sellingId = JSON.parse(localStorage.getItem("sellingId"));
 				if (gift === 'false') {
-					items.push({
-						id: Number(sellingId.Id),
-						quantity: 1,
-						selling_plan: Number(sellingId.sellingId) || null,
-						properties: {
-							_Bundle: bundleId
-						}
-					}, {
+					// items.push({
+					// 	id: Number(sellingId.Id),
+					// 	quantity: 1,
+					// 	selling_plan: Number(sellingId.sellingId) || null,
+					// 	properties: {
+					// 		_Bundle: bundleId
+					// 	}
+					// }, {
+					// 	id: Number(id),
+					// 	quantity: 1
+					// });
+					items.push( {
 						id: Number(id),
 						quantity: 1
 					});
