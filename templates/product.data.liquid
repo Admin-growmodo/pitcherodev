@@ -1,8 +1,0 @@
-{% layout none %}
-
-[{%- for variant in product.variants -%}
-  {
-    "id": {{ variant.id | json }},
-    "inventory_quantity": {{ variant.inventory_quantity | json }}
-  }{% unless forloop.last %},{% endunless %}
-{%- endfor -%}]
