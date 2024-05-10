@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "custom_css": [
+        "h1 {font-family: \"Montserrat\", sans-serif;}"
+      ],
+      "settings": {
+        "text_color": "#fff",
+        "background_color": "linear-gradient(348deg, rgba(0, 32, 48, 1) 100%, rgba(0, 32, 48, 1) 100%, rgba(0, 32, 48, 1) 100%)"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

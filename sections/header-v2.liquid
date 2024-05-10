@@ -1,0 +1,304 @@
+{%- liquid
+  assign show_announcement = false
+
+  if section.settings.show_announcement and section.settings.announcement != blank
+    assign show_announcement = true
+  endif
+
+
+-%}
+
+<style>
+  :root {
+    --announcement: {% if show_announcement %}1{% else %}0{% endif %};
+  }
+</style>
+
+<header ttt {{ section.settings.transparent }} role="banner" data-component="Header" class="Header {%if show_announcement %} hasAnnouncement {% endif %}">
+  {% if show_announcement %}
+    <div class="Header__Announcement px-5 sm:px-6">
+      <div class="h-full flex items-center justify-start overflow-x-auto whitespace-nowrap">
+        <div class="w-full text-center">
+          {{ section.settings.announcement }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="Header__Inner header_v2">
+    {% if section.settings.menu_mobile != blank %}
+      <button
+        type="button"
+        class="p-0 text-inherit sm:hidden sm-down:w-1/5"
+        aria-label="{{ 'layout.header.menu_trigger' | t }}"
+        data-drawer-toggle="menuDrawer"
+      >
+        {% render 'icons', icon: 'menu', className: '!w-10 !h-9' %}
+      </button>
+    {% endif %}
+    <div class="Header__Logo h2">
+      <a class="flex leading-none" href="{{ routes.root_url }}">
+        {% if section.settings.logo != blank %}
+          <img
+            width="{{ section.settings.logo.width }}"
+            height="{{ section.settings.logo.height }}"
+            loading="eager"
+            class="LogoImage w-auto h-4 xs:h-5"
+            src="{{ section.settings.logo | image_url }}"
+            alt="{{ shop.name }}"
+          >
+        {% else %}
+          {{ shop.name }}
+        {% endif %}
+      </a>
+    </div>
+    {% comment %} ml-15 sm-down:hidden {% endcomment %}
+    <div class="sm-down:hidden">
+      {% render 'header-nav', menu: section.settings.menu_main, label: 'Primary' %}
+    </div>
+    {% if section.settings.button_link != blank %}
+      <div class="header__button sm-down:hidden">
+        <a
+          class=" Button Button--primary relative xs-down:!px-3 Button--blue "
+          href="{{ section.settings.button_link }}"
+        >
+          <span>{{ section.settings.button_label }}</span>
+        </a>
+      </div>
+    {% endif %}
+    <div class="Header__Actions header_v2 sm-down:w-1/5">
+      {% if section.settings.search %}
+        <a
+          href="{{ routes.search_url }}"
+          class="flex transition-opacity duration-200 ease-in-out hover:opacity-75 sm-down:hidden"
+          aria-label="{{ 'layout.header.search.title' | t }}"
+        >
+          {% render 'icons', icon: 'search' %}
+        </a>
+      {% endif %}
+
+      {% if shop.customer_accounts_enabled and section.settings.account %}
+        {% if customer %}
+          <a
+            class="text-14 font-medium flex transition-opacity duration-200 ease-in-out sm-down:hidden hover:opacity-75"
+            href="{{ routes.account_url }}"
+          >
+            {{ 'layout.header.account.title' | t }}
+          </a>
+        {% else %}
+          <!-- {{ routes.account_register_url }} -->
+          <a
+            class="text-14 font-medium flex transition-opacity duration-200 ease-in-out sm-down:hidden hover:opacity-75"
+            href="https://billing.pitcherogps.com/p/login/9AQ9CXf181dP7726oo"
+          >
+            {% comment %} {{ 'layout.header.account.sign_in' | t }} {% endcomment %}
+            {% include 'user-icon' %}
+          </a>
+        {% endif %}
+      {% endif %}
+
+      {% for block in section.blocks %}
+        {% if block.type == 'action' and block.settings.text != blank %}
+          {% liquid
+            assign show_block_index = false
+            if block.settings.index and template == 'index' and cart.item_count == 0
+              assign show_block_index = true
+            endif
+          %}
+          {% if block.settings.style == 'link' %}
+            <a
+              class="{% unless block.settings.mobile %} sm-down:hidden{% endunless %}"
+              href="{{ block.settings.url }}"
+            >
+              {{ block.settings.text }}
+            </a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% if section.settings.cart %}
+        {% liquid
+          assign hide_cart_index = false
+          if section.settings.hide_cart_index and template == 'index'
+            assign hide_cart_index = true
+          endif
+        %}
+        {% comment %} Button Button--primary relative xs-down:!px-3 Button--blue {% endcomment %}
+        <a
+          class="relative xs-down:!px-3 md:hidden transition-opacity ease-in-out hover:opacity-75"
+          href="{{ routes.cart_url }}"
+        >
+          {% include 'basket-icon' %}
+          <span
+            class="absolute -top-1 -right-1 rounded-full bg-brand-sale flex justify-center items-center cart-number"
+            data-cart-count
+            {% if cart.item_count == 0 %}
+              style="display: none"
+            {% endif %}
+          >
+            <div class="absolute">{{- cart.item_count -}}</div>
+          </span>
+        </a>
+        <a
+          class="relative xs-down:!px-3 sm-down:hidden transition-opacity ease-in-out hover:opacity-75"
+          href="{{ routes.cart_url }}"
+        >
+          {% include 'basket-icon' %}
+          {% comment %} <span class="sm:hidden">{{ 'layout.header.cart.title' | t }}</span> {% endcomment %}
+          <span
+            class="absolute -top-1 -right-1 rounded-full bg-brand-sale justify-center items-center cart-number"
+            data-cart-count
+            {% if cart.item_count == 0 %}
+              style="display: none"
+            {% endif %}
+          >
+            <div class="absolute">{{- cart.item_count -}}</div>
+          </span>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+{% render 'drawer-menu', menu_main: section.settings.menu_mobile %}
+
+{% schema %}
+{
+  "name": "Header V2",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "transparent",
+      "label": "Transparent on Homepage",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "search",
+      "label": "Show search icon",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "account",
+      "label": "Show account icon",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "cart",
+      "label": "Show cart icon",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_cart_index",
+      "label": "Hide cart icon only on home page",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Announcement bar"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_announcement",
+      "label": "Show announcement",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "announcement",
+      "label": "Announcement",
+      "default": "<p>Free shipping with any purchases before June!</p>"
+    },
+    {
+      "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Image Logo"
+    },
+    {
+      "type": "header",
+      "content": "Navigation"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_main",
+      "label": "Menu main",
+      "default": "main-menu"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_mobile",
+      "label": "Menu mobile",
+      "default": "main-menu"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Shop GPS Trackers"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+
+  ],
+  "blocks": [
+    {
+      "type": "action",
+      "name": "Action",
+      "settings": [
+        {
+          "type": "select",
+          "id": "style",
+          "label": "Style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "sale",
+              "label": "Sale"
+            },
+            {
+              "value": "link",
+              "label": "Link"
+            }
+          ],
+          "default": "primary"
+        },
+        {
+          "type": "checkbox",
+          "id": "mobile",
+          "label": "Show on mobile devices",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "index",
+          "label": "Show only on home page",
+          "default": false
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
