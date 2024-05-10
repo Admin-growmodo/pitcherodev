@@ -272,7 +272,46 @@
                         <h3 class="text-16 font-body tracking-normal sm:text-24 membership_title">
                           {{ membership_product.title | remove: "Membership" }}
                         </h3>
+                        {% assign membership_type =  membership_product.title | remove: "Membership" %}
+                        {% assign clean_membership_type = membership_type | strip  %} 
+                        {% if clean_membership_type == "Annual" %}
+                          {% assign annual_paid = membership_variant_paid.price | divided_by: 12 %}
+                          <div {{annual_paid}} {{ membership_variant_paid.price }} class="flex items-center flex-row justify-start text-left flex-col membeship_price-container" >
+                            <span class="font-heading text-50 sm:text-72 membership__price">
+                             {{ membership_variant_paid.price | divided_by: 12 | money_without_trailing_zeros }}
+                            </span>
 
+                            <span class="font-bold text-16 leading-none sm:text-16 membership_permonth">
+                             ({{ "checkout_process.membership.product_per_month_html" | t }})
+                            </span>
+                          </div>
+                          <div class="capitalize membership_desc">
+                            {% assign annual_price = membership_variant_paid.price | money_without_trailing_zeros %}
+                            {{ "checkout_process.membership.annual.billed" | t: price: annual_price }}
+                          </div>
+                          <div class="capitalize membership_desc">
+                            +{{ membership_variant_paid.price  | money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }} 
+                          </div>
+                        {% elsif  clean_membership_type == "Monthly" %}
+                          <div class="flex items-center flex-row justify-start text-left flex-col membeship_price-container">
+                            <span class="font-heading text-50 sm:text-72 membership__price">
+                              {{ membership_variant_paid.price | money_without_trailing_zeros }}
+                            </span>
+
+                            <span class="font-bold text-16 leading-none sm:text-16 membership_permonth">
+                              ({{ "checkout_process.membership.product_per_month_html" | t }})
+                            </span>
+                          </div>
+                          <div class="capitalize membership_desc">
+                            {% assign monthly_price = membership_variant_paid.price | money_without_trailing_zeros %}
+                             {{ "checkout_process.membership.monthly.billed" | t: price: monthly_price }}
+                          </div>
+                          <div class="capitalize membership_desc">
+                            +{{ membership_variant_paid.price  | money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }} 
+                          </div>
+                        {% endif %}
+
+                        {% comment %}  {% endcomment %}
                         {% if selling_plan_group.name contains "Annual" %}
                           {% assign annual_paid = membership_variant_paid.price | divided_by: 12 %}
                           <div class="flex items-center flex-row justify-start text-left flex-col membeship_price-container" >
