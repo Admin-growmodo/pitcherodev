@@ -310,9 +310,7 @@
                             +{{ membership_variant_paid.price  | money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }} 
                           </div>
                         {% endif %}
-
-                        {% comment %}  {% endcomment %}
-                        {% if selling_plan_group.name contains "Annual" %}
+                        {% comment %} {% if selling_plan_group.name contains "Annual" %}
                           {% assign annual_paid = membership_variant_paid.price | divided_by: 12 %}
                           <div class="flex items-center flex-row justify-start text-left flex-col membeship_price-container" >
                             <span class="font-heading text-50 sm:text-72 membership__price">
@@ -355,7 +353,7 @@
                               {{ membership_variant_paid.price | money_without_trailing_zeros }}
                             </span>
                           </div>
-                        {% endif %}
+                        {% endif %} {% endcomment %}
                       </div>
                     </label>
                   </div>
