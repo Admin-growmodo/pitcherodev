@@ -53,8 +53,8 @@
           "show_announcement": false,
           "announcement": "",
           "logo": "shopify:\/\/shop_images\/logo.png",
-          "menu_main": "new-menu",
-          "menu_mobile": "mobile-menu"
+          "menu_main": "",
+          "menu_mobile": ""
         }
       },
       "newsletter": {
@@ -80,7 +80,7 @@
           "a1ea298d-da72-48e7-b361-ce5039b86779": {
             "type": "menu",
             "settings": {
-              "menu": "footer-1"
+              "menu": ""
             }
           },
           "e64b438c-41b1-4b38-bf73-aa0f9b07d064": {
@@ -99,7 +99,7 @@
           "show_payments": true,
           "show_social": true,
           "credits_text": "© 2022 Pitchero GPS",
-          "menu": "footer-1"
+          "menu": ""
         }
       },
       "header-v2": {
@@ -112,7 +112,7 @@
           "hide_cart_index": false,
           "show_announcement": false,
           "announcement": "<p><a href=\"\/products\/new-gps-player-bundle\" target=\"_blank\" title=\"GPS Player Bundle\">Claim a FREE GPS BASE LAYER<\/a><\/p>",
-          "logo": "shopify:\/\/shop_images\/image_4362.svg",
+          "logo": "shopify:\/\/shop_images\/Group.svg",
           "menu_main": "main-menu-v2",
           "menu_mobile": "main-menu-v2",
           "button_label": "Shop GPS Trackers",
@@ -124,57 +124,10 @@
 
     ],
     "blocks": {
-      "2965712708760319418": {
-        "type": "shopify:\/\/apps\/proof-bear-sales-popup\/blocks\/widget\/6e90b7fd-96ea-488b-9571-34f0c382838a",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "6588702529468458379": {
-        "type": "shopify:\/\/apps\/ecomposer-builder\/blocks\/app-embed\/a0fc26e1-7741-4773-8b27-39389b4fb4a0",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "8814297988395605169": {
-        "type": "shopify:\/\/apps\/adperfect-marketing-platform\/blocks\/app-embed\/8b4a8c56-21b5-437e-95f9-cd5dc65ceb49",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "7902831097370503076": {
-        "type": "shopify:\/\/apps\/estimated-order-delivery-date\/blocks\/estimated-delivery-days\/d8155dd1-6598-4174-aaeb-cbcf85a857bc",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "12198985164985445843": {
-        "type": "shopify:\/\/apps\/nova-eu-cookie-bar-gdpr\/blocks\/app-embed\/6667ecbd-70cf-4527-84a9-e6037e6ca706",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "17151115064775110295": {
-        "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/recharge-theme\/371eed76-0b44-4869-9813-730372ea378e",
-        "disabled": false,
-        "settings": {
-          "color_brand": "#467C99",
-          "contrast_color": "#FFFFFF",
-          "color_brand_secondary": "#467C99",
-          "corners": "8px",
-          "app_background": "#f9f8f4",
-          "app_container": 1200,
-          "app_vertical_padding": 32,
-          "images_aspect_ratio": "1",
-          "cards_background": "#FFFFFF",
-          "cards_border_color": "rgba(0,0,0,0)"
-        }
-      },
-      "18228966181090706294": {
-        "type": "shopify:\/\/apps\/selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+        "type": "shopify:\/\/apps\/estimated-delivery-date-eta\/blocks\/estimated-delivery-days\/d8155dd1-6598-4174-aaeb-cbcf85a857bc",
         "disabled": true,
         "settings": {
-          "storefrontAccessToken": "e0d2e6805358eb8d62d1fd82dd3abf54"
         }
       }
     }
