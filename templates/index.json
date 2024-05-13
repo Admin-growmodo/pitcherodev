@@ -25,7 +25,6 @@
           "settings": {
             "show_on_mobile": true,
             "text": "Approved by FIFA & World Rugby",
-            "image": "shopify:\/\/shop_images\/Frame_746_fc6a8356-75b8-4c59-9855-02dacd1f7322.webp",
             "image_mobile": "shopify:\/\/shop_images\/Frame_746_fc6a8356-75b8-4c59-9855-02dacd1f7322.png"
           }
         },
@@ -51,9 +50,7 @@
         "color": "#012130",
         "style": "black",
         "image_left": false,
-        "image": "shopify:\/\/shop_images\/Frame_1256_2_11b17a62-e9a9-4ff8-a3f2-0ab664a9bfff.png",
         "hide_text_mobile": false,
-        "image_mobile": "shopify:\/\/shop_images\/Frame_1256_2_11b17a62-e9a9-4ff8-a3f2-0ab664a9bfff.png",
         "show_image_decoration": false,
         "show_image_on_mobile": true,
         "title": "<p>Train Smarter<\/p><p>Run Faster<\/p>",
@@ -72,7 +69,7 @@
           "settings": {
             "style": "primary",
             "text": "Shop GPS Player Tracker",
-            "url": "shopify:\/\/products\/new-gps-player-bundle"
+            "url": "shopify:\/\/products\/player-bundle-annual"
           }
         },
         "image_TwMd8M": {
@@ -290,8 +287,6 @@
         "padding_top_mobile": 20,
         "padding_bottom": 100,
         "padding_bottom_mobile": 20,
-        "image": "shopify:\/\/shop_images\/00_DT_Home_Call_Out_2.png",
-        "image_mobile": "shopify:\/\/shop_images\/00_Mobile_Home_Call_Out_3.png",
         "hide_text_mobile": true,
         "image_crop_center": false,
         "background_none": true,
@@ -347,7 +342,6 @@
       "disabled": true,
       "settings": {
         "style": "black",
-        "image": "shopify:\/\/shop_images\/DSC05899_C_V3.png",
         "image_decoration": true,
         "title": "JOIN THE #SPEEDHEROES",
         "title_as_h1": false,
@@ -360,8 +354,6 @@
         "template--15632184213709__a1566207-7b11-462c-b142-66bbe76cc979-166505428603852b59-0": {
           "type": "bundle",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_461_4.png",
-            "image_mobile": "shopify:\/\/shop_images\/Frame_1049.png",
             "overlay_background": false,
             "text_color": "#000000",
             "title": "Player<br>bundle",
@@ -375,8 +367,6 @@
         "template--15632184213709__a1566207-7b11-462c-b142-66bbe76cc979-166505428603852b59-1": {
           "type": "bundle",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_461_7.png",
-            "image_mobile": "shopify:\/\/shop_images\/Frame_1052.png",
             "overlay_background": false,
             "text_color": "#000000",
             "title": "Team<br> bundle",
@@ -628,7 +618,6 @@
         "review_card_4BCQGg": {
           "type": "review_card",
           "settings": {
-            "image_card_reviews": "shopify:\/\/shop_images\/Trustpilot_ratings_5star-RGB.png",
             "card_title": "100% faultless and worth investing in",
             "card_review": "Delivery was quick, device is incredibly simple to set up and super comfortable to wear. The feedback and data is efficient and easy to analyse. Would recommend 100% and very good value for money.",
             "writer_name": "Paul Head",
@@ -639,7 +628,6 @@
         "review_card_Jn98GB": {
           "type": "review_card",
           "settings": {
-            "image_card_reviews": "shopify:\/\/shop_images\/Trustpilot_ratings_5star-RGB.png",
             "card_title": "Awesome Product, Great App!",
             "card_review": "Bought this for my football crazy son that wanted to see his stats.\nFound Pitchero to have good reviews and at a much better price point than all others.\nHes only used it once, in a training session, but the app is fantastic and the data you can see and use is top notch!",
             "writer_name": "Ian Sanders",
@@ -650,7 +638,6 @@
         "review_card_4mreGC": {
           "type": "review_card",
           "settings": {
-            "image_card_reviews": "shopify:\/\/shop_images\/Trustpilot_ratings_5star-RGB.png",
             "card_title": "Excellent Product",
             "card_review": "Excellent product. Easy to pair and dead easy to use.\n\nEspecially like the ability to trim the data to certain points in games helps see the impact of changes on player performance",
             "writer_name": "George Gale",
