@@ -52,7 +52,7 @@
       "type": "page-navigation",
       "settings": {
         "title": "GPS For Players",
-        "text": "<p>When we go running or cycling, we record our performances using watches or bike computers, tracking our progress as we become fitter and faster. It should be no different when we play team sports.<\/p><p><a href=\"\/products\/new-gps-player-bundle\" title=\"GPS Christmas Bundle\"><strong>GPS Player Trackers<\/strong><\/a> are the only way to track your activity whilst playing football, rugby or hockey. They are approved by FIFA and World Rugby to be worn on the back of a Player Vest.<\/p><p>Here are the top 10 reasons every player should wear a <a href=\"\/products\/new-gps-player-bundle\" title=\"GPS Christmas Bundle\"><strong>PitcheroGPS Player tracker<\/strong><\/a>.<\/p>",
+        "text": "<p>When we go running or cycling, we record our performances using watches or bike computers, tracking our progress as we become fitter and faster. It should be no different when we play team sports.<\/p><p><a href=\"\/products\/player-bundle-annual\" title=\"GPS Player Bundle\"><strong>GPS Player Trackers<\/strong><\/a> are the only way to track your activity whilst playing football, rugby or hockey. They are approved by FIFA and World Rugby to be worn on the back of a Player Vest.<\/p><p>Here are the top 10 reasons every player should wear a <a href=\"\/products\/player-bundle-annual\" title=\"GPS Player Bundle\"><strong>PitcheroGPS Player tracker<\/strong><\/a>.<\/p>",
         "menu": "new-why-gps-test"
       }
     },
@@ -286,8 +286,6 @@
         "2618259e-58c3-444f-b522-9c9ac19d0c03": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/23-12-Heat-Impacts-GIF.gif",
-            "image_mobile": "shopify:\/\/shop_images\/23-12-Heat-Impacts-GIF.gif"
           }
         }
       },
@@ -344,8 +342,7 @@
         "1b3fe488-c7c5-42a5-a774-2e7406f8a5bc": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_48102102_1.png",
-            "image_mobile": "shopify:\/\/shop_images\/Frame_48102103_1.png"
+            "image": "shopify:\/\/shop_images\/Frame_48102102_1.png"
           }
         }
       },
