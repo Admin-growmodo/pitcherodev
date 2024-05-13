@@ -2119,16 +2119,9 @@
 				var items = [];
 				var bundleProducts = Object.values(state.bundle);
 				var id = localStorage.getItem("productVariant");
-				var sellingId = JSON.parse(localStorage.getItem("sellingId"));
+				// var sellingId = JSON.parse(localStorage.getItem("sellingId"));
 				if (gift === 'false') {
-					items.push({
-						id: Number(sellingId.Id),
-						quantity: 1,
-						selling_plan: Number(sellingId.sellingId) || null,
-						properties: {
-							_Bundle: bundleId
-						}
-					}, {
+					items.push( {
 						id: Number(id),
 						quantity: 1
 					});
@@ -2366,7 +2359,7 @@
 			});
 			var sellingIdString = JSON.stringify(sellingId);
 			localStorage.setItem("productVariant", select.selectedOptions[0].value);
-			localStorage.setItem("sellingId", sellingIdString);
+			// localStorage.setItem("sellingId", sellingIdString);
 		};
 		submitBundle.addEventListener("click", function () {
 			setItemStorage(membership);
