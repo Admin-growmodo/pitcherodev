@@ -44,6 +44,17 @@
       },
       "blocks": {
       }
+    },
+    "3d1a16a7-7f28-4dce-9e1a-ed99c8162501": {
+      "settings": {
+      },
+      "blocks": {
+        "c407fb81-9248-4d3f-992e-648fd5494bb6": {
+          "settings": {
+            "text": "<p>FIFA and approves the PitcheroGPS Player Tracker for use at all levels of competition. From college soccer all the way up to the MLS and Premier League.<br\/><br\/><\/p>"
+          }
+        }
+      }
     }
   }
 }
