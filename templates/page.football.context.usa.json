@@ -55,6 +55,17 @@
           }
         }
       }
+    },
+    "8e986013-c410-49fe-857a-629affee1f8a": {
+      "settings": {
+      },
+      "blocks": {
+        "85e45834-7836-43b7-b9b9-0545670b3e11": {
+          "settings": {
+            "text": "<p>The PitcheroGPS Tracker is your ultimate tool for game-changing performance insights. It accurately records key metrics to help you excel on the soccer field. Track your Total Distance covered during a game or training, how often you reach Top Speed and track your movements with interactive heat maps.<\/p>"
+          }
+        }
+      }
     }
   }
 }
