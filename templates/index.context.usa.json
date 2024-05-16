@@ -15,6 +15,14 @@
           }
         }
       }
+    },
+    "hero_redesign_v2_jEPqiB": {
+      "settings": {
+        "title": "<p>GPS Sports<\/p><p>Performance Tracking<\/p>",
+        "sub_title": "Track, Analyse, and Boost Your Game Day Performance"
+      },
+      "blocks": {
+      }
     }
   }
 }
