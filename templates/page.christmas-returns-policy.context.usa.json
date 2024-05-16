@@ -1,8 +1,0 @@
-{
-  "parent": "page.christmas-returns-policy.json",
-  "context": {
-    "market": "usa"
-  },
-  "sections": {
-  }
-}
