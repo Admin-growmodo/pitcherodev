@@ -4,5 +4,17 @@
     "market": "usa"
   },
   "sections": {
+    "dcfabdbb-ce42-424a-a503-92b65b3e45812": {
+      "settings": {
+      },
+      "blocks": {
+        "template--15632184213709__dcfabdbb-ce42-424a-a503-92b65b3e4581-1665070376077c76c5-1": {
+          "settings": {
+            "title": "Soccer",
+            "url": "shopify:\/\/pages\/football"
+          }
+        }
+      }
+    }
   }
 }
