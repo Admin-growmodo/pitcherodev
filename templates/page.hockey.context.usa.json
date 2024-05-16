@@ -94,6 +94,13 @@
           }
         }
       }
+    },
+    "c9696dc0-b0a0-4ae2-bb4b-8677c96bdc1e": {
+      "settings": {
+        "text": "<p>GPS tracking in field hockey aids injury prevention by providing data on player loads, enabling optimal training and recovery adjustments.<\/p><p>Key benefits include:<\/p><ul><li>Monitoring workload to prevent overtraining<\/li><li>Identifying potential injury patterns<\/li><li>Facilitating targeted post-injury rehabilitation<\/li><\/ul>"
+      },
+      "blocks": {
+      }
     }
   }
 }
