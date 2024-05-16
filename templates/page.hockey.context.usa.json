@@ -46,10 +46,21 @@
     },
     "2e21bfb7-46bb-4036-99a7-717cf5c22257": {
       "settings": {
-        "bold_text": "<p><strong>In field hockey, GPS trackers, often embedded in wearable gear, provide critical insights into player movements and performance. <\/strong><\/p>",
-        "title": "How do GPS field hockey trackers work?"
+        "title": "How do GPS field hockey trackers work?",
+        "bold_text": "<p><strong>In field hockey, GPS trackers, often embedded in wearable gear, provide critical insights into player movements and performance. <\/strong><\/p>"
       },
       "blocks": {
+      }
+    },
+    "8e986013-c410-49fe-857a-629affee1f8a": {
+      "settings": {
+      },
+      "blocks": {
+        "85e45834-7836-43b7-b9b9-0545670b3e11": {
+          "settings": {
+            "text": "<p>The PitcheroGPS Tracker is your ultimate tool for game-changing performance insights. It accurately records key metrics to help you excel on the hockey field. Track your Total Distance covered during a game or training, reach your Top Speed, and record your Total Active Time to monitor your stamina. The tracker also records High Speed Running, assessing the frequency and intensity of your sprints, and records impacts.<\/p>"
+          }
+        }
       }
     }
   }
