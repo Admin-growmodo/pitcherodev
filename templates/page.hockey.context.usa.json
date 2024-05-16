@@ -62,6 +62,27 @@
           }
         }
       }
+    },
+    "e5b0038b-f2da-4ec2-bce5-66980c3e67e0": {
+      "settings": {
+        "text": "<p>Distance tracking offers crucial insights into a field hockey player's match fitness, and serves as a performance improvement gauge across the season. <\/p><p>Key benefits include:<\/p><ul><li>Highlight stamina and fatigue levels<\/li><li>Build a picture of a player’s capabilities<\/li><li>Provides distance data for coaches<\/li><\/ul>"
+      },
+      "blocks": {
+      }
+    },
+    "8715817d-bc86-44e4-98bd-9c379ba78ddf": {
+      "settings": {
+        "text": "<p>Precisely measure top speed, providing essential insights for players aiming to get faster and fitter on the hockey field.<\/p><p>Key benefits include:<\/p><ul><li>Identifying current top speed<\/li><li><a href=\"\/pages\/speed-training\" target=\"_blank\" title=\"Speed Training\"><strong>Tracking your speed progress<\/strong><\/a><\/li><li>Fuels healthy competition between teamates<\/li><\/ul>"
+      },
+      "blocks": {
+      }
+    },
+    "0822f538-b606-41c9-b6b2-f113ad3aa364": {
+      "settings": {
+        "text": "<p>Measuring accelerations and decelerations during field hockey games provides unique insights into a player's dynamic movement skills and readiness to perform.<\/p><p>Key benefits include:<\/p><ul><li>Evaluates player agility and reaction times<\/li><li><a href=\"\/pages\/speed-training\" target=\"_blank\" title=\"Speed Training\"><strong>Helps design training for rapid speed changes<\/strong><\/a><\/li><li>Assists in monitoring and reducing injury risk<\/li><\/ul>"
+      },
+      "blocks": {
+      }
     }
   }
 }
