@@ -41,6 +41,37 @@
         "url": "shopify:\/\/products\/new-gps-player-bundle"
       }
     },
+    "introduction_section_U6UiCi": {
+      "type": "introduction-section",
+      "settings": {
+        "cta_label": "LEARN MORE",
+        "cta_link": "#",
+        "border_color": "#012130",
+        "border_color_mobile": "#00F0FF",
+        "bg_one_color": "#fff",
+        "img_row_one": "shopify:\/\/shop_images\/Frame_48102143.png",
+        "caption_one": "An introduction to",
+        "caption_one_color": "#012130",
+        "title_one": "Phil Greening",
+        "title_one_color": "#012130",
+        "logo_one_one": "shopify:\/\/shop_images\/91cd800f08a34391379b52ecd9d0a230.png",
+        "logo_one_two": "shopify:\/\/shop_images\/fc118ea58de5552a15de599afe9ad95c.png",
+        "logo_one_three": "shopify:\/\/shop_images\/e8c5faa42455e1a4df927adf62a150ec.png",
+        "column_one_one_text": "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Fusce malesuada lacus vel felis auctor iaculis morbi commodo ipsum nec ex consequat accumsan. In lobortis malesuada vulputate, pra esent sed gravida elit cursus auctor urna. Donec sed tristique nulla, eget bibendum velit duis hendrerit egestas.",
+        "column_one_two_text": "Suspendisse sed augue sed nisi sollicitudin mollis. Fusce et ligula molestie, lobortis felis sit amet, malesuada erat. Cras convallis sapien eu augue lacinia vehicula. Phasellus risus nisl, feugiat scelerisque consectetur ut, finibus a massa. Cras convallis sapien eu augue lacinia vehicula et ligula molestie, lobortis felis.",
+        "content_one_color": "#012130",
+        "bg_two_color": "#012130",
+        "img_row_two": "shopify:\/\/shop_images\/Group_116.png",
+        "caption_two": "",
+        "caption_two_color": "",
+        "title_two": "Why Phil uses GPS",
+        "title_two_color": "#00F0FF",
+        "logo_two_one": "shopify:\/\/shop_images\/GPS_-_Approved.png",
+        "column_two_one_text": "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Fusce malesuada lacus vel felis auctor iaculis morbi commodo ipsum nec ex consequat accumsan. In lobortis malesuada vulputate, pra esent sed gravida elit cursus auctor urna. Donec sed tristique nulla, eget bibendum velit duis hendrerit egestas.",
+        "column_two_two_text": "Suspendisse sed augue sed nisi sollicitudin mollis. Fusce et ligula molestie, lobortis felis sit amet, malesuada erat. Cras convallis sapien eu augue lacinia vehicula. Phasellus risus nisl, feugiat scelerisque consectetur ut, finibus a massa. Cras convallis sapien eu augue lacinia vehicula et ligula molestie, lobortis felis.",
+        "content_two_color": "#fff"
+      }
+    },
     "d7776379-fee4-477f-b6c1-6b994f515542": {
       "type": "offer-app",
       "blocks": {
@@ -475,7 +506,6 @@
         "5b46d06f-3c46-4643-981b-eb86124fde38": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1024.png",
             "image_max_width": 520,
             "rounded": false,
             "background_color": ""
@@ -515,7 +545,6 @@
         "6222f94a-f0b8-4e6a-ae4f-dc8bcfe2fcf7": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1023_3.png",
             "image_max_width": 520,
             "rounded": false,
             "background_color": ""
@@ -555,7 +584,6 @@
         "6f492039-b0ee-46f9-9507-8a3c368e7bb2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1024_1.png",
             "image_max_width": 550,
             "rounded": false,
             "background_color": ""
@@ -595,7 +623,6 @@
         "264b947b-c39d-4682-860d-76b34cdef500": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1024_2.png",
             "image_max_width": 520,
             "rounded": false,
             "background_color": ""
@@ -733,6 +760,7 @@
     "page_header",
     "main",
     "f1c6b04e-d41f-4fb1-b6bd-4be885137c5f",
+    "introduction_section_U6UiCi",
     "d7776379-fee4-477f-b6c1-6b994f515542",
     "4f9a356d-ba74-4d33-a8c1-4977e1827318",
     "109437f4-3604-424a-a4b2-8a741d1e2eff",
