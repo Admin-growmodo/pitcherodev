@@ -41,6 +41,37 @@
         "url": "shopify:\/\/products\/new-gps-player-bundle"
       }
     },
+    "introduction_section_WkrwBC": {
+      "type": "introduction-section",
+      "settings": {
+        "cta_label": "LEARN MORE",
+        "cta_link": "#",
+        "border_color": "#012130",
+        "border_color_mobile": "#00F0FF",
+        "bg_one_color": "#fff",
+        "img_row_one": "shopify:\/\/shop_images\/Frame_48102143.png",
+        "caption_one": "AN INTRODUCTION TO",
+        "caption_one_color": "#000",
+        "title_one": "Phil Greening",
+        "title_one_color": "#012130",
+        "logo_one_one": "shopify:\/\/shop_images\/91cd800f08a34391379b52ecd9d0a230.png",
+        "logo_one_two": "shopify:\/\/shop_images\/fc118ea58de5552a15de599afe9ad95c.png",
+        "logo_one_three": "shopify:\/\/shop_images\/e8c5faa42455e1a4df927adf62a150ec.png",
+        "column_one_one_text": "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Fusce malesuada lacus vel felis auctor iaculis morbi commodo ipsum nec ex consequat accumsan. In lobortis malesuada vulputate, pra esent sed gravida elit cursus auctor urna. Donec sed tristique nulla, eget bibendum velit duis hendrerit egestas.",
+        "column_one_two_text": "Suspendisse sed augue sed nisi sollicitudin mollis. Fusce et ligula molestie, lobortis felis sit amet, malesuada erat. Cras convallis sapien eu augue lacinia vehicula. Phasellus risus nisl, feugiat scelerisque consectetur ut, finibus a massa. Cras convallis sapien eu augue lacinia vehicula et ligula molestie, lobortis felis.",
+        "content_one_color": "#012130",
+        "bg_two_color": "#012130",
+        "img_row_two": "shopify:\/\/shop_images\/Group_116.png",
+        "caption_two": "",
+        "caption_two_color": "",
+        "title_two": "Why Phil uses GPS",
+        "title_two_color": "#00F0FF",
+        "logo_two_one": "shopify:\/\/shop_images\/GPS_-_Approved.png",
+        "column_two_one_text": "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Fusce malesuada lacus vel felis auctor iaculis morbi commodo ipsum nec ex consequat accumsan. In lobortis malesuada vulputate, pra esent sed gravida elit cursus auctor urna. Donec sed tristique nulla, eget bibendum velit duis hendrerit egestas.",
+        "column_two_two_text": "Suspendisse sed augue sed nisi sollicitudin mollis. Fusce et ligula molestie, lobortis felis sit amet, malesuada erat. Cras convallis sapien eu augue lacinia vehicula. Phasellus risus nisl, feugiat scelerisque consectetur ut, finibus a massa. Cras convallis sapien eu augue lacinia vehicula et ligula molestie, lobortis felis.",
+        "content_two_color": "#fff"
+      }
+    },
     "d7776379-fee4-477f-b6c1-6b994f515542": {
       "type": "offer-app",
       "blocks": {
@@ -202,9 +233,7 @@
         "padding_bottom": 100,
         "padding_bottom_mobile": 50,
         "title": "FIFA Approved",
-        "sub_title": "GLOBALLY APPROVED",
-        "image": "shopify:\/\/shop_images\/Pitchero_GPS_Tracker_1_1.png",
-        "image_mobile": "shopify:\/\/shop_images\/Pitchero_GPS_Tracker_1_1.png"
+        "sub_title": "GLOBALLY APPROVED"
       }
     },
     "2e21bfb7-46bb-4036-99a7-717cf5c22257": {
@@ -431,7 +460,6 @@
         "padding_bottom_mobile": 30,
         "show_media_on_mobile": true,
         "medium_size": true,
-        "icon_heading": "shopify:\/\/shop_images\/Icon_Speed_4.png",
         "title": "",
         "title_center": false,
         "title_position": "outside",
@@ -510,7 +538,6 @@
       "disabled": true,
       "settings": {
         "style": "black",
-        "image": "shopify:\/\/shop_images\/WP9_7040_adfc73a0-43a9-4a71-9074-e282b8b708a4.png",
         "image_decoration": false,
         "title": "Join The #SpeedHeroes",
         "title_as_h1": false,
@@ -622,7 +649,6 @@
         "padding_bottom_mobile": 0,
         "show_media_on_mobile": true,
         "medium_size": true,
-        "icon_heading": "shopify:\/\/shop_images\/Icon_Speed_4.png",
         "title": "",
         "title_center": false,
         "title_position": "outside",
@@ -788,6 +814,7 @@
     "page_header",
     "main",
     "f1c6b04e-d41f-4fb1-b6bd-4be885137c5f",
+    "introduction_section_WkrwBC",
     "d7776379-fee4-477f-b6c1-6b994f515542",
     "4f9a356d-ba74-4d33-a8c1-4977e1827318",
     "109437f4-3604-424a-a4b2-8a741d1e2eff",
