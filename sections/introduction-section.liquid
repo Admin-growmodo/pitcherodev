@@ -1,0 +1,288 @@
+{% 
+  render 'introduction-css',
+  border_color: section.settings.border_color,
+  bg_one_color: section.settings.bg_one_color,
+  caption_one_color: section.settings.caption_one_color,
+  title_one_color: section.settings.title_one_color,
+  content_one_color: section.settings.content_one_color,
+  bg_two_color: section.settings.bg_two_color,
+  title_two_color: section.settings.title_two_color,
+  content_two_color: section.settings.content_two_color,
+  border_color_mobile: section.settings.border_color_mobile
+%}
+
+<section
+  id="{{section.id}}"
+  class="Introduction_Section"
+  data-component="Introduction"
+>
+  <div class="Introduction_Container">
+    <div class="Introduction_Row-One rounded-t-2xl">
+      <div class="Image-Wrapper">
+        <img src="{{ section.settings.img_row_one | img_url: "master" }}">
+      </div>
+      <div class="Content-Wrapper">
+        <div class="Title-Icon-Wrapper">
+          <div class="Title-Wrapper">
+            {% if section.settings.caption_one != blank %}
+              <h3 class="font-body font-normal text-brand-tertiary text-20 uppercase Intorduction_Caption">{{ section.settings.caption_one }}</h3>
+            {% endif %}
+            {% if section.settings.title_one != blank %}
+              <h2 class="text-48 uppercase sm:text-48 Intorduction_Title">{{ section.settings.title_one }}</h2>
+            {% endif %}
+          </div>
+          <div class="Icon-Wrapper">
+            {% if section.settings.logo_one_one != blank %}
+              <img src="{{ section.settings.logo_one_one | img_url: "master" }}">
+            {% endif %}
+            {% if section.settings.logo_one_two != blank %}
+              <img src="{{ section.settings.logo_one_two | img_url: "master" }}">
+            {% endif %}
+            {% if section.settings.logo_one_three != blank %}
+              <img src="{{ section.settings.logo_one_three | img_url: "master" }}">
+            {% endif %}
+          </div>
+        </div>
+        <div class="Mobile-Image-Wrapper">
+          <img src="{{ section.settings.img_row_one | img_url: "master" }}">
+        </div>
+        <div class="grid gap-y-8 gap-x-10 mt-8 sm:mt-16 md:grid-cols-2 text-container">
+          <div class="Icon-Wrapper-Mobile">
+            {% if section.settings.logo_one_one != blank %}
+              <img src="{{ section.settings.logo_one_one | img_url: "master" }}">
+            {% endif %}
+            {% if section.settings.logo_one_two != blank %}
+              <img src="{{ section.settings.logo_one_two | img_url: "master" }}">
+            {% endif %}
+            {% if section.settings.logo_one_three != blank %}
+              <img src="{{ section.settings.logo_one_three | img_url: "master" }}">
+            {% endif %}
+          </div>
+          <div class="rte">
+            <p>{{ section.settings.column_one_one_text }}</p>
+          </div>
+          <div class="rte">
+            <p>{{ section.settings.column_one_two_text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Introduction_Row-Two">
+      <div class="Image-Wrapper">
+        <img src="{{ section.settings.img_row_two | img_url: "master" }}">
+      </div>
+      <div class="Content-Wrapper">
+        <div class="Icon-Wrapper-Two-Mobile">
+          {% if section.settings.logo_two_one != blank %}
+            <img src="{{ section.settings.logo_two_one | img_url: "master" }}">
+          {% endif %}
+          {% if section.settings.logo_two_two != blank %}
+            <img src="{{ section.settings.logo_two_two | img_url: "master" }}">
+          {% endif %}
+          {% if section.settings.logo_two_three != blank %}
+            <img src="{{ section.settings.two_two_three | img_url: "master" }}">
+          {% endif %}
+        </div>
+        <div class="Title-Icon-Wrapper">
+          <div class="Title-Wrapper">
+            {% if section.settings.caption_two != blank %}
+              <h3 class="font-body font-normal text-brand-tertiary text-20 uppercase Intorduction_Caption">{{ section.settings.caption_two }}</h3>
+            {% endif %}
+            {% if section.settings.title_two != blank %}
+              <h2 class="text-48 uppercase sm:text-48 Intorduction_Title">{{ section.settings.title_two }}</h2>
+            {% endif %}
+          </div>
+          <div class="Icon-Wrapper">
+            {% if section.settings.logo_two_one != blank %}
+              <img src="{{ section.settings.logo_two_one | img_url: "master" }}">
+            {% endif %}
+            {% if section.settings.logo_two_two != blank %}
+              <img src="{{ section.settings.logo_two_two | img_url: "master" }}">
+            {% endif %}
+            {% if section.settings.logo_two_three != blank %}
+              <img src="{{ section.settings.logo_two_three | img_url: "master" }}">
+            {% endif %}
+          </div>
+        </div>
+        <div class="grid gap-y-8 gap-x-10 mt-8 sm:mt-16 md:grid-cols-2">
+          <div class="rte">
+            <p>{{ section.settings.column_two_one_text }}</p>
+          </div>
+          <div class="rte">
+            <p>{{ section.settings.column_two_two_text }}</p>
+            <p class="font-bold" style="color: {{ section.settings.title_two_color }} !important">{{ section.settings.title_one }}</p>
+          </div>
+        </div>
+      </div>
+      {% if section.settings.cta_label != blank and section.settings.cta_link != blank %}
+      <div class="Introduction_CTA">
+        <a href="{{ section.settings.cta_link }}" class="Button Button--sale Button--large sm:!w-auto">
+            {{ section.settings.cta_label }}
+          </a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Custom: Introduction",
+    "settings": [
+      {
+        "type": "text",
+        "id": "cta_label",
+        "label": "CTA Label"
+      },
+      {
+        "type": "url",
+        "id": "cta_link",
+        "label": "CTA Link"
+      },
+      {
+        "type": "color",
+        "id": "border_color",
+        "label": "Border Color"
+      },
+      {
+        "type": "header",
+        "content": "First Row"
+      },
+      {
+        "type": "color",
+        "id": "border_color_mobile",
+        "label": "Border Color in Mobile"
+      },
+      {
+        "type": "color",
+        "id": "bg_one_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "image_picker",
+        "id": "img_row_one",
+        "label": "Row Image"
+      },
+      {
+        "type": "text",
+        "id": "caption_one",
+        "label": "Caption"
+      },
+      {
+        "type": "color",
+        "id": "caption_one_color",
+        "label": "Caption Text Color"
+      },
+      {
+        "type": "text",
+        "id": "title_one",
+        "label": "Title"
+      },
+      {
+        "type": "color",
+        "id": "title_one_color",
+        "label": "Title Text Color"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_one_one",
+        "label": "Logo One"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_one_two",
+        "label": "Logo Two"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_one_three",
+        "label": "Logo Three"
+      },
+      {
+        "type": "textarea",
+        "id": "column_one_one_text",
+        "label": "Column One Text"
+      },
+      {
+        "type": "textarea",
+        "id": "column_one_two_text",
+        "label": "Column Two Text"
+      },
+      {
+        "type": "color",
+        "id": "content_one_color",
+        "label": "Text Color"
+      },
+      {
+        "type": "header",
+        "content": "Second Row"
+      },
+      {
+        "type": "color",
+        "id": "bg_two_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "image_picker",
+        "id": "img_row_two",
+        "label": "Row Image"
+      },
+      {
+        "type": "text",
+        "id": "caption_two",
+        "label": "Caption"
+      },
+      {
+        "type": "color",
+        "id": "caption_two_color",
+        "label": "Caption Text Color"
+      },
+      {
+        "type": "text",
+        "id": "title_two",
+        "label": "Title"
+      },
+      {
+        "type": "color",
+        "id": "title_two_color",
+        "label": "Title Text Color"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_two_one",
+        "label": "Logo One"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_two_two",
+        "label": "Logo Two"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_two_three",
+        "label": "Logo Three"
+      },
+      {
+        "type": "textarea",
+        "id": "column_two_one_text",
+        "label": "Column One Text"
+      },
+      {
+        "type": "textarea",
+        "id": "column_two_two_text",
+        "label": "Column Two Text"
+      },
+      {
+        "type": "color",
+        "id": "content_two_color",
+        "label": "Text Color"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom: Introduction",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}
