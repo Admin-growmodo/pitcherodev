@@ -4,6 +4,14 @@
     "market": "usa"
   },
   "sections": {
+    "hero_redesign_v2_jEPqiB": {
+      "settings": {
+        "title": "<p>GPS Sports<\/p><p>Performance Tracking<\/p>",
+        "sub_title": "Track, Analyze, and Boost Your Game Day Performance"
+      },
+      "blocks": {
+      }
+    },
     "dcfabdbb-ce42-424a-a503-92b65b3e45812": {
       "settings": {
       },
@@ -14,14 +22,6 @@
             "url": "shopify:\/\/pages\/football"
           }
         }
-      }
-    },
-    "hero_redesign_v2_jEPqiB": {
-      "settings": {
-        "title": "<p>GPS Sports<\/p><p>Performance Tracking<\/p>",
-        "sub_title": "Track, Analyse, and Boost Your Game Day Performance"
-      },
-      "blocks": {
       }
     }
   }
