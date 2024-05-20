@@ -1,0 +1,127 @@
+{
+  "parent": "page.hockey.json",
+  "context": {
+    "market": "usa"
+  },
+  "sections": {
+    "f1c6b04e-d41f-4fb1-b6bd-4be885137c5f": {
+      "settings": {
+        "subtitle": "Be a Fitter & Faster Field Hockey Player"
+      },
+      "blocks": {
+      }
+    },
+    "d7776379-fee4-477f-b6c1-6b994f515542": {
+      "settings": {
+        "sub_title": "How Field Hockey Players Benefit from GPS"
+      },
+      "blocks": {
+        "a47ac102-b331-47f2-afe6-140e714cb89c": {
+          "settings": {
+            "text": "<p>This guide shows how every field hockey player can benefit from wearing a GPS Player Vest. Get Fitter and run faster. GPS trackers measure key metrics related to the three core pillars of performance: Speed, Distance, and Intensity. It provides detailed insights into a player's movements, helping to enhance performance. Through understanding how these metrics interact, players can push their limits and achieve their personal bests consistently on the pitch. Learn more about how GPS field hockey trackers work and the crucial data they record in the sections below.<\/p>"
+          }
+        }
+      }
+    },
+    "4f9a356d-ba74-4d33-a8c1-4977e1827318": {
+      "settings": {
+        "text": "<p>In field hockey, speed is a crucial element that can make or break a player's performance. The fast nature of field hockey demands quick reflexes and explosive power. Whether it's sprinting to intercept a pass or rapidly changing direction to evade an opponent, <a href=\"\/pages\/speed-training\" target=\"_blank\" title=\"Speed Training\"><strong>speed plays a vital role at every turn<\/strong><\/a>.<\/p>"
+      },
+      "blocks": {
+      }
+    },
+    "109437f4-3604-424a-a4b2-8a741d1e2eff": {
+      "settings": {
+        "text": "<p>Players need to traverse long distances on the hockey field in order to be in the right position to make plays. The ability to cover ground quickly can make a huge difference in a game, as it allows players to be in the right place at the right time.<\/p>"
+      },
+      "blocks": {
+      }
+    },
+    "50028057-a1ba-4885-8e27-a96eb025315d": {
+      "settings": {
+        "text": "<p>Field hockey players need to be highly focused and driven in order to maintain their intensity throughout the game. The physical demands of the sport, such as the need to cover large distances quickly and engage in physical contact with other players, require a high level of stamina and endurance.<\/p>"
+      },
+      "blocks": {
+      }
+    },
+    "2e21bfb7-46bb-4036-99a7-717cf5c22257": {
+      "settings": {
+        "title": "How do GPS field hockey trackers work?",
+        "bold_text": "<p><strong>In field hockey, GPS trackers, often embedded in wearable gear, provide critical insights into player movements and performance. <\/strong><\/p>"
+      },
+      "blocks": {
+      }
+    },
+    "8e986013-c410-49fe-857a-629affee1f8a": {
+      "settings": {
+      },
+      "blocks": {
+        "85e45834-7836-43b7-b9b9-0545670b3e11": {
+          "settings": {
+            "text": "<p>The PitcheroGPS Tracker is your ultimate tool for game-changing performance insights. It accurately records key metrics to help you excel on the hockey field. Track your Total Distance covered during a game or training, reach your Top Speed, and record your Total Active Time to monitor your stamina. The tracker also records High Speed Running, assessing the frequency and intensity of your sprints, and records impacts.<\/p>"
+          }
+        }
+      }
+    },
+    "e5b0038b-f2da-4ec2-bce5-66980c3e67e0": {
+      "settings": {
+        "text": "<p>Distance tracking offers crucial insights into a field hockey player's match fitness, and serves as a performance improvement gauge across the season. <\/p><p>Key benefits include:<\/p><ul><li>Highlight stamina and fatigue levels<\/li><li>Build a picture of a player’s capabilities<\/li><li>Provides distance data for coaches<\/li><\/ul>"
+      },
+      "blocks": {
+      }
+    },
+    "8715817d-bc86-44e4-98bd-9c379ba78ddf": {
+      "settings": {
+        "text": "<p>Precisely measure top speed, providing essential insights for players aiming to get faster and fitter on the hockey field.<\/p><p>Key benefits include:<\/p><ul><li>Identifying current top speed<\/li><li><a href=\"\/pages\/speed-training\" target=\"_blank\" title=\"Speed Training\"><strong>Tracking your speed progress<\/strong><\/a><\/li><li>Fuels healthy competition between teamates<\/li><\/ul>"
+      },
+      "blocks": {
+      }
+    },
+    "0822f538-b606-41c9-b6b2-f113ad3aa364": {
+      "settings": {
+        "text": "<p>Measuring accelerations and decelerations during field hockey games provides unique insights into a player's dynamic movement skills and readiness to perform.<\/p><p>Key benefits include:<\/p><ul><li>Evaluates player agility and reaction times<\/li><li><a href=\"\/pages\/speed-training\" target=\"_blank\" title=\"Speed Training\"><strong>Helps design training for rapid speed changes<\/strong><\/a><\/li><li>Assists in monitoring and reducing injury risk<\/li><\/ul>"
+      },
+      "blocks": {
+      }
+    },
+    "01f4755d-75db-4bd4-ad1b-3969489954e7": {
+      "settings": {
+      },
+      "blocks": {
+        "109a4c5f-759e-4b2c-b499-40f91a451f8d": {
+          "settings": {
+            "text": "<p>On the hockey field, Speed is undefeated and the PitcheroGPS Speed Training programme can make every field hockey player run faster for longer.<br\/><br\/>Completed over 6 weeks and designed for field hockey players of all abilities, the programme is a series of drills and exercises to improve running technique and game-day performance.<\/p>"
+          }
+        }
+      }
+    },
+    "c9696dc0-b0a0-4ae2-bb4b-8677c96bdc1e": {
+      "settings": {
+        "text": "<p>GPS tracking in field hockey aids injury prevention by providing data on player loads, enabling optimal training and recovery adjustments.<\/p><p>Key benefits include:<\/p><ul><li>Monitoring workload to prevent overtraining<\/li><li>Identifying potential injury patterns<\/li><li>Facilitating targeted post-injury rehabilitation<\/li><\/ul>"
+      },
+      "blocks": {
+      }
+    },
+    "d9b4152e-a1ae-4d3e-84ff-ae622b0ae55e": {
+      "settings": {
+        "text": "<p>Tracking total active time in field hockey offers insights into actual on-field engagement, improving conditioning and strategy.<\/p><p>Key benefits include:<\/p><ul><li>Better conditioning and fitness planning<\/li><li>Accurate workload assessment<\/li><li>Informed substitutions and strategic decisions<\/li><\/ul>"
+      },
+      "blocks": {
+      }
+    },
+    "1625e892-3c1f-4476-b485-f72038fb1bc9": {
+      "settings": {
+        "text": "<p>High speed running is an asset in any sport. Get to know your levels of intensity in field hockey practice and games.<\/p><p>In the PitcheroGPS field hockey tracking app, you can set:<\/p><ul><li>Custom speed zones for all abilities and ages<\/li><li>The name of each speed zone<\/li><li>The value of each banding<\/li><li>Up to 8 speed bands<\/li><\/ul>"
+      },
+      "blocks": {
+      }
+    },
+    "4d111cd8-737b-4957-b52d-810e3018a3b7": {
+      "settings": {
+        "text": "<p>Impacts are inevitable in field hockey, our GPS tracker measures how many times a player has been involved in a collision.<\/p><p>Key benefits include:<\/p><ul><li>See how hard and how often a player is hit<\/li><li>Impact level can be set to account for any age group<\/li><li>Demonstrates player wellfare is taken seriously<\/li><li>Data can indicate when a player should be substituted<\/li><\/ul>"
+      },
+      "blocks": {
+      }
+    }
+  }
+}

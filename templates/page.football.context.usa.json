@@ -1,0 +1,78 @@
+{
+  "parent": "page.football.json",
+  "context": {
+    "market": "usa"
+  },
+  "sections": {
+    "f1c6b04e-d41f-4fb1-b6bd-4be885137c5f": {
+      "settings": {
+        "subtitle": "Be a Fitter & Faster Soccer Player",
+        "title": "GPS Soccer Trackers"
+      },
+      "blocks": {
+      }
+    },
+    "d7776379-fee4-477f-b6c1-6b994f515542": {
+      "settings": {
+        "sub_title": "How Soccer Players Benefit from GPS"
+      },
+      "blocks": {
+        "a47ac102-b331-47f2-afe6-140e714cb89c": {
+          "settings": {
+            "text": "<p>This guide reveals how every soccer player can improve their performance by wearing a GPS Player Vest. GPS trackers record metrics associated with the three foundational pillars of performance: Speed, Distance, and Intensity. By monitoring these metrics, players can strive to continually surpass their limits and regularly achieve personal bests on the pitch becoming fitter and faster soccer players. Discover more about how GPS soccer trackers function and the essential data they record in the sections that follow.<\/p>"
+          }
+        }
+      }
+    },
+    "4f9a356d-ba74-4d33-a8c1-4977e1827318": {
+      "settings": {
+        "text": "<p>In soccer, <a href=\"\/pages\/speed-training\" target=\"_blank\" title=\"Speed Training\"><strong>speed is a critical factor<\/strong><\/a> that can elevate a player's performance to new heights. The dynamic nature of the sport requires rapid bursts of acceleration and agility. Whether it's sprinting to reach a through ball or swiftly changing direction to get past an opponent, speed always wins.<\/p>"
+      },
+      "blocks": {
+      }
+    },
+    "109437f4-3604-424a-a4b2-8a741d1e2eff": {
+      "settings": {
+        "text": "<p>Covering ground is crucial in soccer. Distance covered can often be the defining factor between an average performance and a match-winning one. A player adept at reading the game and proactively moving to occupy key spaces is invaluable to their team.<\/p>"
+      },
+      "blocks": {
+      }
+    },
+    "50028057-a1ba-4885-8e27-a96eb025315d": {
+      "settings": {
+        "text": "<p>Intensity in soccer encapsulates the tenacity of a player's actions on the pitch - from sharp sprints and sudden decelerations to explosive changes in direction. It's the driving force behind a player's impact in the game. By understanding and improving intensity levels, players can optimise their performance.<\/p>"
+      },
+      "blocks": {
+      }
+    },
+    "3d1a16a7-7f28-4dce-9e1a-ed99c8162501": {
+      "settings": {
+      },
+      "blocks": {
+        "c407fb81-9248-4d3f-992e-648fd5494bb6": {
+          "settings": {
+            "text": "<p>FIFA and approves the PitcheroGPS Player Tracker for use at all levels of competition including high school, college all the way up to the MLS and Premier League.<br\/><br\/><\/p>"
+          }
+        }
+      }
+    },
+    "8e986013-c410-49fe-857a-629affee1f8a": {
+      "settings": {
+      },
+      "blocks": {
+        "85e45834-7836-43b7-b9b9-0545670b3e11": {
+          "settings": {
+            "text": "<p>The PitcheroGPS Tracker is your ultimate tool for game-changing performance insights. It accurately records key metrics to help you excel on the soccer field. Track your Total Distance covered during a game or training, how often you reach Top Speed and track your movements with interactive heat maps.<\/p>"
+          }
+        }
+      }
+    },
+    "8715817d-bc86-44e4-98bd-9c379ba78ddf": {
+      "settings": {
+        "text": "<p><a href=\"\/pages\/speed-training\" target=\"_blank\" title=\"Speed Training\"><strong>Tracking the top speed<\/strong><\/a> can be a game-changer in soccer, offering critical insights into a player's speed, fitness. and level of performance.<\/p><p>Key benefits include:<\/p><ul><li>Assessing ultimate speed potential<\/li><li>Pinpointing instances of top speed<\/li><li><a href=\"\/pages\/speed-training\" target=\"_blank\" title=\"Speed Training\"><strong>Supporting data-driven speed development<\/strong><\/a><\/li><\/ul>"
+      },
+      "blocks": {
+      }
+    }
+  }
+}

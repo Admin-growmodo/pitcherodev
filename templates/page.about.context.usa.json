@@ -1,0 +1,22 @@
+{
+  "parent": "page.about.json",
+  "context": {
+    "market": "usa"
+  },
+  "sections": {
+    "180fa0e4-49e5-4a89-aa55-60ca867e4911": {
+      "settings": {
+        "text": "<p>PitcheroGPS is the World's first GPS Player Vest built for all levels. Our innovative technology serves everyone from highschool and college a players, to semi-professionals and professional athletes.<\/p><p>Our innovative, proprietary technology provides laser-sharp accuracy with easy-to-understand performance data at a price all players can afford.<\/p>"
+      },
+      "blocks": {
+      }
+    },
+    "671950a8-5d93-4931-bcdd-406a9bdca920": {
+      "settings": {
+        "text": "<p>Millions of athletes use GPS tracking devices every day whilst cycling or running. These are often small computers fixed to the bike's frame or a smartwatch worn on the runner's wrist. In most cases, they record four key statistics:<\/p><ul><li><strong>Speed<\/strong> - how fast you travel<\/li><li><strong>Distance<\/strong> - how far you travel<\/li><li><strong>Intensity<\/strong> - how hard you work<\/li><li><strong>Position<\/strong> - your location whilst travelling<\/li><\/ul><p>If you can do this whilst cycling or running, why not when playing team contact sports like soccer, rugby or field hockey? If players can measure their performance, they can track their progress, set targets and reach goals. Improving performance every game, week in and week out.<\/p>"
+      },
+      "blocks": {
+      }
+    }
+  }
+}
