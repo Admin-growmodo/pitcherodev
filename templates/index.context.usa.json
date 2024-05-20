@@ -30,6 +30,17 @@
       },
       "blocks": {
       }
+    },
+    "cfc9569b-0dbe-4e18-a99c-7e61ce2b8e4a": {
+      "settings": {
+      },
+      "blocks": {
+        "7a91f850-6ed1-40d3-97db-38512dc38d2f": {
+          "settings": {
+            "text": "<p>Train smarter, optimize every training session and track your metrics as they improve game by game.<\/p>"
+          }
+        }
+      }
     }
   }
 }
