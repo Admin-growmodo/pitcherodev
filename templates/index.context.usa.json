@@ -48,6 +48,17 @@
       },
       "blocks": {
       }
+    },
+    "7592e725-7b75-4969-ab88-a8ff6137c603": {
+      "settings": {
+      },
+      "blocks": {
+        "044d3ed0-9ccc-42fc-97a5-6ea7354a2736": {
+          "settings": {
+            "text": "<p>FIFA and World Rugby approve the PitcheroGPS Player Tracker for use at all levels of competition including high school, college all the way up to the MLS and Premier League.<\/p>"
+          }
+        }
+      }
     }
   }
 }
