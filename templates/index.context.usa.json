@@ -41,6 +41,13 @@
           }
         }
       }
+    },
+    "cefb3da8-2ed9-4724-8999-a42752413e5e": {
+      "settings": {
+        "text": "<p>The PitcheroGPS Player App displays your performance data in a fun, easy-to-use app. No jargon. Just the <a href=\"\/products\/new-gps-player-bundle\" title=\"GPS Player Bundle\">metrics that matter<\/a> to make you train smarter and run faster.<br\/><br\/><strong>Interactive Heat Maps<br\/><\/strong>Every session, training or game day, creates a series of interactive heat maps, showing your location and performance during the session. <br\/><br\/><strong>Metrics that Matter<br\/><\/strong>We only display the metrics that matter, no complex jargon. Just the metrics which make you a fitter, faster player to improve your performance. <br\/><br\/><strong>Compare Your Stats<br\/><\/strong>Every session is logged in Trends, a series of graphs plotting your performance over time. Set goals and watch your metrics improve with stunning graphics and charts. <\/p>"
+      },
+      "blocks": {
+      }
     }
   }
 }
