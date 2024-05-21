@@ -543,7 +543,7 @@
             </div>
           </div>
         {% endif %}
-        {% if  product.handle contains 'player-bundle-annual' or product.handle contains 'player-bundle-monthly' or product.handle contains 'pitcherogps-gift-card-annual' %}
+        {% if  product.handle contains 'player-bundle-annual' or product.handle contains 'player-bundle-monthly' or product.handle contains 'player-bundle-gift-annual' %}
           <div data-component="ProductSelection" class="mt-4">
           <p class="font-bold membership__heading__title vest_title">{{ "checkout_process.membership.vest" | t }}</p>
             {% form "product", product, class: "w-full" %}
@@ -566,7 +566,7 @@
         {% endif %}
 
         {% if section.settings.enable_checkout_process %}
-          {% if  product.handle contains 'player-bundle-annual' or product.handle contains 'player-bundle-monthly' or product.handle contains 'pitcherogps-gift-card-annual'  %}
+          {% if  product.handle contains 'player-bundle-annual' or product.handle contains 'player-bundle-monthly' or product.handle contains 'player-bundle-gift-annual'  %}
             <div class="space-y-6 mt-7 flex md:space-y-0  add_to_cart-container">
               <button
                 class="Button Button--sale text-base md:!w-auto add_tocart_button"  
