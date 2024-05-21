@@ -646,7 +646,7 @@
           </div>
         {% endif %}
 
-        {% if  product.handle contains 'player-bundle-annual' or product.handle contains 'player-bundle-monthly' or product.handle contains 'player-bundle-gift-annual' or product.hanle contains 'player-bundle-gift-monthly' %}
+        {% if  product.handle contains 'player-bundle-annual' or product.handle contains 'player-bundle-monthly' or product.handle contains 'player-bundle-gift-annual' or product.handle contains 'player-bundle-gift-monthly' %}
           <div data-component="ProductSelection" class="mt-4">
           <p class="font-bold membership__heading__title vest_title">{{ "checkout_process.membership.vest" | t }}</p>
             {% form "product", product, class: "w-full" %}
