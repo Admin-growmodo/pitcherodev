@@ -683,11 +683,11 @@
                 {% endif %}
               </button>
               {% if product.metafields.membership.gift.value != blank %}
-              <a    {% if  product.handle contains 'player-bundle-monthly' %}disabled="true"{% endif %}
+              <a    {% if  product.handle contains 'player-bundle-monthly' or product.handle contains 'player-bundle-gift-monthly'  %}disabled="true"{% endif %}
 
                   id="buy_as_gift"
                   href="{{ section.settings.checkout_process_page_gift.url | default: section.settings.checkout_process_page.url }}"
-                  class="md:!text-base btnBorder add_tocart_button {% if  product.handle contains 'player-bundle-monthly' %} grayed-out{% endif %}"
+                  class="md:!text-base btnBorder add_tocart_button {% if  product.handle contains 'player-bundle-monthly' or product.handle contains 'player-bundle-gift-monthly'  %} grayed-out{% endif %}"
                 >
                   {{ "products.product.buy_gift" | t }}
                 </a>
