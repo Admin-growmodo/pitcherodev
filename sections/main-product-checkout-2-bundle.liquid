@@ -134,7 +134,7 @@
 
       <div class="Product__Info">
         {% if section.settings.enable_checkout_process %}
-          {% unless  product.handle contains 'player-bundle-annual' or product.handle contains 'player-bundle-monthly' or product.handle contains 'new-gps-team-bundle' %}
+          {% unless  product.handle contains 'player-bundle-annual' or product.handle contains 'player-bundle-monthly' or product.handle contains 'new-gps-team-bundle' or product.handle contains  "player-bundle-gift-annual" %}
           <div class="space-y-6 mt-7 md:hidden">
               <a
                 href="{{ section.settings.checkout_process_page.url }}"
@@ -436,7 +436,7 @@
           </div>
         {% endif %}
 
-        {% if  product.handle contains 'pitcherogps-gift-card-annual'  %}
+        {% if  product.handle contains 'player-bundle-gift-annual'  %}
           <div class="mt-6 membership__parent-container">
             <div class="max-w-4xl mx-auto" data-checkout-process="membership">
               <p class="font-bold membership__heading__title">{{ "checkout_process.membership.member" | t }}</p>
