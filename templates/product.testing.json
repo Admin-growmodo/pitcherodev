@@ -109,7 +109,7 @@
         "adult_table_data_first_row": "34-37,37-40,40-43,43-46,46-49",
         "adult_table_data_second_row": "88-94,95-102,103-110,111-117,118-125",
         "checkout_process_page": "checkout-process",
-        "checkout_process_page_gift": "checkout-process-player-as-gift",
+        "checkout_process_page_gift": "checkout-process",
         "button": "",
         "button_url": "shopify:\/\/pages\/choose-membership",
         "button_color": "",
