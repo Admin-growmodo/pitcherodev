@@ -1733,6 +1733,7 @@
 		}, {});
 		function updateSelection() {
 			state.id = variants[state.options.join(" / ")];
+			
 			main.value = state.id;
 			listeners.forEach(function (fn) {
 				return fn(state);
@@ -2342,6 +2343,7 @@
 		var select = node.querySelector("select[data-option-main]");
 		var membership = node.querySelectorAll("[data-checkout-process=membership] input[data-selling-plan-id]");
 		var submitBundle = node.querySelector("button[data-submit-bundle]");
+		
 		var submit = form.querySelector('button[type="submit"]');
 		var _window$theme$product = window.theme.product,
 			addToCart = _window$theme$product.addToCart,
@@ -2358,6 +2360,8 @@
 				}
 			});
 			var sellingIdString = JSON.stringify(sellingId);
+			// updateSelection()
+			
 			localStorage.setItem("productVariant", select.selectedOptions[0].value);
 			// localStorage.setItem("sellingId", sellingIdString);
 		};
@@ -2365,6 +2369,7 @@
 			setItemStorage(membership);
 			window.location.href = "/pages/checkout-process";
 		});
+
 		form.addEventListener("submit", function (event) {
 			event.preventDefault();
 			submit.disabled = true;

@@ -147,6 +147,66 @@
               });
           });
               </script>
+              <script>
+                var buttons = document.querySelectorAll('.size__grid-container .button');
+var originalSelect = document.querySelector('#product-option-9255503823133-gps-player-vest-size[data-option-select]');
+var opts = {
+  select: "[data-option-select]",
+   main: "[data-option-main]",
+};
+let listeners = []
+let state = {
+  id: null,
+  options: [],
+};
+
+const selects = document.querySelectorAll(opts.select);
+  const main = document.querySelector(opts.main)
+selects.forEach((select) => {
+  if (select.nodeName !== "SELECT")
+    throw new Error(
+      "data-option-select should be defined on the individual option selectors"
+    )
+
+  const index = parseInt(select.getAttribute("data-index"), 10)
+
+  // set initial value
+  state.options[index] = select.value
+
+  select.addEventListener("change", (e) => {
+    state.options[index] = e.target.value
+    updateSelection()
+  })
+})
+  const variants = [].slice.call(main.children).reduce((options, child) => {
+    options[child.innerHTML] = child.value
+    return options
+  }, {})
+function updateSelection() {
+  state.id = variants[state.options.join(" / ")]
+    	console.log(state.id)
+  main.value = state.id
+    	localStorage.setItem("productVariant",state.id)
+  listeners.forEach((fn) => fn(state))
+}
+
+buttons.forEach(function(item) {
+  item.addEventListener('click', function() {
+    // Get the variant id from the button's data attribute
+    var variantId = this.getAttribute('data-variant-id');
+    // Find the corresponding radio button
+    var radio = document.getElementById('a' + variantId);
+
+    if (radio) {
+      // Check the radio button
+      radio.checked = true;
+      // Update the select value to match the radio button's value
+      originalSelect.value = radio.getAttribute('data-variant-label');
+      updateSelection();
+    }
+  });
+});
+              </script>
     <script>
       if(window.location.pathname === "/collections/all"){
         window.location.href = "/collections/accessories";

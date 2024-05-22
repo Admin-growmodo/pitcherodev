@@ -62,71 +62,152 @@ label.btn.btn-default.radioproduct_label {
   max-width:  421px;
 }
 </style>
-<div test class="custom-select" data-component="ProductSelect">
+{% comment %} <div test class="custom-select" data-component="ProductSelect">
   {% comment %} <div class="select-styled product-select">{{ 'products.product.size' | t }}</div>
   <ul class="select-options">
     {% for variant in product.variants %}
         <li>{{ variant.title }}</li>
     {% endfor %}
-  </ul> {% endcomment %}
+  </ul> {% endcomment %
   <select id="originalSelect" class="hidden" data-option-main>
       {% for variant in product.variants %}
           <option value="{{ variant.id }}">{{ variant.title }}</option>
       {% endfor %}
   </select>
-</div>
+</div> {% endcomment %}
 <div class="parent_size_grid">
   <div class="size__grid-container">
-    {% for variant in product.variants %}
-      {% assign clean_size = variant.title | replace: "Youth - ", "Y" | replace: "Adult - ", "" | replace: " ", "" %}
-      <div class="button product_button_size" data-variant-id="{{ variant.id }}">
-        <input  type="radio" id="a{{ variant.id }}" name="check-substitution-2" value="{{ variant.id }}" class="variant-radio" />
-        <label class="btn btn-default radioproduct_label" for="a{{ variant.id }}">{{ clean_size }}</label>
-      </div>
+    {% for option in product.options_with_values %}
+      {% if  option.name == "GPS Player Vest (Size)" %}
+        {% for value in option.values %}
+          {% assign clean_size = value | replace: "Youth - ", "Y" | replace: "Adult - ", "" | replace: " ", "" %}
+          <div class="button product_button_size" data-variant-id="{{ value.id }}">
+            <input  type="radio" id="a{{ value.id }}" data-variant-id="{{ value.id }}" data-variant-label="{{value}}" name="check-substitution-2" value="{{ value.id }}" class="variant-radio" />
+            <label class="btn btn-default radioproduct_label" for="a{{ value.id }}">{{ clean_size }}</label>
+          </div>
+
+        {% endfor %}
+      {% endif %}
     {% endfor %}
+    {% comment %} {% for variants in product.options_with_values %}
+     {% if  variants.name == "GPS Player Vest (Size)" %}
+ 
+     {% endif %}
+
+    {% endfor %} {% endcomment %}
+    
   </div>
   
 </div>
+
+
+<div>
+  {% unless product.has_only_default_variant %}
+    <div data-component="ProductSelection">
+      {% for option in product.options_with_values %}
+        {% liquid
+          assign is_size = false
+          if option.name == "Size"
+            assign is_size = true
+          endif
+        %}
+
+        <fieldset class="p-0 m-0 space-y-5">
+          <legend class="p-0 font-medium w-full flex items-center">
+            <span>{{ option.name }}</span>
+
+            {% comment %} {% if is_size %}
+              <button
+                type="button"
+                class="p-0 ml-auto underline font-medium hover:no-underline"
+                data-modal-trigger="size-guide-{{ product.id }}"
+              >
+                {{ 'products.product.size_trigger' | t }}
+              </button>
+
+            {% endif %} {% endcomment %}
+          </legend>
+					{% assign option_id = "product-option-" | append: product.id | append: "-" | append: option.name | handle %}
+					
+          <select
+            class="w-full font-bold"
+            name="{{ option.name }}"
+            id="product-option-{{ product.id }}-{{ option.name | handle }}"
+            data-option-select
+            data-index="{{ forloop.index0 }}"
+					{% if forloop.index0 == 0 %}	onchange="variantOnChange()" {% endif  %}
+          >
+            <option selected disabled>Please Choose {{ option.name }}</option>
+
+            {% for value in option.values %}
+							{% assign option_index = forloop.index |  minus: 1 %}
+							<option value="{{ value }}" {% if product.variants[option_index].available == false %}disabled{% endif %}>
+                {{ value }}
+              </option>
+            {% endfor %}
+          </select>
+        </fieldset>
+      {% endfor %}
+
+      <select class="hiddsen" name="id" data-option-main>
+        {% for variant in product.variants %}
+          <option
+            value="{{ variant.id }}"
+            {% if product.selected_or_first_available_variant == variant %}
+              selected
+            {% endif %}
+          >{{ variant.title }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  {% else %}
+    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+  {% endunless %}
+</div>
+
 <div class="size__container">
   <button id="openSizeGuide" class="size__chart btn btn-open">{{ size_guide_label }}</button>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var buttons = document.querySelectorAll('.size__grid-container .button');
+  
+      const variantID = '{{option_id}}';
+    
 
-    var originalSelect = document.querySelector('#originalSelect[data-option-main]');
-    buttons.forEach(function(item, index) {
-      item.addEventListener('click', function() {
-          var value = originalSelect.options[index].value;
-            var variantId = this.getAttribute('data-variant-id');
-            console.log(value)
-            var radio = document.getElementById('a' + variantId);
-            
-            // Check the radio button and update the originalSelect value
-            radio.checked = true;
-            originalSelect.value = radio.value;
-            document.querySelector('[data-submit-bundle]').removeAttribute('disabled');
-        });
-    });
-    var labels = document.querySelectorAll('.cursor-pointer');
-    var buttonBuy = document.getElementById('buy_as_gift');
-    // Add click event listener to each label
-    labels.forEach(function(label) {
-      label.addEventListener('click', function() {
-        // Get the value of the data-membership attribute
-        var membershipValue = label.getAttribute('data-membership');
-        if (membershipValue === 'Monthly') {
-            buttonBuy.classList.add('grayed-out');
-            buttonBuy.disabled = true;
-            buttonBuy.setAttribute('disabled', 'true');
-          } else {
-            buttonBuy.classList.remove('grayed-out');
-            buttonBuy.disabled = false;
-            buttonBuy.removeAttribute('disabled');
-          }
-      });
-    });
-});
+var current_value = document.getElementById(variantID).value;
+if (current_value != "Please Choose Size") {
+  document.getElementById('hasVariantBtn').disabled = false;
+}
+
+function variantOnChange() {
+  var x = document.getElementById(variantID).value;
+  if(x != null) {
+
+    // document.getElementById('hasVariantBtn').disabled = false;
+    document.querySelector('[data-submit-bundle]').removeAttribute('disabled');
+    document.querySelector('[data-submit-gift-bundle]').removeAttribute('disabled');
+    // console.log("this")
+  }
+}
+
+ 
+ // var labels = document.querySelectorAll('.cursor-pointer');
+    // var buttonBuy = document.getElementById('buy_as_gift');
+    // // Add click event listener to each label
+    // labels.forEach(function(label) {
+    //   label.addEventListener('click', function() {
+    //     // Get the value of the data-membership attribute
+    //     var membershipValue = label.getAttribute('data-membership');
+    //     if (membershipValue === 'Monthly') {
+    //         buttonBuy.classList.add('grayed-out');
+    //         buttonBuy.disabled = true;
+    //         buttonBuy.setAttribute('disabled', 'true');
+    //       } else {
+    //         buttonBuy.classList.remove('grayed-out');
+    //         buttonBuy.disabled = false;
+    //         buttonBuy.removeAttribute('disabled');
+    //       }
+    //   });
+    // });
 </script>
 

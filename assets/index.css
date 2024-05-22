@@ -4363,6 +4363,12 @@ display: block !important;
 .Product [data-submit-bundle]{
     font-size: 16px;
   }
+  .Product [data-submit-gift-bundle]{
+    height: auto !important;
+  }
+.Product [data-submit-gift-bundle]{
+    font-size: 16px;
+  }
 @media screen and (max-width: 940px) {
     .Product .Product__Info .Button.buy_gift{
       margin-bottom: 27px;

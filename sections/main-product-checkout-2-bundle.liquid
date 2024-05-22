@@ -2,6 +2,17 @@
 
   assign review = section.blocks | where: "type", "review" | first
 %}
+<style>
+  a#buy_as_gift {
+    cursor: pointer;
+}
+
+.Button--disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+</style>
 {% assign checkout_process_params = "?handle=" | append: product.handle %}
 <section test_hello-2 class="Product py-6 md:py-14" data-component="Product">
   <div class="max-w-screen-lg mx-auto px-3.5 xs:px-7.5 lg:px-[25px]">
@@ -580,14 +591,23 @@
                 {% endif %}
               </button>
               {% if product.metafields.membership.gift.value != blank %}
-              <a    {% if  product.handle contains 'player-bundle-monthly' %}disabled="true"{% endif %}
+              {% comment %} <a    {% if  product.handle contains 'player-bundle-monthly' %}disabled="true"{% endif %}
 
                   id="buy_as_gift"
-                  href="{{ section.settings.checkout_process_page_gift.url | default: section.settings.checkout_process_page.url }}"
+                  {% comment %} href="{{ section.settings.checkout_process_page_gift.url | default: section.settings.checkout_process_page.url }}" {% endcomment
                   class="md:!text-base btnBorder add_tocart_button {% if  product.handle contains 'player-bundle-monthly' %} grayed-out{% endif %}"
                 >
                   {{ "products.product.buy_gift" | t }}
-                </a>
+                </a> {% endcomment %}
+              <button
+              id="buy_as_gift"
+                class="Button Button--sale text-base md:!w-auto add_tocart_button md:!text-base btnBorder hasVariantBtn {% if  product.handle contains 'player-bundle-monthly' %} grayed-out{% endif %}"  
+                  data-submit-gift-bundle
+                
+                
+              >
+              {{ "products.product.buy_gift" | t }}
+              </button>
               {% endif %}
             </div>
             {% if  product.handle contains 'player-bundle-annual' or product.handle contains 'player-bundle-monthly' %}
@@ -722,7 +742,29 @@ adult_table_data_second_row: section.settings.adult_table_data_second_row,
 
 
 %}
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
 
+document.getElementById('buy_as_gift').addEventListener('click', function() {
+
+    // Get the select element with data-index="1"
+    const membershipSelect = document.querySelector('select[data-index="1"]');
+
+    // Set the value to "12 Months Gift Membership"
+    membershipSelect.value = '12 Months Gift Membership';
+
+    // Trigger the onchange event manually if there are any side effects
+    if (typeof membershipSelect.onchange === 'function') {
+        membershipSelect.onchange();
+    } else {
+        // Alternatively, trigger the change event for modern browsers
+        const event = new Event('change', { bubbles: true });
+        membershipSelect.dispatchEvent(event);
+    }
+});
+});
+
+</script>
 {% schema %}
 {
   "name": "Product",

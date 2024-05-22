@@ -41,6 +41,9 @@
       <div class="max-w-4xl mx-auto px-5 lg:px-14">
         <div class="flex flex-wrap items-end justify-center gap-9 sm:gap-11">
           {% for membership_product in product.metafields.membership.products.value %}
+            <script>
+              console.log({{membership_product | json }})
+            </script>
             {% liquid
               assign selling_plan_group = membership_product.selling_plan_groups.first
               assign selling_plan = selling_plan_group.selling_plans.first
@@ -148,8 +151,8 @@
     </div>
 
     <div data-checkout-process="gift">
-      <div class="max-w-screen-lg mx-auto px-5 lg:px-[25px]">
-        <div class="flex flex-wrap items-end justify-center gap-5 sm:gap-11">
+      <div class="max-w-screen-lg mx-auto px-5 lg:px-[25px]" hell>
+        <div class="flex flex-wrap items-end justify-center gap-5 sm:gap-11" hello>
           {% if product.metafields.membership.gift.value != blank %}
             {% assign gift_membership_product = product.metafields.membership.gift.value %}
             {% assign gift_membership_variant = gift_membership_product.variants.first %}
