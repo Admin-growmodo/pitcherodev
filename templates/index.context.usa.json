@@ -4,6 +4,14 @@
     "market": "usa"
   },
   "sections": {
+    "hero_redesign_v2_jEPqiB": {
+      "settings": {
+        "title": "<p>GPS Sports<\/p><p>Performance Tracking<\/p>",
+        "sub_title": "Track, Analyze, and Boost Your Game Day Performance"
+      },
+      "blocks": {
+      }
+    },
     "dcfabdbb-ce42-424a-a503-92b65b3e45812": {
       "settings": {
       },
@@ -13,15 +21,48 @@
             "title": "Soccer",
             "url": "shopify:\/\/pages\/football"
           }
+        },
+        "template--15632184213709__dcfabdbb-ce42-424a-a503-92b65b3e4581-1665070376077c76c5-2": {
+          "settings": {
+            "title": "Field Hockey"
+          }
         }
       }
     },
-    "hero_redesign_v2_jEPqiB": {
+    "ed7f9077-2fc4-4b45-9e8d-b5bdea6fbb63": {
       "settings": {
-        "title": "<p>GPS Sports<\/p><p>Performance Tracking<\/p>",
-        "sub_title": "Track, Analyse, and Boost Your Game Day Performance"
+        "bold_text_mobile": "<p><strong>Top players wear a GPS tracker to record their data, compare their metrics and improve their training and game day performance.<\/strong><\/p>"
       },
       "blocks": {
+      }
+    },
+    "cfc9569b-0dbe-4e18-a99c-7e61ce2b8e4a": {
+      "settings": {
+      },
+      "blocks": {
+        "7a91f850-6ed1-40d3-97db-38512dc38d2f": {
+          "settings": {
+            "text": "<p>Train smarter, optimize every training session and track your metrics as they improve game by game.<\/p>"
+          }
+        }
+      }
+    },
+    "cefb3da8-2ed9-4724-8999-a42752413e5e": {
+      "settings": {
+        "text": "<p>The PitcheroGPS Player App displays your performance data in a fun, easy-to-use app. No jargon. Just the <a href=\"\/products\/new-gps-player-bundle\" title=\"GPS Player Bundle\">metrics that matter<\/a> to make you train smarter and run faster.<br\/><br\/><strong>Interactive Heat Maps<br\/><\/strong>Every session, training or game day, creates a series of interactive heat maps, showing your location and performance during the session. <br\/><br\/><strong>Metrics that Matter<br\/><\/strong>We only display the metrics that matter, no complex jargon. Just the metrics which make you a fitter, faster player to improve your performance. <br\/><br\/><strong>Compare Your Stats<br\/><\/strong>Every session is logged in Trends, a series of graphs plotting your performance over time. Set goals and watch your metrics improve with stunning graphics and charts. <\/p>"
+      },
+      "blocks": {
+      }
+    },
+    "7592e725-7b75-4969-ab88-a8ff6137c603": {
+      "settings": {
+      },
+      "blocks": {
+        "044d3ed0-9ccc-42fc-97a5-6ea7354a2736": {
+          "settings": {
+            "text": "<p>FIFA and World Rugby approve the PitcheroGPS Player Tracker for use at all levels of competition including high school, college all the way up to the MLS and Premier League.<\/p>"
+          }
+        }
       }
     }
   }
