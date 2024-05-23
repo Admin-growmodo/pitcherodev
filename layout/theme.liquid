@@ -191,20 +191,20 @@ function updateHiddenSelect() {
         }).val());
     }
 }
-var setItemStorage = function setItemStorage(inputs) {
-  inputs.forEach(function (input) {
-    if (input.checked) {
-      sellingId = {
-        sellingId: input.dataset.sellingPlanId,
-        Id: input.value
-      };
-    }
-  });
-  var sellingIdString = JSON.stringify(sellingId);
-  // updateSelection()
-  
-  localStorage.setItem("productVariant", $hiddenSelect.selectedOptions[0].value);
-  // localStorage.setItem("sellingId", sellingIdString);
+var setItemStorage = function() {
+    var sellingId;
+    membership.each(function() {
+        if ($(this).is(":checked")) {
+            sellingId = {
+                sellingId: $(this).data('selling-plan-id'),
+                Id: $(this).val()
+            };
+        }
+    });
+    var sellingIdString = JSON.stringify(sellingId);
+
+    localStorage.setItem("productVariant", $hiddenSelect.val());
+    // localStorage.setItem("sellingId", sellingIdString);
 };
 // Attach event listeners to the select elements
 $originalSelect.on('change', updateHiddenSelect);
@@ -214,13 +214,13 @@ $membershipSelect.on('change', updateHiddenSelect);
 $('#buy_as_gift').on('click', function() {
     $membershipSelect.val('12 Months Gift Membership').trigger('change');
 
-    setItemStorage(membership);
+    setItemStorage();
   window.location.href = "/pages/checkout-process";
 });
 $('.add_tocart_button').on('click', function() {
     $membershipSelect.val('£60 per year after activation').trigger('change');
 
-    setItemStorage(membership);
+    setItemStorage();
   window.location.href = "/pages/checkout-process";
 });
 

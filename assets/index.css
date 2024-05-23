@@ -9983,6 +9983,10 @@ margin-bottom: 8.62px;
   width: 203px !important; 
   justify-content: center;
 }
+.add_tocart_button-gift {
+  width: 203px !important; 
+  justify-content: center;
+}
 .add_to_cart-container {
   gap: 12px;
 }
@@ -10029,6 +10033,10 @@ margin-bottom: 8.62px;
     justify-content: space-between ;
   }
   .add_tocart_button{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .add_tocart_button-gift{
     width: 100% !important;
     max-width: 100% !important;
   }
@@ -10087,7 +10095,9 @@ margin-bottom: 8.62px;
   .add_tocart_button{
   padding: 17px 24px;
   }
-
+  .add_tocart_button-gift{
+    padding: 17px 24px;
+    }
   .product__titles{
     font-size: 40px;
     
