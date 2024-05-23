@@ -2343,7 +2343,7 @@
 		var select = node.querySelector("select[data-option-main]");
 		var membership = node.querySelectorAll("[data-checkout-process=membership] input[data-selling-plan-id]");
 		var submitBundle = node.querySelector("button[data-submit-bundle]");
-		
+
 		var submit = form.querySelector('button[type="submit"]');
 		var _window$theme$product = window.theme.product,
 			addToCart = _window$theme$product.addToCart,
@@ -2366,6 +2366,7 @@
 			// localStorage.setItem("sellingId", sellingIdString);
 		};
 		submitBundle.addEventListener("click", function () {
+
 			setItemStorage(membership);
 			window.location.href = "/pages/checkout-process";
 		});

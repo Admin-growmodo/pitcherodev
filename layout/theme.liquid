@@ -67,6 +67,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
     {{ content_for_header }}
+   
   </head>
 
   <body data-template="{{ template.name }}" class="{{page.handle}}">
@@ -147,66 +148,7 @@
               });
           });
               </script>
-              <script>
-                var buttons = document.querySelectorAll('.size__grid-container .button');
-var originalSelect = document.querySelector('#product-option-9255503823133-gps-player-vest-size[data-option-select]');
-var opts = {
-  select: "[data-option-select]",
-   main: "[data-option-main]",
-};
-let listeners = []
-let state = {
-  id: null,
-  options: [],
-};
-
-const selects = document.querySelectorAll(opts.select);
-  const main = document.querySelector(opts.main)
-selects.forEach((select) => {
-  if (select.nodeName !== "SELECT")
-    throw new Error(
-      "data-option-select should be defined on the individual option selectors"
-    )
-
-  const index = parseInt(select.getAttribute("data-index"), 10)
-
-  // set initial value
-  state.options[index] = select.value
-
-  select.addEventListener("change", (e) => {
-    state.options[index] = e.target.value
-    updateSelection()
-  })
-})
-  const variants = [].slice.call(main.children).reduce((options, child) => {
-    options[child.innerHTML] = child.value
-    return options
-  }, {})
-function updateSelection() {
-  state.id = variants[state.options.join(" / ")]
-    	console.log(state.id)
-  main.value = state.id
-    	localStorage.setItem("productVariant",state.id)
-  listeners.forEach((fn) => fn(state))
-}
-
-buttons.forEach(function(item) {
-  item.addEventListener('click', function() {
-    // Get the variant id from the button's data attribute
-    var variantId = this.getAttribute('data-variant-id');
-    // Find the corresponding radio button
-    var radio = document.getElementById('a' + variantId);
-
-    if (radio) {
-      // Check the radio button
-      radio.checked = true;
-      // Update the select value to match the radio button's value
-      originalSelect.value = radio.getAttribute('data-variant-label');
-      updateSelection();
-    }
-  });
-});
-              </script>
+      
     <script>
       if(window.location.pathname === "/collections/all"){
         window.location.href = "/collections/accessories";
@@ -226,5 +168,145 @@ buttons.forEach(function(item) {
         window.location.href = 'https://www.pitcherogps.com/collections/all-pitcherogps-products';
       }
     </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+{% if product.handle contains 'player-bundle-annual'  %}
+<script>
+
+var $originalSelect = $('#product-option-9255503823133-gps-player-vest-size'); // GPS Player Vest Size select
+var $membershipSelect = $('#product-option-9255503823133-annual-membership-type'); // Annual Membership Type select
+var $hiddenSelect = $('select[data-option-main]'); // Hidden select
+var membership = $("[data-checkout-process=membership] input[data-selling-plan-id]");
+$('#buy_as_gift').attr('disabled', 'disabled');
+// Function to update the hidden select
+function updateHiddenSelect() {
+    var size = $originalSelect.val();
+    var membership = $membershipSelect.val();
+    
+    if (size && membership) {
+        var combinedValue = size + ' / ' + membership;
+        $hiddenSelect.val($hiddenSelect.find('option').filter(function() {
+            return $(this).text() === combinedValue;
+        }).val());
+    }
+}
+var setItemStorage = function setItemStorage(inputs) {
+  inputs.forEach(function (input) {
+    if (input.checked) {
+      sellingId = {
+        sellingId: input.dataset.sellingPlanId,
+        Id: input.value
+      };
+    }
+  });
+  var sellingIdString = JSON.stringify(sellingId);
+  // updateSelection()
+  
+  localStorage.setItem("productVariant", $hiddenSelect.selectedOptions[0].value);
+  // localStorage.setItem("sellingId", sellingIdString);
+};
+// Attach event listeners to the select elements
+$originalSelect.on('change', updateHiddenSelect);
+$membershipSelect.on('change', updateHiddenSelect);
+
+// Attach click event listener to the Buy as Gift button
+$('#buy_as_gift').on('click', function() {
+    $membershipSelect.val('12 Months Gift Membership').trigger('change');
+
+    setItemStorage(membership);
+  window.location.href = "/pages/checkout-process";
+});
+$('.add_tocart_button').on('click', function() {
+    $membershipSelect.val('£60 per year after activation').trigger('change');
+
+    setItemStorage(membership);
+  window.location.href = "/pages/checkout-process";
+});
+
+// Attach click event listener to each button for size selection
+$('.size__grid-container .button').on('click', function() {
+    var variantId = $(this).data('variant-id');
+    var $radio = $('#a' + variantId);
+
+    if ($radio.length) {
+        $radio.prop('checked', true);
+        var sizeLabel = $radio.data('variant-label');
+        $originalSelect.val(sizeLabel).trigger('change');
+        $('[data-submit-bundle]').removeAttr('disabled');
+        $('[data-submit-gift-bundle]').removeAttr('disabled');
+    }
+});
+</script>
+{% endif %}
+
+{% if product.handle contains 'player-bundle-monthly'  %}
+  <script>
+  
+  var $originalSelect = $('#product-option-9255523385629-gps-player-vest-size'); // GPS Player Vest Size select
+  var $membershipSelect = $('#product-option-9255523385629-monthly-membership-type'); // Annual Membership Type select
+  var $hiddenSelect = $('select[data-option-main]'); // Hidden select
+  var membership = $("[data-checkout-process=membership] input[data-selling-plan-id]");
+  $('#buy_as_gift').attr('disabled', 'disabled');
+  // Function to update the hidden select
+  function updateHiddenSelect() {
+      var size = $originalSelect.val();
+      var membership = $membershipSelect.val();
+      
+      if (size && membership) {
+          var combinedValue = size + ' / ' + membership;
+          $hiddenSelect.val($hiddenSelect.find('option').filter(function() {
+              return $(this).text() === combinedValue;
+          }).val());
+      }
+  }
+  var setItemStorage = function setItemStorage(inputs) {
+    inputs.forEach(function (input) {
+      if (input.checked) {
+        sellingId = {
+          sellingId: input.dataset.sellingPlanId,
+          Id: input.value
+        };
+      }
+    });
+    var sellingIdString = JSON.stringify(sellingId);
+    // updateSelection()
+    
+    localStorage.setItem("productVariant", $hiddenSelect.selectedOptions[0].value);
+    // localStorage.setItem("sellingId", sellingIdString);
+  };
+  // Attach event listeners to the select elements
+  $originalSelect.on('change', updateHiddenSelect);
+  $membershipSelect.on('change', updateHiddenSelect);
+  
+  // // Attach click event listener to the Buy as Gift button
+  // $('#buy_as_gift').on('click', function() {
+  //     $membershipSelect.val('12 Months Gift Membership').trigger('change');
+  
+  //     setItemStorage(membership);
+  //   window.location.href = "/pages/checkout-process";
+  // });
+  $('.add_tocart_button').on('click', function() {
+      $membershipSelect.val('£10 per month after activation').trigger('change');
+  
+      setItemStorage(membership);
+    window.location.href = "/pages/checkout-process";
+  });
+  
+  // Attach click event listener to each button for size selection
+  $('.size__grid-container .button').on('click', function() {
+      var variantId = $(this).data('variant-id');
+      var $radio = $('#a' + variantId);
+  
+      if ($radio.length) {
+          $radio.prop('checked', true);
+          var sizeLabel = $radio.data('variant-label');
+          $originalSelect.val(sizeLabel).trigger('change');
+          $('[data-submit-bundle]').removeAttr('disabled');
+          $('[data-submit-gift-bundle]').removeAttr('disabled');
+      }
+  });
+  </script> 
+{% endif %} 
   {%- render "ecom_footer"-%}<script>var check_edd_data_from_liquid = '1';</script>{% render 'edd_read_data_from_liquid' %}</body>
 </html>

@@ -705,7 +705,7 @@
               <button
               id="buy_as_gift"
                 class="Button Button--sale text-base md:!w-auto add_tocart_button md:!text-base btnBorder hasVariantBtn {% if  product.handle contains 'player-bundle-monthly' %} grayed-out{% endif %}"  
-                  data-submit-gift-bundle
+                  {% if  product.handle contains 'player-bundle-annual' %}data-submit-gift-bundle{% endif %}
                 
                 
               >
@@ -845,29 +845,7 @@ adult_table_data_second_row: section.settings.adult_table_data_second_row,
 
 
 %}
-<script>
- document.addEventListener('DOMContentLoaded', function() {
 
-document.getElementById('buy_as_gift').addEventListener('click', function() {
-
-    // Get the select element with data-index="1"
-    const membershipSelect = document.querySelector('select[data-index="1"]');
-
-    // Set the value to "12 Months Gift Membership"
-    membershipSelect.value = '12 Months Gift Membership';
-
-    // Trigger the onchange event manually if there are any side effects
-    if (typeof membershipSelect.onchange === 'function') {
-        membershipSelect.onchange();
-    } else {
-        // Alternatively, trigger the change event for modern browsers
-        const event = new Event('change', { bubbles: true });
-        membershipSelect.dispatchEvent(event);
-    }
-});
-});
-
-</script>
 {% schema %}
 {
   "name": "Product",

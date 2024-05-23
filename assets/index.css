@@ -4363,9 +4363,12 @@ display: block !important;
 .Product [data-submit-bundle]{
     font-size: 16px;
   }
-  .Product [data-submit-gift-bundle]{
+  .Product [data-submit-gift-bundle],#buy_as_gift{
     height: auto !important;
   }
+  button#buy_as_gift {
+    height:auto!important
+}
 .Product [data-submit-gift-bundle]{
     font-size: 16px;
   }
@@ -9973,7 +9976,7 @@ margin-bottom: 8.62px;
   font-style: normal;
   font-weight: 600 !important;
   line-height: normal;
-  margin-bottom: -12px;
+  margin-bottom: 16px;
 
 }
 .add_tocart_button {

@@ -75,7 +75,7 @@ label.btn.btn-default.radioproduct_label {
       {% endfor %}
   </select>
 </div> {% endcomment %}
-<div class="parent_size_grid">
+
   <div class="size__grid-container">
     {% for option in product.options_with_values %}
       {% if  option.name == "GPS Player Vest (Size)" %}
@@ -89,19 +89,10 @@ label.btn.btn-default.radioproduct_label {
         {% endfor %}
       {% endif %}
     {% endfor %}
-    {% comment %} {% for variants in product.options_with_values %}
-     {% if  variants.name == "GPS Player Vest (Size)" %}
- 
-     {% endif %}
-
-    {% endfor %} {% endcomment %}
-    
   </div>
   
-</div>
 
-
-<div>
+<div class="hidden">
   {% unless product.has_only_default_variant %}
     <div data-component="ProductSelection">
       {% for option in product.options_with_values %}
@@ -135,7 +126,7 @@ label.btn.btn-default.radioproduct_label {
             id="product-option-{{ product.id }}-{{ option.name | handle }}"
             data-option-select
             data-index="{{ forloop.index0 }}"
-					{% if forloop.index0 == 0 %}	onchange="variantOnChange()" {% endif  %}
+			
           >
             <option selected disabled>Please Choose {{ option.name }}</option>
 
@@ -149,7 +140,7 @@ label.btn.btn-default.radioproduct_label {
         </fieldset>
       {% endfor %}
 
-      <select class="hiddsen" name="id" data-option-main>
+      <select class="hidden" name="id" data-option-main>
         {% for variant in product.variants %}
           <option
             value="{{ variant.id }}"
@@ -184,8 +175,8 @@ function variantOnChange() {
   if(x != null) {
 
     // document.getElementById('hasVariantBtn').disabled = false;
-    document.querySelector('[data-submit-bundle]').removeAttribute('disabled');
-    document.querySelector('[data-submit-gift-bundle]').removeAttribute('disabled');
+    // document.querySelector('[data-submit-bundle]').removeAttribute('disabled');
+    // document.querySelector('[data-submit-gift-bundle]').removeAttribute('disabled');
     // console.log("this")
   }
 }
