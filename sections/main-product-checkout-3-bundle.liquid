@@ -669,6 +669,18 @@
           </div>
         {% endif %}
 
+        {% assign product2_handle = 'player-bundle-monthly' %}
+        {% assign product2 = collections.all.products | where: 'handle', product2_handle | first %}
+
+        {% if product2  %}
+          <div data-component="ProductSelection" class="mt-4">
+          <p class="font-bold membership__heading__title vest_title">{{ "checkout_process.membership.vest" | t }}</p>
+            {% form "product", product2, class: "w-full" %}
+              {% render "product-item-select-2", product: product2, bundle: true, size_guide_label: section.settings.size_guide_label, size_guide_link: section.settings.size_guide_link%}
+            {% endform %}
+          </div>
+        {% endif %}
+
 
 
         {% if product.metafields.meta.list != blank %}
