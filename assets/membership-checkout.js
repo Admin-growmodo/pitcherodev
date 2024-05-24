@@ -1,25 +1,28 @@
 $(document).ready(function() {
-            $('label').on('click', function() {
-                // Get the data-membership-id of the clicked label
-                var membershipId = $(this).data('membership-id');
+    $('label#membership_1').on('click', function() {
+        // Get the data-membership-id of the clicked label
+        var membershipId = $(this).data('membership-id');
 
-                // Uncheck all radio buttons
-                $('input.sr-only.peer').prop('checked', false);
+        // Update the value of the input field with the class 'product-id' to match the membership ID
+        $('.product-id').val(membershipId);
 
-                // Check the radio button with the same data-membership-id
-                $('input.sr-only.peer[data-membership-id="' + membershipId + '"]').prop('checked', true).trigger('change');
+        // Uncheck all radio buttons
+        $('input.sr-only.peer').prop('checked', false);
 
-                // Store the membership ID in localStorage
-                localStorage.setItem('selectedProductId', membershipId);
-            });
+        // Check the radio button with the same data-membership-id
+        $('input.sr-only.peer[data-membership-id="' + membershipId + '"]').prop('checked', true).trigger('change');
 
-            // Add a change event to handle any additional logic after the radio is checked
-            $('input.sr-only.peer').on('change', function() {
-                if ($(this).is(':checked')) {
-                    console.log('Checked:', $(this).attr('id'));
-                }
-            });
-        });
+        // Store the membership ID in localStorage
+        localStorage.setItem('selectedProductId', membershipId);
+    });
+
+    // Add a change event to handle any additional logic after the radio is checked
+    $('input.sr-only.peer').on('change', function() {
+        if ($(this).is(':checked')) {
+            console.log('Checked:', $(this).attr('id'));
+        }
+    });
+});
 
 
 $(document).ready(function() {
