@@ -223,7 +223,8 @@ $('#buy_as_gift').on('click', function() {
   window.location.href = "/pages/checkout-process";
 });
 $('.add_tocart_button').on('click', function() {
-    if (localStorage.getItem('selectedProductId') === '8099044819229') {
+    var memberId = $('label#membership_1').data('membership-id');
+    if (memberId === '8099044819229') {
         $monthlymembershipSelect.val('£10 per month after activation').trigger('change');
     }
     else {
