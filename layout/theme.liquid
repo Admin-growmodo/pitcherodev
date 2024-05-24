@@ -204,6 +204,7 @@ var setItemStorage = function() {
     var sellingIdString = JSON.stringify(sellingId);
 
     localStorage.setItem("productVariant", $hiddenSelect.val());
+    localStorage.setItem('selectedProductId', membershipId);
     // localStorage.setItem("sellingId", sellingIdString);
 };
 // Attach event listeners to the select elements
