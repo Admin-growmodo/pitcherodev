@@ -20,3 +20,29 @@ $(document).ready(function() {
                 }
             });
         });
+
+
+$(document).ready(function() {
+            // Retrieve the stored product ID from localStorage
+            var selectedProductId = localStorage.getItem('selectedProductId');
+
+            if (selectedProductId) {
+                console.log('Selected Product ID:', selectedProductId);
+
+                // Function to initiate checkout with the selected product
+                function initiateCheckout(productId) {
+                    var checkoutUrl = '/cart/' + productId + ':1'; // Append product ID and quantity to the checkout URL
+                    window.location.href = checkoutUrl; // Redirect to the checkout URL
+                }
+
+                // Add event listener to the checkout button
+                $('.button[data-checkout-process="submit"]').on('click', function() {
+                    initiateCheckout(selectedProductId);
+                });
+
+                // Optionally, you can clear the localStorage if you only need it once
+                // localStorage.removeItem('selectedProductId');
+            } else {
+                console.log('No product ID found in localStorage');
+            }
+        });
