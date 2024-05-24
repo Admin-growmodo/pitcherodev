@@ -1,15 +1,22 @@
 $(document).ready(function() {
-    $('label#membership_1').on('click', function() {
-        // Get the data-membership-id of the clicked label
-        var membershipId = $(this).data('membership-id');
+            $('label').on('click', function() {
+                // Get the data-membership-id of the clicked label
+                var membershipId = $(this).data('membership-id');
 
-        // Check the radio button with the same data-membership-id
-        $('input.sr-only.peer').each(function() {
-            if ($(this).data('membership-id') == membershipId) {
-                $(this).prop('checked', true).change(); // Use .prop() to set the checked attribute and .change() to trigger the change event
-            } else {
-                $(this).prop('checked', false);
-            }
+                // Uncheck all radio buttons
+                $('input.sr-only.peer').prop('checked', false);
+
+                // Check the radio button with the same data-membership-id
+                $('input.sr-only.peer[data-membership-id="' + membershipId + '"]').prop('checked', true).trigger('change');
+
+                // Store the membership ID in localStorage
+                localStorage.setItem('selectedProductId', membershipId);
+            });
+
+            // Add a change event to handle any additional logic after the radio is checked
+            $('input.sr-only.peer').on('change', function() {
+                if ($(this).is(':checked')) {
+                    console.log('Checked:', $(this).attr('id'));
+                }
+            });
         });
-    });
-});
