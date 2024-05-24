@@ -176,6 +176,7 @@
 
 var $originalSelect = $('#product-option-9255503823133-gps-player-vest-size'); // GPS Player Vest Size select
 var $membershipSelect = $('#product-option-9255503823133-annual-membership-type'); // Annual Membership Type select
+var $monthlymembershipSelect = $('#product-option-9255523385629-monthly-membership-type');
 var $hiddenSelect = $('select[data-option-main]'); // Hidden select
 var membership = $("[data-checkout-process=membership] input[data-selling-plan-id]");
 $('#buy_as_gift').attr('disabled', 'disabled');
@@ -210,6 +211,7 @@ var setItemStorage = function() {
 // Attach event listeners to the select elements
 $originalSelect.on('change', updateHiddenSelect);
 $membershipSelect.on('change', updateHiddenSelect);
+$monthlymembershipSelect.on('change', updateHiddenSelect);
 
 // Attach click event listener to the Buy as Gift button
 $('#buy_as_gift').on('click', function() {
@@ -222,7 +224,7 @@ $('#buy_as_gift').on('click', function() {
 });
 $('.add_tocart_button').on('click', function() {
     if (localStorage.getItem('selectedProductId') === '8099044819229') {
-        $membershipSelect.val('£10 per month after activation').trigger('change');
+        $monthlymembershipSelect.val('£10 per month after activation').trigger('change');
     }
     else {
       $membershipSelect.val('£60 per year after activation').trigger('change');
