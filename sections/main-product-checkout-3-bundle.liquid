@@ -13,7 +13,7 @@
     opacity: 0.5;
 }
 </style>
-<script src="{{ 'membership-checkout.js' | shopify_asset_url }}" defer="defer"></script>
+<script src="{{ 'membership-checkout.js' | asset_url }}" defer="defer"></script>
 {% assign checkout_process_params = "?handle=" | append: product.handle %}
 <section test_hello-2 class="Product py-6 md:py-14" data-component="Product">
   <div class="max-w-screen-lg mx-auto px-3.5 xs:px-7.5 lg:px-[25px]">
