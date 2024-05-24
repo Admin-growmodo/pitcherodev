@@ -22,3 +22,26 @@ $(document).ready(function() {
         });
 
 
+$(document).ready(function() {
+            // Function to initiate checkout with the selected product
+            function initiateCheckout() {
+                // Retrieve the stored product ID from localStorage
+                var selectedProductId = localStorage.getItem('selectedProductId');
+
+                if (selectedProductId) {
+                    console.log('Selected Product ID:', selectedProductId);
+
+                    // Redirect to the checkout page with the selected product ID
+                    window.location.href = '/checkout?productId=' + selectedProductId;
+                } else {
+                    console.log('No product ID found in localStorage');
+                }
+            }
+
+            // Add event listener to the checkout button
+            $('#checkout-button3').on('click', function() {
+                if ($(this).data('checkout-process') === 'submit') {
+                    initiateCheckout();
+                }
+            });
+        });
