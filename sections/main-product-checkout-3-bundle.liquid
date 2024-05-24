@@ -269,8 +269,10 @@
                   %}
                
                   <div class="w-full sm:grow sm:basis-0 sm:min-w-0  sm:max-w-sm sellingId newmember relative" >
+                    {% comment %}
                   {% if forloop.first %} <a style="z-index:9;" class="absolute h-full w-full z-30 " href="/products/player-bundle-annual"></a>{% endif %}
                   {% if forloop.last %} <a style="z-index:9;" class="absolute h-full w-full z-30 " href="/products/player-bundle-monthly"></a>{% endif %}
+                    {% endcomment %}
                    
                     <input
                       type="radio"
