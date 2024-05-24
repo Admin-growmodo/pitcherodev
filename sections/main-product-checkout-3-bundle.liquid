@@ -280,7 +280,7 @@
                       class="sr-only peer"
                       {% if forloop.first %}checked{% endif %} />
 
-                    <label id="membership_1" data-membership="{{ membership_product.title | remove: " Membership" | strip }}" for="membership-{{ membership_product.id }}" class="block cursor-pointer border-2 border-solid peer-checked:border-brand-accent peer-checked:shadow-checked rounded-16">
+                    <label id="membership_1" data-membership="{{ membership_product.title | remove: " Membership" | strip }}" data-membership-id="{{ membership_product.id }}" for="membership-{{ membership_product.id }}" class="block cursor-pointer border-2 border-solid peer-checked:border-brand-accent peer-checked:shadow-checked rounded-16">
                       {% if forloop.first %}
                        <div class="membership_badge-container">
                         <div class="selling-plan-group uppercase font-bold text-center text-white p-3 bg-brand-primary peer-checked:bg-brand-accent rounded-10 membership_badge">
