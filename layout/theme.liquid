@@ -213,14 +213,21 @@ $membershipSelect.on('change', updateHiddenSelect);
 
 // Attach click event listener to the Buy as Gift button
 $('#buy_as_gift').on('click', function() {
+
+  
     $membershipSelect.val('12 Months Gift Membership').trigger('change');
 
     setItemStorage();
   window.location.href = "/pages/checkout-process";
 });
 $('.add_tocart_button').on('click', function() {
-    
-  $membershipSelect.val('£60 per year after activation').trigger('change');
+    if (localStorage.getItem('selectedProductId') === '8099044819229') {
+        $membershipSelect.val('£10 per month after activation').trigger('change');
+    }
+    else {
+      $membershipSelect.val('£60 per year after activation').trigger('change');
+    }
+  
 
     setItemStorage();
   window.location.href = "/pages/checkout-process";
