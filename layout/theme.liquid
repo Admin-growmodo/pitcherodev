@@ -225,6 +225,7 @@ $('#buy_as_gift').on('click', function() {
 $('.add_tocart_button').on('click', function() {
     var memberId = $('label#membership_1').data('membership-id');
     if (memberId === '8099044819229') {
+        console.log('test');
         $monthlymembershipSelect.val('£10 per month after activation').trigger('change');
     }
     else {
