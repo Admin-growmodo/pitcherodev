@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('label').on('click', function() {
+    $('label#membership_1').on('click', function() {
         // Get the data-membership-id of the clicked label
         var membershipId = $(this).data('membership-id');
 
