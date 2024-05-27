@@ -224,7 +224,7 @@
         <div class="Product__Description rte product__title">
           {{ product.metafields.custom.product_descriptions | metafield_tag }} 
       </div>
-        {% if product.handle contains 'new-gps-player-bundle' %}
+        {% if product.handle contains 'new-gps-player-bundle' or product.handle contains 'new-gps-player-bundle-test'%}
           <div class="mt-6 membership__parent-container">
             <div class="max-w-4xl mx-auto" data-checkout-process="membership">
               <p class="font-bold membership__heading__title">{{ "checkout_process.membership.member" | t }}</p>
@@ -255,62 +255,66 @@
                       type="radio"
                       name="membership"
                       id="membership-{{ membership_product.id }}"
-                      value="{{ membership_variant.id }}"
+                      value="{% if forloop.first %}45270280012061{% else %}45301956116765{% endif %}"
                       data-selling-plan-id="{{ selling_plan.id }}"
+            
                       class="sr-only peer"
                       {% if forloop.first %}checked{% endif %} />
-
+                        
                     <label id="membership_1" data-membership="{{ membership_product.title | remove: " Membership" | strip }}" for="membership-{{ membership_product.id }}" class="block cursor-pointer border-2 border-solid peer-checked:border-brand-accent peer-checked:shadow-checked rounded-16">
-                      {% if forloop.first %}
-                        <div class="membership_badge-container">
-                         <div class="selling-plan-group uppercase font-bold text-center text-white p-3 bg-brand-primary peer-checked:bg-brand-accent rounded-10 membership_badge">
-                           {{ "checkout_process.membership.product_best_value" | t }}
-                         </div>
+                      {% if selling_plan_group.name contains "Annual" %}
+                       <div class="membership_badge-container">
+                        <div class="selling-plan-group uppercase font-bold text-center text-white p-3 bg-brand-primary peer-checked:bg-brand-accent rounded-10 membership_badge">
+                          {{ "checkout_process.membership.product_best_value" | t }}
                         </div>
-                       {% endif %}
+                       </div>
+                      {% endif %}
                       <div class="text-left membership__container">
                         <h3 class="text-16 font-body tracking-normal sm:text-24 membership_title">
                           {{ membership_product.title | remove: "Membership" }}
                         </h3>
-                        {% assign membership_type =  membership_product.title | remove: "Membership" %}
-                        {% assign clean_membership_type = membership_type | strip  %} 
-                        {% if clean_membership_type == "Annual" %}
-                          {% assign annual_paid = membership_variant_paid.price | divided_by: 12 %}
-                          <div {{annual_paid}} {{ membership_variant_paid.price }} class="flex items-center flex-row justify-start text-left flex-col membeship_price-container" >
-                            <span class="font-heading text-50 sm:text-72 membership__price">
-                             {{ membership_variant_paid.price | divided_by: 12 | money_without_trailing_zeros }}
-                            </span>
+                
+       {% assign membership_type =  membership_product.title | remove: "Membership" %}
+       {% assign clean_membership_type = membership_type | strip  %} 
+       {% if clean_membership_type == "Annual" %}
+         {% assign annual_paid = membership_variant_paid.price | divided_by: 12 %}
+         <div {{annual_paid}} {{ membership_variant_paid.price }} class="flex items-center flex-row justify-start text-left flex-col membeship_price-container" >
+           <span class="font-heading text-50 sm:text-72 membership__price">
+            {{ membership_variant_paid.price | divided_by: 12 | money_without_trailing_zeros }}
+           </span>
 
-                            <span class="font-bold text-16 leading-none sm:text-16 membership_permonth">
-                             ({{ "checkout_process.membership.product_per_month_html" | t }})
-                            </span>
-                          </div>
-                          <div class="capitalize membership_desc">
-                            {% assign annual_price = membership_variant_paid.price | money_without_trailing_zeros %}
-                            {{ "checkout_process.membership.annual.billed" | t: price: annual_price }}
-                          </div>
-                          <div class="capitalize membership_desc">
-                            +{{ membership_variant_paid.price  | money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }} 
-                          </div>
-                        {% elsif  clean_membership_type == "Monthly" %}
-                          <div class="flex items-center flex-row justify-start text-left flex-col membeship_price-container">
-                            <span class="font-heading text-50 sm:text-72 membership__price">
-                              {{ membership_variant_paid.price | money_without_trailing_zeros }}
-                            </span>
+           <span class="font-bold text-16 leading-none sm:text-16 membership_permonth">
+            ({{ "checkout_process.membership.product_per_month_html" | t }})
+           </span>
+         </div>
+         <div class="capitalize membership_desc">
+           {% assign annual_price = membership_variant_paid.price | money_without_trailing_zeros %}
+           {{ "checkout_process.membership.annual.billed" | t: price: annual_price }}
+         </div>
+         <div class="capitalize membership_desc">
+           +{{ 6000 | money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }}
+         </div>
+       {% elsif  clean_membership_type == "Monthly" %}
+         <div class="flex items-center flex-row justify-start text-left flex-col membeship_price-container">
+           <span class="font-heading text-50 sm:text-72 membership__price">
+             {{ membership_variant_paid.price | money_without_trailing_zeros }}
+           </span>
 
-                            <span class="font-bold text-16 leading-none sm:text-16 membership_permonth">
-                              ({{ "checkout_process.membership.product_per_month_html" | t }})
-                            </span>
-                          </div>
-                          <div class="capitalize membership_desc">
-                            {% assign monthly_price = membership_variant_paid.price | money_without_trailing_zeros %}
-                             {{ "checkout_process.membership.monthly.billed" | t: price: monthly_price }}
-                          </div>
-                          <div class="capitalize membership_desc">
-                            +{{ 6000  | money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }} 
-                          </div>
-                        {% endif %}
-                        {% comment %} {% if selling_plan_group.name contains "Annual" %}
+           <span class="font-bold text-16 leading-none sm:text-16 membership_permonth">
+             ({{ "checkout_process.membership.product_per_month_html" | t }})
+           </span>
+         </div>
+         <div class="capitalize membership_desc">
+           {% assign monthly_price = membership_variant_paid.price | money_without_trailing_zeros %}
+            {{ "checkout_process.membership.monthly.billed" | t: price: monthly_price }}
+         </div>
+         <div class="capitalize membership_desc">
+           +{{ 6000 | money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }}
+         </div>
+       {% endif %}
+      {% comment %}  {% endcomment %}
+                         {% comment %} 
+                        <!-- {% if selling_plan_group.name contains "Annual" %}
                           {% assign annual_paid = membership_variant_paid.price | divided_by: 12 %}
                           <div class="flex items-center flex-row justify-start text-left flex-col membeship_price-container" >
                             <span class="font-heading text-50 sm:text-72 membership__price">
@@ -327,7 +331,7 @@
                             {{ "checkout_process.membership.annual.billed" | t: price: annual_price }}
                           </div>
                           <div class="capitalize membership_desc">
-                            +{{ membership_variant_paid.price | minus: annual_paid | money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }}
+                            +{{ 6000| money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }}
                           </div>
                         {% elsif selling_plan_group.name contains "Monthly" %}
                           <div class="flex items-center flex-row justify-start text-left flex-col membeship_price-container">
@@ -345,7 +349,7 @@
                              {{ "checkout_process.membership.monthly.billed" | t: price: monthly_price }}
                           </div>
                           <div class="capitalize membership_desc">
-                            +{{ 5500 | money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }}
+                            +{{ 6000 | money_without_trailing_zeros }} {{ "checkout_process.membership.upfront" | t }}
                           </div>
                         {% else %}
                           <div class="flex items-center justify-center text-left space-x-4 mt-2">
@@ -353,7 +357,8 @@
                               {{ membership_variant_paid.price | money_without_trailing_zeros }}
                             </span>
                           </div>
-                        {% endif %} {% endcomment %}
+                        {% endif %} -->
+                         {% endcomment %}
                       </div>
                     </label>
                   </div>
@@ -368,11 +373,11 @@
             </div>
           </div>
         {% endif %}
-        {% if product.handle contains 'new-gps-player-bundle' %}
+        {% if product.handle contains 'new-gps-player-bundle' or product.handle contains 'new-gps-player-bundle-test' %}
           <div data-component="ProductSelection" class="mt-4">
           <p class="font-bold membership__heading__title vest_title">{{ "checkout_process.membership.vest" | t }}</p>
             {% form "product", product, class: "w-full" %}
-              {% render "product-item-select-2", product: product, bundle: true, size_guide_label: section.settings.size_guide_label, size_guide_link: section.settings.size_guide_link%}
+              {% render "product-item-select-3", product: product, bundle: true, size_guide_label: section.settings.size_guide_label, size_guide_link: section.settings.size_guide_link%}
             {% endform %}
           </div>
         {% endif %}
@@ -402,13 +407,15 @@
                 {% endif %}
               </button>
               {% if product.metafields.membership.gift.value != blank %}
-                <a
-                  id="buy_as_gift"
-                  href="{{ section.settings.checkout_process_page_gift.url | default: section.settings.checkout_process_page.url }}"
-                  class="md:!text-base btnBorder add_tocart_button"
+                <button
+                id="buy_as_gift"
+                  class="Button Button--sale text-base md:!w-auto add_tocart_button-gift md:!text-base btnBorder hasVariantBtn {% if  product.handle contains 'player-bundle-monthly' %} grayed-out{% endif %}"  
+                    data-submit-gift-bundle
+                  
+                  
                 >
-                  {{ "products.product.buy_gift" | t }}
-                </a>
+                {{ "products.product.buy_gift" | t }}
+                </button>
               {% endif %}
             </div>
             {% if product.handle contains 'new-gps-player-bundle' %}

@@ -1733,7 +1733,6 @@
 		}, {});
 		function updateSelection() {
 			state.id = variants[state.options.join(" / ")];
-			
 			main.value = state.id;
 			listeners.forEach(function (fn) {
 				return fn(state);
@@ -2115,14 +2114,22 @@
 		var isButtonClicked = false;
 		document.addEventListener("click", function (event) {
 			var submit = event.target.closest("[data-checkout-process=submit]");
+			
 			if (submit && !isButtonClicked) {
 				isButtonClicked = true;
 				var items = [];
 				var bundleProducts = Object.values(state.bundle);
 				var id = localStorage.getItem("productVariant");
-				// var sellingId = JSON.parse(localStorage.getItem("sellingId"));
+				var sellingId = JSON.parse(localStorage.getItem("sellingId"));
 				if (gift === 'false') {
-					items.push( {
+					items.push({
+						id: Number(sellingId.Id),
+						quantity: 1,
+						selling_plan: Number(sellingId.sellingId) || null,
+						properties: {
+							_Bundle: bundleId
+						}
+					}, {
 						id: Number(id),
 						quantity: 1
 					});
@@ -2153,6 +2160,7 @@
 					return window.location.href = "".concat(window.Shopify.routes.root, "checkout");
 				});
 			}
+			
 		});
 		window.addEventListener("popstate", function (event) {
 			var _event$state;
@@ -2343,34 +2351,52 @@
 		var select = node.querySelector("select[data-option-main]");
 		var membership = node.querySelectorAll("[data-checkout-process=membership] input[data-selling-plan-id]");
 		var submitBundle = node.querySelector("button[data-submit-bundle]");
-
+		var submitGiftBundle = node.querySelector("button[data-submit-gift-bundle]");
 		var submit = form.querySelector('button[type="submit"]');
 		var _window$theme$product = window.theme.product,
 			addToCart = _window$theme$product.addToCart,
 			adding = _window$theme$product.adding;
 		var sellingId;
-		console.log(submitBundle);
+		console.log(membership);
 		var setItemStorage = function setItemStorage(inputs) {
 			inputs.forEach(function (input) {
+			
+				if (input.checked) {
+			
+						sellingId = {
+							sellingId: input.dataset.sellingPlanId,
+							Id: input.value
+						};
+					}
+		
+				
+			});
+			var sellingIdString = JSON.stringify(sellingId);
+			localStorage.setItem("productVariant", select.selectedOptions[0].value);
+			localStorage.setItem("sellingId", sellingIdString);
+		};
+		var setItemStorageGift = function setItemStorage(inputs) {
+			inputs.forEach(function (input) {
+
 				if (input.checked) {
 					sellingId = {
 						sellingId: input.dataset.sellingPlanId,
-						Id: input.value
+						Id: 44974647410973
 					};
 				}
 			});
 			var sellingIdString = JSON.stringify(sellingId);
-			// updateSelection()
-			
 			localStorage.setItem("productVariant", select.selectedOptions[0].value);
-			// localStorage.setItem("sellingId", sellingIdString);
+			localStorage.setItem("sellingId", sellingIdString);
 		};
 		submitBundle.addEventListener("click", function () {
-
 			setItemStorage(membership);
 			window.location.href = "/pages/checkout-process";
 		});
-
+		submitGiftBundle.addEventListener("click", function () {
+			setItemStorageGift(membership);
+			window.location.href = "/pages/checkout-process";
+		});
 		form.addEventListener("submit", function (event) {
 			event.preventDefault();
 			submit.disabled = true;
