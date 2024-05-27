@@ -704,9 +704,9 @@
                 </a> {% endcomment %}
               <button
               id="buy_as_gift"
-                class="Button Button--sale text-base md:!w-auto add_tocart_button-gift md:!text-base btnBorder hasVariantBtn {% if  product.handle contains 'player-bundle-monthly' %} grayed-out{% endif %}"  
+                class="Button Button--sale text-base md:!w-auto add_tocart_button-gift md:!text-base btnBorder hasVariantBtn "  
                   {% if  product.handle contains 'player-bundle-annual' %}data-submit-gift-bundle{% endif %}
-                
+                    disabled
                 
               >
               {{ "products.product.buy_gift" | t }}
