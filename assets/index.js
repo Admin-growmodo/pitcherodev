@@ -1849,7 +1849,10 @@
 				button.addEventListener("click", function (e) {
 					e.preventDefault();
 					var id = parseInt(button.dataset.id, 10);
+					var bundleId = parseInt(button.dataset.bundleId, 10);
+					
 					handleRemoveOnClick(id);
+					handleRemoveOnClick(bundleId);
 				});
 			});
 		};
@@ -2120,18 +2123,26 @@
 				var items = [];
 				var bundleProducts = Object.values(state.bundle);
 				var id = localStorage.getItem("productVariant");
-				var sellingId = JSON.parse(localStorage.getItem("sellingId"));
+				var sellingId = JSON.parse(localStorage.getItem("sellingId")); 
+			
 				if (gift === 'false') {
 					items.push({
 						id: Number(sellingId.Id),
 						quantity: 1,
 						selling_plan: Number(sellingId.sellingId) || null,
 						properties: {
-							_Bundle: bundleId
+							_Bundle: bundleId,
+							_bundle_id : Number(id),
+							_is_bundle: true
 						}
 					}, {
 						id: Number(id),
-						quantity: 1
+						quantity: 1,
+						properties: {
+							_Bundle: bundleId,
+							_bundle_id: Number(sellingId.Id)
+				
+						}
 					});
 				} else {
 					items.push({

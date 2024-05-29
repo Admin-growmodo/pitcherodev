@@ -55,13 +55,29 @@
               <div>
                 <div class="max-w-4xl mx-auto md:px-12">
                   <div class="sm-down:space-y-6 sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-10 md:gap-20">
+
                     {% for item in cart.items %}
                       {% if has_subscription and item == subscription_item %}
                         {% continue %}
                       {% endif %}
 
+                      {%  assign bundle_id = '' %}
+                      {%  assign is_bundle = false %}
+                      {% for property in item.properties %}
+                        {% if property.first  == "_bundle_id" %}
+                          {% assign bundle_id =  property.last %}
+                        {% endif %}
+                        {% if property.first  == "_is_bundle" %}
+                          {% assign is_bundle =  true %}
+                        {% endif %}
+                      {% endfor %}
+               
+                      {% if is_bundle %}
+                        {% assign is_bundle =  false %}
+                        {% continue %}
+                      {% endif %}
                       <div class="flex items-start border-0 border-solid border-brand-gray sm-down:[&:not(:first-child)]:border-t sm-down:[&:not(:first-child)]:pt-7.5 sm:w-[calc(50%-20px)] md:w-[calc(50%-40px)]">
-                        <a href="{{ item.url }}" class="w-36 shrink-0 rounded-xl overflow-hidden">
+                        <a test href="{{ item.url }}" class="w-36 shrink-0 rounded-xl overflow-hidden">
                           <div class="aspect-w-4 aspect-h-3">
                             {% if item.image != blank %}
                               {{ item.image | image_url: width: 300 | image_tag: class: "object-cover" }}
@@ -75,7 +91,8 @@
                           <a href="{{ item.url }}" class="font-bold">
                             {{ item.product.title }}
                           </a>
-
+                         
+                      
                           {% if has_deposit and deposit_item == item %}
                             <p class="mt-1">{{ "cart.deposit.label" | t }}</p>
                           {% else %}
@@ -97,11 +114,18 @@
                               {{ item.final_line_price | money }}
                             {% endif %}
                           </div>
-
+                          {% comment %}  {% endcomment %}
                           <div class="mt-5">
+                       
                             <button
                               type="button"
                               class="text-14 underline p-0"
+                    
+                                data-bundle-id="{{ bundle_id }}"
+ 
+                        
+                           
+                             
                               data-id="{{ item.variant_id }}"
                               data-remove
                             >
