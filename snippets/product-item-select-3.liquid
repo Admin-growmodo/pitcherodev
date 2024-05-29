@@ -108,7 +108,9 @@ label.btn.btn-default.radioproduct_label {
             radio.checked = true;
             originalSelect.value = radio.value;
             document.querySelector('[data-submit-bundle]').removeAttribute('disabled');
-            document.querySelector('[data-submit-gift-bundle]').removeAttribute('disabled');
+            document.querySelector('#buy_as_gift').setAttribute('disabled', 'false');  
+
+document.querySelector('#buy_as_gift').removeAttribute('disabled'); 
    
         }); 
     });
@@ -117,16 +119,36 @@ label.btn.btn-default.radioproduct_label {
     // Add click event listener to each label 
     labels.forEach(function(label) {
       label.addEventListener('click', function() {
+        document.querySelector('[data-submit-bundle]').setAttribute('disabled','true');
+        document.querySelector('#buy_as_gift').setAttribute('disabled', 'true');  
         // Get the value of the data-membership attribute
         var membershipValue = label.getAttribute('data-membership');
         if (membershipValue === 'Monthly') {
             buttonBuy.classList.add('grayed-out');
             buttonBuy.disabled = true;
             buttonBuy.setAttribute('disabled', 'true');
+           
+                      // Get all radio buttons with the class 'variant-radio'
+          var radioButtons = document.querySelectorAll('.variant-radio');
+          
+          // Loop through each radio button and uncheck it
+          radioButtons.forEach(function(radioButton) {
+              radioButton.checked = false;
+          });
             
           } else {
             buttonBuy.classList.remove('grayed-out');
-        
+            var radioButtons = document.querySelectorAll('.variant-radio');
+          
+          // Loop through each radio button and uncheck it
+          radioButtons.forEach(function(radioButton) {
+              radioButton.checked = false;
+          });
+           
+
+          // Get all radio buttons with the class 'variant-radio'
+
+
           }
       });
     });

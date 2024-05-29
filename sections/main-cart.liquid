@@ -63,9 +63,11 @@
 
                       {%  assign bundle_id = '' %}
                       {%  assign is_bundle = false %}
+                      {%  assign bundle_link = true %}
                       {% for property in item.properties %}
                         {% if property.first  == "_bundle_id" %}
                           {% assign bundle_id =  property.last %}
+                          {% assign bundle_link = false %}
                         {% endif %}
                         {% if property.first  == "_is_bundle" %}
                           {% assign is_bundle =  true %}
@@ -77,7 +79,13 @@
                         {% continue %}
                       {% endif %}
                       <div class="flex items-start border-0 border-solid border-brand-gray sm-down:[&:not(:first-child)]:border-t sm-down:[&:not(:first-child)]:pt-7.5 sm:w-[calc(50%-20px)] md:w-[calc(50%-40px)]">
+                 
+                      {% if bundle_link %}
                         <a test href="{{ item.url }}" class="w-36 shrink-0 rounded-xl overflow-hidden">
+                      
+                        {%  else %} 
+                        <div test href="{{ item.url }}" class="w-36 shrink-0 rounded-xl overflow-hidden">
+                        {% endif  %}
                           <div class="aspect-w-4 aspect-h-3">
                             {% if item.image != blank %}
                               {{ item.image | image_url: width: 300 | image_tag: class: "object-cover" }}
@@ -85,13 +93,28 @@
                               {{ "image" | placeholder_svg_tag }}
                             {% endif %}
                           </div>
-                        </a>
+                          {% if bundle_link %}
+                            </a>
+
+                        {%  else %} 
+                        </div>
+                      {% endif  %} 
 
                         <div class="ml-4">
-                          <a href="{{ item.url }}" class="font-bold">
+                          {% if bundle_link %}
+                            <a href="{{ item.url }}" class="font-bold"> 
+
+                        {%  else %} 
+                        <div  class="font-bold">
+                      {% endif  %} 
+                
                             {{ item.product.title }}
-                          </a>
-                         
+                            {% if bundle_link %}
+                              </a> 
+  
+                          {%  else %} 
+                          </div>
+                        {% endif  %} 
                       
                           {% if has_deposit and deposit_item == item %}
                             <p class="mt-1">{{ "cart.deposit.label" | t }}</p>
