@@ -290,7 +290,6 @@
         "e46e2743-1ec8-4d02-ad16-579a2e07eaf3": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Epsom_College_Logo.png",
             "image_width": 100,
             "title": "Epsom COllege"
           }
@@ -306,7 +305,6 @@
         "6b62f116-e536-46a1-88c5-c01aacf5679c": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cropped-1874NorthwichLogo_RGB.png",
             "image_width": 100,
             "title": "Northwich 1984"
           }
@@ -314,7 +312,6 @@
         "a88d1053-0830-4771-a9d0-309d4e2ba30c": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Risborough_Rangers_F.C._logo.png",
             "image_width": 100,
             "title": "Risborough Rangers"
           }
@@ -322,7 +319,6 @@
         "13abd1aa-e868-4816-a9ad-a7de77bbb1a0": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Guernsey_RFC_logo.png",
             "image_width": 106,
             "title": "Guernsey Raiders"
           }
@@ -330,7 +326,6 @@
         "dd1b433c-495b-4dce-a8dc-039312a9a6a2": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Marlborough_College_Arms_svg.png",
             "image_width": 96,
             "title": "Marlborough College"
           }
@@ -369,7 +364,7 @@
         "f8c23190-c8f0-4174-b1f0-659409e693ce": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_923.png"
+            "image": "shopify:\/\/shop_images\/GPS_Tracker_Player_Vest.png"
           }
         }
       },
@@ -397,7 +392,7 @@
         "a854a355-81fe-44f2-be1d-07314c49ec99": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collection_Page_Case_67932d66-86ca-4a35-91e7-616af1e4b6eb.png"
+            "image": "shopify:\/\/shop_images\/Cahrging_Data_Transfer.png"
           }
         }
       },
@@ -758,8 +753,7 @@
         "padding_bottom_mobile": 50,
         "title": "FIFA & World RUGBY APPROVED",
         "sub_title": "GLOBALLY APPROVED",
-        "image": "shopify:\/\/shop_images\/Pitchero_GPS_Tracker_1.png",
-        "image_mobile": "shopify:\/\/shop_images\/Pitchero_GPS_Tracker_1_1.png"
+        "image": "shopify:\/\/shop_images\/Pitchero_GPS_Tracker_1.png"
       }
     },
     "1be8b7cc-118c-40d3-970c-ebe70a8206ee": {
