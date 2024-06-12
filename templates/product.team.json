@@ -276,14 +276,6 @@
         "media_position": "flex-row"
       }
     },
-    "f16ce80e-f2b5-4ce8-9bb1-9167b0ea0e7d": {
-      "type": "new-from-register",
-      "settings": {
-        "style": "black",
-        "title": "Contact Sales",
-        "html": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"2547723\",\n    formId: \"5d2f4e73-2497-41bf-ac8e-3169e7c4b0bb\"\n  });\n<\/script>"
-      }
-    },
     "07670245-5cd8-4ab1-8498-d20c96146b53": {
       "type": "logo-list",
       "blocks": {
@@ -572,6 +564,14 @@
         "media_position": "flex-row"
       }
     },
+    "f16ce80e-f2b5-4ce8-9bb1-9167b0ea0e7d": {
+      "type": "new-from-register",
+      "settings": {
+        "style": "black",
+        "title": "Contact Sales",
+        "html": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"2547723\",\n    formId: \"5d2f4e73-2497-41bf-ac8e-3169e7c4b0bb\"\n  });\n<\/script>"
+      }
+    },
     "fc3b7418-19ab-4f12-8f15-deb29cf26094": {
       "type": "media-with-text-redesign",
       "blocks": {
@@ -854,7 +854,6 @@
     "71e3ea67-87db-46b3-9e4f-d8b9e4a6e1da",
     "3ec50ef0-264a-4687-b059-c42908d4017b",
     "415d0b43-2680-4d50-b954-07f84c289da2",
-    "f16ce80e-f2b5-4ce8-9bb1-9167b0ea0e7d",
     "07670245-5cd8-4ab1-8498-d20c96146b53",
     "ebe5b13c-50b0-4003-8da0-e0862c93989f",
     "62d77063-fdec-475e-815b-1e9208f7e6ab",
@@ -863,6 +862,7 @@
     "88ac6b2b-a96e-4041-a1e6-da88e6b6b016",
     "2ba7ebfc-93ab-46b3-b2bc-252ca619fba8",
     "d709fc1b-ce74-4de9-8393-9fbf7884cf62",
+    "f16ce80e-f2b5-4ce8-9bb1-9167b0ea0e7d",
     "fc3b7418-19ab-4f12-8f15-deb29cf26094",
     "869313ec-f3ea-4438-ad59-b4314f4c68b3",
     "ab086122-f34d-4fb0-8613-d0953e7e9a96",
