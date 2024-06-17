@@ -208,29 +208,14 @@
         "number": 4
       }
     },
-    "text_with_media_n7PiMT": {
-      "type": "text-with-media",
+    "metrics_grid_MBWLFV": {
+      "type": "metrics-grid",
       "settings": {
-        "top_padding": false,
+        "top_padding": true,
         "bottom_padding": false,
-        "padding_top": 50,
-        "padding_top_mobile": 50,
-        "padding_bottom": 40,
-        "padding_bottom_mobile": 0,
-        "show_media_on_mobile": true,
-        "medium_size": false,
-        "title": "",
-        "title_center": false,
-        "title_position": "outside",
-        "bold_text": "<p><strong>Trusted At Every Level<\/strong><\/p>",
-        "bold_text_mobile": "<p><strong>Trusted At Every Level<\/strong><\/p>",
-        "bold_text_center": true,
-        "bold_text_size": 24,
-        "text": "",
-        "text_list_background": false,
-        "text_color": "#000000",
-        "background_color": "#ffffff",
-        "media_position": "flex-row"
+        "show_border": false,
+        "title": "Trusted at Every Level",
+        "text": ""
       }
     },
     "video_banner_469i3z": {
@@ -254,52 +239,6 @@
         "style_btn": "primary",
         "text": "",
         "url": ""
-      }
-    },
-    "81412b0e-a831-4940-a391-b38462bfddb0": {
-      "type": "how-to-order",
-      "blocks": {
-        "a8ee8ebc-73ff-4a7d-a78d-fb3c20839580": {
-          "type": "step",
-          "settings": {
-            "title": "Step 1",
-            "text": "Pay £200 deposit",
-            "bold_text": "",
-            "bold_text_separator": ""
-          }
-        },
-        "850b234e-3c1a-423f-b7f6-2c7c94e88dfe": {
-          "type": "step",
-          "settings": {
-            "title": "Step 2",
-            "text": "Complete final payment",
-            "bold_text": "",
-            "bold_text_separator": ""
-          }
-        },
-        "c24d9ba7-8307-4fc0-bb52-fb04db527c59": {
-          "type": "step",
-          "settings": {
-            "title": "Step 3",
-            "text": "Team Bundle delivered",
-            "bold_text": "",
-            "bold_text_separator": ""
-          }
-        }
-      },
-      "block_order": [
-        "a8ee8ebc-73ff-4a7d-a78d-fb3c20839580",
-        "850b234e-3c1a-423f-b7f6-2c7c94e88dfe",
-        "c24d9ba7-8307-4fc0-bb52-fb04db527c59"
-      ],
-      "disabled": true,
-      "settings": {
-        "top_spacing": false,
-        "bottom_spacing": false,
-        "title": "How to Order",
-        "text": "",
-        "text_color": "#ffffff",
-        "background_color": "#012130"
       }
     },
     "ebe5b13c-50b0-4003-8da0-e0862c93989f": {
@@ -814,9 +753,8 @@
     "main",
     "71e3ea67-87db-46b3-9e4f-d8b9e4a6e1da",
     "3ec50ef0-264a-4687-b059-c42908d4017b",
-    "text_with_media_n7PiMT",
+    "metrics_grid_MBWLFV",
     "video_banner_469i3z",
-    "81412b0e-a831-4940-a391-b38462bfddb0",
     "ebe5b13c-50b0-4003-8da0-e0862c93989f",
     "62d77063-fdec-475e-815b-1e9208f7e6ab",
     "57faa2f9-b4a9-41d4-a17f-03c79a3c1ed1",
