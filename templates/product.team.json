@@ -215,7 +215,7 @@
         "bottom_padding": false,
         "padding_top": 50,
         "padding_top_mobile": 50,
-        "padding_bottom": 0,
+        "padding_bottom": 40,
         "padding_bottom_mobile": 0,
         "show_media_on_mobile": true,
         "medium_size": false,
