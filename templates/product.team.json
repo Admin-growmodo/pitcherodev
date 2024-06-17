@@ -222,7 +222,7 @@
       "type": "video-banner",
       "settings": {
         "width": 840,
-        "padding_top": 0,
+        "padding_top": 20,
         "padding_top_mobile": 0,
         "padding_bottom": 60,
         "padding_bottom_mobile": 0,
@@ -235,6 +235,8 @@
         "image": "shopify:\/\/shop_images\/Screenshot_2024-06-17_at_10.28.10.png",
         "video_popup": false,
         "video_autoplay": false,
+        "video": "",
+        "video_iframe": "",
         "border_radius": 30,
         "style_btn": "primary",
         "text": "",
