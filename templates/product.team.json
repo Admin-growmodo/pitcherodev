@@ -107,52 +107,6 @@
         "download-link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0550\/2146\/9901\/files\/PitcheroGPS_-_Team_Bundle_Brochure_9a27fdb5-024e-4a63-8123-071a4ff1a9f8.pdf?v=1702288060"
       }
     },
-    "81412b0e-a831-4940-a391-b38462bfddb0": {
-      "type": "how-to-order",
-      "blocks": {
-        "a8ee8ebc-73ff-4a7d-a78d-fb3c20839580": {
-          "type": "step",
-          "settings": {
-            "title": "Step 1",
-            "text": "Pay £200 deposit",
-            "bold_text": "",
-            "bold_text_separator": ""
-          }
-        },
-        "850b234e-3c1a-423f-b7f6-2c7c94e88dfe": {
-          "type": "step",
-          "settings": {
-            "title": "Step 2",
-            "text": "Complete final payment",
-            "bold_text": "",
-            "bold_text_separator": ""
-          }
-        },
-        "c24d9ba7-8307-4fc0-bb52-fb04db527c59": {
-          "type": "step",
-          "settings": {
-            "title": "Step 3",
-            "text": "Team Bundle delivered",
-            "bold_text": "",
-            "bold_text_separator": ""
-          }
-        }
-      },
-      "block_order": [
-        "a8ee8ebc-73ff-4a7d-a78d-fb3c20839580",
-        "850b234e-3c1a-423f-b7f6-2c7c94e88dfe",
-        "c24d9ba7-8307-4fc0-bb52-fb04db527c59"
-      ],
-      "disabled": true,
-      "settings": {
-        "top_spacing": false,
-        "bottom_spacing": false,
-        "title": "How to Order",
-        "text": "",
-        "text_color": "#ffffff",
-        "background_color": "#012130"
-      }
-    },
     "71e3ea67-87db-46b3-9e4f-d8b9e4a6e1da": {
       "type": "text-with-media",
       "settings": {
@@ -254,14 +208,13 @@
         "number": 4
       }
     },
-    "415d0b43-2680-4d50-b954-07f84c289da2": {
+    "text_with_media_n7PiMT": {
       "type": "text-with-media",
-      "disabled": true,
       "settings": {
-        "top_padding": true,
+        "top_padding": false,
         "bottom_padding": false,
-        "padding_top": 0,
-        "padding_top_mobile": 0,
+        "padding_top": 50,
+        "padding_top_mobile": 50,
         "padding_bottom": 0,
         "padding_bottom_mobile": 0,
         "show_media_on_mobile": true,
@@ -269,79 +222,84 @@
         "title": "",
         "title_center": false,
         "title_position": "outside",
-        "bold_text": "<p><strong>Contact Sales<\/strong><\/p>",
-        "bold_text_mobile": "<p><strong>Contact Sales<\/strong><\/p>",
+        "bold_text": "<p><strong>Trusted At Every Level<\/strong><\/p>",
+        "bold_text_mobile": "<p><strong>Trusted At Every Level<\/strong><\/p>",
         "bold_text_center": true,
-        "bold_text_size": 35,
+        "bold_text_size": 24,
         "text": "",
         "text_list_background": false,
-        "text_color": "#ffffff",
-        "background_color": "#000000",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
         "media_position": "flex-row"
       }
     },
-    "07670245-5cd8-4ab1-8498-d20c96146b53": {
-      "type": "logo-list",
+    "video_banner_469i3z": {
+      "type": "video-banner",
+      "settings": {
+        "width": 840,
+        "padding_top": 0,
+        "padding_top_mobile": 95,
+        "padding_bottom": 60,
+        "padding_bottom_mobile": 34,
+        "active_color": true,
+        "color": "#ffffff",
+        "style": "gradient",
+        "subtitle": "",
+        "title": "",
+        "title_as_h1": false,
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-06-17_at_10.28.10.png",
+        "video_popup": false,
+        "video_autoplay": false,
+        "border_radius": 30,
+        "style_btn": "primary",
+        "text": "",
+        "url": ""
+      }
+    },
+    "81412b0e-a831-4940-a391-b38462bfddb0": {
+      "type": "how-to-order",
       "blocks": {
-        "e46e2743-1ec8-4d02-ad16-579a2e07eaf3": {
-          "type": "logo",
+        "a8ee8ebc-73ff-4a7d-a78d-fb3c20839580": {
+          "type": "step",
           "settings": {
-            "image_width": 100,
-            "title": "Epsom COllege"
+            "title": "Step 1",
+            "text": "Pay £200 deposit",
+            "bold_text": "",
+            "bold_text_separator": ""
           }
         },
-        "b796eb19-c5d2-4c28-8358-b6208bd185cf": {
-          "type": "logo",
+        "850b234e-3c1a-423f-b7f6-2c7c94e88dfe": {
+          "type": "step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mansfield_Town_FC_1.png",
-            "image_width": 86,
-            "title": "Mansfield"
+            "title": "Step 2",
+            "text": "Complete final payment",
+            "bold_text": "",
+            "bold_text_separator": ""
           }
         },
-        "6b62f116-e536-46a1-88c5-c01aacf5679c": {
-          "type": "logo",
+        "c24d9ba7-8307-4fc0-bb52-fb04db527c59": {
+          "type": "step",
           "settings": {
-            "image_width": 100,
-            "title": "Northwich 1984"
-          }
-        },
-        "a88d1053-0830-4771-a9d0-309d4e2ba30c": {
-          "type": "logo",
-          "settings": {
-            "image_width": 100,
-            "title": "Risborough Rangers"
-          }
-        },
-        "13abd1aa-e868-4816-a9ad-a7de77bbb1a0": {
-          "type": "logo",
-          "settings": {
-            "image_width": 106,
-            "title": "Guernsey Raiders"
-          }
-        },
-        "dd1b433c-495b-4dce-a8dc-039312a9a6a2": {
-          "type": "logo",
-          "settings": {
-            "image_width": 96,
-            "title": "Marlborough College"
+            "title": "Step 3",
+            "text": "Team Bundle delivered",
+            "bold_text": "",
+            "bold_text_separator": ""
           }
         }
       },
       "block_order": [
-        "e46e2743-1ec8-4d02-ad16-579a2e07eaf3",
-        "b796eb19-c5d2-4c28-8358-b6208bd185cf",
-        "6b62f116-e536-46a1-88c5-c01aacf5679c",
-        "a88d1053-0830-4771-a9d0-309d4e2ba30c",
-        "13abd1aa-e868-4816-a9ad-a7de77bbb1a0",
-        "dd1b433c-495b-4dce-a8dc-039312a9a6a2"
+        "a8ee8ebc-73ff-4a7d-a78d-fb3c20839580",
+        "850b234e-3c1a-423f-b7f6-2c7c94e88dfe",
+        "c24d9ba7-8307-4fc0-bb52-fb04db527c59"
       ],
       "disabled": true,
       "settings": {
         "top_spacing": false,
         "bottom_spacing": false,
-        "title": "Our Customers",
-        "text_color": "",
-        "background_color": "#ffffff"
+        "title": "How to Order",
+        "text": "",
+        "text_color": "#ffffff",
+        "background_color": "#012130"
       }
     },
     "ebe5b13c-50b0-4003-8da0-e0862c93989f": {
@@ -854,11 +812,11 @@
     "5c6c7524-259f-42bb-b61b-12002ecb519d",
     "navigation",
     "main",
-    "81412b0e-a831-4940-a391-b38462bfddb0",
     "71e3ea67-87db-46b3-9e4f-d8b9e4a6e1da",
     "3ec50ef0-264a-4687-b059-c42908d4017b",
-    "415d0b43-2680-4d50-b954-07f84c289da2",
-    "07670245-5cd8-4ab1-8498-d20c96146b53",
+    "text_with_media_n7PiMT",
+    "video_banner_469i3z",
+    "81412b0e-a831-4940-a391-b38462bfddb0",
     "ebe5b13c-50b0-4003-8da0-e0862c93989f",
     "62d77063-fdec-475e-815b-1e9208f7e6ab",
     "57faa2f9-b4a9-41d4-a17f-03c79a3c1ed1",
