@@ -110,7 +110,7 @@
       "type": "checkout-process-upsell",
       "settings": {
         "title": "Add a discounted GPS Base Layer to your order",
-        "product_discount": 100,
+        "product_discount": 0,
         "product_list": [
           "gps-short-sleeve-base-layer",
           "gps-sleeveless-base-layer",
