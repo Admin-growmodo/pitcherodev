@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "c3e3931f-87a3-402e-bc35-d642100b626b": {
@@ -362,7 +371,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Iphone_Homepage_-_Football_2.png",
             "narrow": true
           }
         },
@@ -370,7 +378,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Iphone_Speed_Stats_f675ad97-bade-4336-b6f2-943204506f02.png",
             "narrow": true
           }
         },
@@ -378,7 +385,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Iphone_Intensity_50ebeaf7-4eb2-4ae8-a865-1cfb97daa6a2.png",
             "narrow": true
           }
         }
@@ -456,7 +462,6 @@
         "review_card_qqN99f": {
           "type": "review_card",
           "settings": {
-            "image_card_reviews": "shopify:\/\/shop_images\/Trustpilot_ratings_5star-RGB.png",
             "card_title": "Delighted budding rugby star!",
             "card_review": "My son absolutely loves his Pitchero GPS, he was straight out tearing up our grass to check it out over Christmas! Really easy to set up and provides a mine of information.",
             "writer_name": "Nicola Barker",
@@ -467,7 +472,6 @@
         "review_card_qmJffk": {
           "type": "review_card",
           "settings": {
-            "image_card_reviews": "shopify:\/\/shop_images\/Trustpilot_ratings_5star-RGB.png",
             "card_title": "Fantastic product that will help take…",
             "card_review": "Fantastic product that will help take your fitness to the next level in your respective sport. Easy to use app and downloading of data is a quick simple process. Lots of stats in the app such as top speed, number of high speed runs, distance, impacts, cross references to personal best, a heat map and much more. If you want to invest in a GPS product, this is definitely the one to go for. Highly recommended.",
             "writer_name": "Mark Courtney",
@@ -478,7 +482,6 @@
         "review_card_EUf3qy": {
           "type": "review_card",
           "settings": {
-            "image_card_reviews": "shopify:\/\/shop_images\/Trustpilot_ratings_5star-RGB.png",
             "card_title": "Brilliant Product",
             "card_review": "Really easy to order, delivery was fast as stated when ordering.\nSimple to set up and first connection for my sons first rugby game was seamless!\nReally great stats following the game, all the rest of the team really impressed, I would imagine there will be more orders from the rest of the team coming soon!",
             "writer_name": "Consumer",
@@ -568,6 +571,29 @@
         "image": "shopify:\/\/shop_images\/7a74acc63e8f525cf748022b1bc9f498.png",
         "image_shadow": false,
         "title": "Player Tracker"
+      }
+    },
+    "video_banner_TLEDAL": {
+      "type": "video-banner",
+      "settings": {
+        "width": 840,
+        "padding_top": 100,
+        "padding_top_mobile": 95,
+        "padding_bottom": 60,
+        "padding_bottom_mobile": 34,
+        "active_color": true,
+        "color": "#00F0FF",
+        "style": "gradient",
+        "subtitle": "",
+        "title": "",
+        "title_as_h1": false,
+        "image": "shopify:\/\/shop_images\/Frame_48102245.png",
+        "video_popup": false,
+        "video_autoplay": true,
+        "border_radius": 16,
+        "style_btn": "primary",
+        "text": "",
+        "url": ""
       }
     },
     "ebe5b13c-50b0-4003-8da0-e0862c93989f": {
@@ -757,37 +783,31 @@
         "dfd4f585-5a0b-48b4-97b4-fa2bf618154d": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/WP5_8242.png"
           }
         },
         "ccca7892-99ac-4e95-a91d-82412ba51db2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/WP9_5616.png"
           }
         },
         "template--15660718358733__c17c0d64-0f05-4156-a9cf-5398171985ec-166600327916e7c9e8-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/WP5_8240_1.png"
           }
         },
         "template--15660718358733__c17c0d64-0f05-4156-a9cf-5398171985ec-166600327916e7c9e8-2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IGWP5_2743.jpg"
           }
         },
         "b0501070-382a-486f-aeb4-3390a75e2215": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IGWP5_3131.jpg"
           }
         },
         "template--15660718358733__c17c0d64-0f05-4156-a9cf-5398171985ec-166600327916e7c9e8-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IGWP5_3799.jpg"
           }
         }
       },
@@ -931,7 +951,6 @@
         "0021ae4c-82cb-4f91-8090-20ec4b8c8f00": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_1284_1.png"
           }
         },
         "f742fea3-92fb-45ee-9b1e-ac5ea4b93db5": {
@@ -1050,6 +1069,7 @@
     "81412b0e-a831-4940-a391-b38462bfddb0",
     "custom_trust_pilot_7tRdtq",
     "65f8915f-9dd3-4432-8ffd-86e718ae32d1",
+    "video_banner_TLEDAL",
     "ebe5b13c-50b0-4003-8da0-e0862c93989f",
     "07d13978-3a4f-4140-881f-1bf0c4480a5f",
     "6f867fb0-4716-4376-b4ba-5f7c3b0343c4",
