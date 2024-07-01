@@ -19,45 +19,6 @@
         "background_image": false
       }
     },
-    "navigation": {
-      "type": "product-navigation",
-      "blocks": {
-        "c76b2a9b-3432-41db-8b04-80681b5ee8a6": {
-          "type": "product",
-          "settings": {
-            "product": "new-gps-player-bundle",
-            "image": "shopify:\/\/shop_images\/Frame_467_20ed9b04-8a55-4624-83fd-71e9854bea28.png",
-            "text": ""
-          }
-        },
-        "e89fe0b9-cf0d-4fcb-b227-097e00093b42": {
-          "type": "product",
-          "settings": {
-            "product": "new-gps-team-bundle",
-            "image": "shopify:\/\/shop_images\/Group.png",
-            "text": ""
-          }
-        },
-        "f0fb230e-d3d8-4133-a475-6875013cb863": {
-          "type": "product",
-          "disabled": true,
-          "settings": {
-            "product": "original-team-bundle",
-            "image": "shopify:\/\/shop_images\/Group.png",
-            "icon": "shopify:\/\/shop_images\/Group_95_59265f24-a10b-4d3d-8312-8bac17e1506f.png",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "c76b2a9b-3432-41db-8b04-80681b5ee8a6",
-        "e89fe0b9-cf0d-4fcb-b227-097e00093b42",
-        "f0fb230e-d3d8-4133-a475-6875013cb863"
-      ],
-      "disabled": true,
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-product-checkout",
       "blocks": {
@@ -238,7 +199,7 @@
         "active_color": true,
         "color": "#ffffff",
         "style": "gradient",
-        "subtitle": "",
+        "subtitle": "Trusted at every level",
         "title": "",
         "title_as_h1": false,
         "image": "shopify:\/\/shop_images\/Screenshot_2024-06-17_at_10.28.10.png",
@@ -849,7 +810,6 @@
   },
   "order": [
     "5c6c7524-259f-42bb-b61b-12002ecb519d",
-    "navigation",
     "main",
     "71e3ea67-87db-46b3-9e4f-d8b9e4a6e1da",
     "3ec50ef0-264a-4687-b059-c42908d4017b",
