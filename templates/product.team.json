@@ -178,18 +178,11 @@
         "number": 4
       }
     },
-    "metrics_grid_MBWLFV": {
-      "type": "metrics-grid",
-      "settings": {
-        "top_padding": true,
-        "bottom_padding": false,
-        "show_border": false,
-        "title": "Trusted at Every Level",
-        "text": ""
-      }
-    },
     "video_banner_469i3z": {
       "type": "video-banner",
+      "custom_css": [
+        ".video-banner-full-subtitle {color: black !important;}"
+      ],
       "settings": {
         "width": 760,
         "padding_top": 20,
@@ -199,7 +192,7 @@
         "active_color": true,
         "color": "#ffffff",
         "style": "gradient",
-        "subtitle": "Trusted at every level",
+        "subtitle": "Trusted at Every Level",
         "title": "",
         "title_as_h1": false,
         "image": "shopify:\/\/shop_images\/Screenshot_2024-06-17_at_10.28.10.png",
@@ -813,7 +806,6 @@
     "main",
     "71e3ea67-87db-46b3-9e4f-d8b9e4a6e1da",
     "3ec50ef0-264a-4687-b059-c42908d4017b",
-    "metrics_grid_MBWLFV",
     "video_banner_469i3z",
     "ebe5b13c-50b0-4003-8da0-e0862c93989f",
     "62d77063-fdec-475e-815b-1e9208f7e6ab",
