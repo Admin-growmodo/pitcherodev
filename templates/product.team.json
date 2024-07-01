@@ -756,6 +756,95 @@
         "container_width": "medium",
         "title": ""
       }
+    },
+    "columns_slider_PpMp3n": {
+      "type": "columns-slider",
+      "blocks": {
+        "column_QimyjE": {
+          "type": "column",
+          "settings": {
+            "add_radius": false,
+            "title": "Heading",
+            "url": ""
+          }
+        },
+        "column_Azqhed": {
+          "type": "column",
+          "settings": {
+            "add_radius": false,
+            "title": "Heading",
+            "url": ""
+          }
+        },
+        "column_qz4ArC": {
+          "type": "column",
+          "settings": {
+            "add_radius": false,
+            "title": "Heading",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_QimyjE",
+        "column_Azqhed",
+        "column_qz4ArC"
+      ],
+      "settings": {
+        "padding_top": 19,
+        "padding_top_mobile": 19,
+        "padding_bottom": 48,
+        "padding_bottom_mobile": 48
+      }
+    },
+    "columns_kjDEEX": {
+      "type": "columns",
+      "blocks": {
+        "column_WJEFJw": {
+          "type": "column",
+          "settings": {
+            "title": "Heading",
+            "text": "",
+            "url": ""
+          }
+        },
+        "column_CtgPWN": {
+          "type": "column",
+          "settings": {
+            "title": "Heading",
+            "text": "",
+            "url": ""
+          }
+        },
+        "column_rPHD7P": {
+          "type": "column",
+          "settings": {
+            "title": "Heading",
+            "text": "",
+            "url": ""
+          }
+        },
+        "column_wLRU6W": {
+          "type": "column",
+          "settings": {
+            "title": "Heading",
+            "text": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_WJEFJw",
+        "column_CtgPWN",
+        "column_rPHD7P",
+        "column_wLRU6W"
+      ],
+      "settings": {
+        "top_padding": true,
+        "bottom_padding": true,
+        "title": "Heading",
+        "text": ""
+      }
     }
   },
   "order": [
@@ -781,6 +870,8 @@
     "508c358d-c028-4a9a-987e-b819bd61f888",
     "b36e4f91-6cd7-46fb-a433-f14393779a92",
     "1be8b7cc-118c-40d3-970c-ebe70a8206ee",
-    "3bc2347a-f8d6-4ce2-9339-3581cd4fc6ba"
+    "3bc2347a-f8d6-4ce2-9339-3581cd4fc6ba",
+    "columns_slider_PpMp3n",
+    "columns_kjDEEX"
   ]
 }
